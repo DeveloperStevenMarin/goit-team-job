@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap");
 * {
   font-family: "DM Sans";
   box-sizing: border-box;
@@ -20,6 +21,26 @@ a {
 a:hover {
   color: rgb(212, 20, 67);
   cursor: pointer;
+}
+
+.customer__review__elipse {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.icon__quotation {
+  width: 54px;
+  height: 40px;
+}
+
+.house {
+  width: 4px;
+  height: 4px;
+}
+
+.container {
+  background-color: blueviolet;
 }
 
 .gallery {
