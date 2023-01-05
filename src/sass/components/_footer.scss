@@ -1,0 +1,81 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as m;
+
+// color:$pink-light;
+// color: $pink;
+// color: $pink-dark;
+// color:$gray-pink;
+.footer {
+  background-color: color.$pink-light;
+}
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+// .footer h3 {
+//     @include m.footerText(color.$pink, 1.8rem, 400, 0.04em, null );
+//     font-family: "Titan One", cursive;
+//   font-weight: 400;
+//   font-size: 58px;
+// }
+.footer {
+  &__slogan {
+    text-transform: uppercase;
+    &--small-title {
+      @include m.footerText(color.$pink, 1.8rem, 400, 0.04em, null);
+      font-family: "Titan One", cursive;
+    }
+    span{
+        font-family: "Titan One", cursive;
+
+    }
+    &--big-title {
+      @include m.footerText(color.$pink-dark, 3.6rem, 400, 0.04em, 1.5);
+      font-family: "Titan One", cursive;
+    }
+  }
+}
+.footer__social {
+  &--icons {
+    display: flex;
+    gap: 10px;
+
+  }
+  &--icon {
+    width: 34px;
+    height: 34px;
+    background-color: color.$pink;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.7;
+
+    &:hover{
+        background-color: color.$pink-dark;
+    }
+    svg{
+        fill: color.$white;
+        width:20px;
+        height: 20px;
+        
+    }
+  }
+}
+
+.footer__copyright {
+  border-top: 1px solid color.$white;
+  text-align: center;
+  padding: 25px 0;
+  p {
+    @include m.footerText(color.$gray-pink, 0.87rem, 700, 0.04em, null);
+    transition: 500ms ease;
+
+    &:hover{
+        font-size: 1rem;
+        transition: 500ms ease;
+
+    }
+}
+}

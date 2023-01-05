@@ -1,0 +1,96 @@
+* {
+  font-family: "DM Sans";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 0em;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(212, 20, 67);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgb(255, 245, 246);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer__slogan {
+  text-transform: uppercase;
+}
+.footer__slogan--small-title {
+  color: rgb(255, 165, 186);
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  font-family: "Titan One", cursive;
+}
+.footer__slogan span {
+  font-family: "Titan One", cursive;
+}
+.footer__slogan--big-title {
+  color: rgb(212, 20, 67);
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  font-family: "Titan One", cursive;
+}
+
+.footer__social--icons {
+  display: flex;
+  gap: 10px;
+}
+.footer__social--icon {
+  width: 34px;
+  height: 34px;
+  background-color: rgb(255, 165, 186);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.7;
+}
+.footer__social--icon:hover {
+  background-color: rgb(212, 20, 67);
+}
+.footer__social--icon svg {
+  fill: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+}
+
+.footer__copyright {
+  border-top: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  padding: 25px 0;
+}
+.footer__copyright p {
+  color: #907E82;
+  font-size: 0.87rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: 500ms ease;
+}
+.footer__copyright p:hover {
+  font-size: 1rem;
+  transition: 500ms ease;
+}
+
+/*# sourceMappingURL=main.min.css.map */
