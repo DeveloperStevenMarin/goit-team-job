@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap");
 * {
   font-family: "DM Sans";
   box-sizing: border-box;
@@ -28,12 +29,39 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 300px, rgb(255, 245, 246) 300px);
+  overflow: hidden;
+  height: 420px;
 }
 
 .container-images {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+.container-images:nth-child(2n+0) {
+  margin-bottom: -45px;
+}
+.container-images:nth-child(4n+0) {
+  margin-bottom: -45px;
+}
+.container-images:nth-child(3n+0) {
+  margin-bottom: 45px;
+}
+.container-images:nth-child(5n+0) {
+  margin-bottom: 45px;
+}
+.container-images__image {
+  max-height: 138px;
+  max-width: 138px;
+  transition: max-height 0.15s ease-out;
+  transition: max-width 0.15s ease-out;
+}
+.container-images__image:hover {
+  max-height: 220px;
+  max-width: 220px;
+  transition: max-height 0.25s ease-in;
+  transition: max-width 0.15s ease-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
