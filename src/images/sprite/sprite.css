@@ -1,0 +1,101 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+}
+.icon-telegram {
+  width: 28px;
+  height: 28px;
+  background-position: 0 0;
+}
+.icon-home3 {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -44px;
+}
+.icon-quotes-right {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -44px;
+}
+.icon-company_tagline {
+  width: 67px;
+  height: 32px;
+  background-position: 0 -92px;
+}
+.icon-brand {
+  width: 43px;
+  height: 32px;
+  background-position: -96px -92px;
+}
+.icon-foster-p {
+  width: 65px;
+  height: 32px;
+  background-position: -192px -92px;
+}
+.icon-company2 {
+  width: 34px;
+  height: 32px;
+  background-position: -288px -92px;
+}
+.icon-company {
+  width: 26px;
+  height: 32px;
+  background-position: -336px -92px;
+}
+.icon-yaco {
+  width: 29px;
+  height: 32px;
+  background-position: -384px -92px;
+}
+.icon-antena {
+  width: 30px;
+  height: 32px;
+  background-position: -432px -92px;
+}
+.icon-astronaut {
+  width: 32px;
+  height: 32px;
+  background-position: -480px -92px;
+}
+.icon-clock {
+  width: 31px;
+  height: 32px;
+  background-position: -528px -92px;
+}
+.icon-diagram {
+  width: 32px;
+  height: 32px;
+  background-position: -576px -92px;
+}
+.icon-envelope {
+  width: 43px;
+  height: 32px;
+  background-position: -624px -92px;
+}
+.icon-fb {
+  width: 18px;
+  height: 32px;
+  background-position: 0 -140px;
+}
+.icon-ig {
+  width: 32px;
+  height: 32px;
+  background-position: -48px -140px;
+}
+.icon-linkedin {
+  width: 32px;
+  height: 32px;
+  background-position: -96px -140px;
+}
+.icon-phone {
+  width: 20px;
+  height: 32px;
+  background-position: -144px -140px;
+}
+.icon-twitter {
+  width: 36px;
+  height: 32px;
+  background-position: -192px -140px;
+}
+

@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="./css/styles.css"
-    />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap" rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="" href="./images/icons.svg" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>IceCream</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <header class="hero-header"></header>
-    <section class="products"></section>
-    <section class="about"></section>
-    <section class="advantages"></section>
-    <section class="gallery"></section>
-    <section class="customer-reviews"></section>
-    <section class="contacts"></section>
-    <footer class="footer"></footer>
-  </body>
+	<head>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="./css/styles.css"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="node_modules/modern-normalize/modern-normalize.css"
+		/>
+		<link rel="" href="./images/icons.svg" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>IceCream</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<header class="hero-header"></header>
+		<section class="products"></section>
+		<section class="about"></section>
+		<section class="advantages"></section>
+		<section class="gallery"></section>
+
+		<section class="customer__reviews container">
+			<article>
+				<div class="customer__images">
+					<img src="images/testimonials3.png" alt="" />
+					<img src="images/testimonials2.png" alt="" />
+					<img src="images/testimonials1.png" alt="" />
+				</div>
+				<div>
+					<svg>
+						<use href="images/icon.svg#icon-quotes-right"></use>
+					</svg>
+					<p class="customer__coments"></p>
+					<p class="">
+						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+						ipsum primis in nibh vel risus.
+						<svg>
+							<use href="images/icon.svg#icon-underline1"></use>
+						</svg>
+						<svg>
+							<use href="images/icon.svg#icon-underline2"></use>
+						</svg>
+					</p>
+					<span class="dots">*</span>
+					<span class="dots">*</span>
+					<span class="dots">*</span>
+					<div>
+						<h2>Emily, Los Angeles</h2>
+						<svg>
+							<use href="images/icon.svg#icon-house"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="slider__button"></div>
+			</article>
+		</section>
+
+		<section class="contacts"></section>
+		<footer class="footer"></footer>
+	</body>
 </html>
