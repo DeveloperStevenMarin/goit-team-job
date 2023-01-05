@@ -7,11 +7,16 @@
 
 ul {
   list-style-type: none;
-  margin-block-end: 0em;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding-inline-start: 0px;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 
 a {
@@ -35,6 +40,4 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */
