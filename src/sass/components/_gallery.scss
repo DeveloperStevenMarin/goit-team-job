@@ -1,16 +1,51 @@
+@use "../utils/color" as colors;
 
 
-.gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(
+    0deg,
+    colors.$white 300px,
+    colors.$pink-light 300px
+  );
+ overflow: hidden;
+ height: 420px;
 }
 
-.container-images{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.container-images {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+  
+  &:nth-child(2n+0) {
+    margin-bottom: -45px;
+  }
+  &:nth-child(4n+0) {
+    margin-bottom: -45px;
+  }
+  &:nth-child(3n+0) {
+    margin-bottom: 45px;
+  }
+  &:nth-child(5n+0) {
+    margin-bottom: 45px;
+  }
+  &__image {
+    max-height: 138px;
+    max-width: 138px;
+    transition: max-height 0.15s ease-out;
+    transition: max-width 0.15s ease-out;
+  }
+  &__image:hover{
+    
+    max-height: 220px;
+    max-width: 220px;
+    transition: max-height 0.25s ease-in;
+    transition: max-width 0.15s ease-out;
+    
+  }
 }
