@@ -2,10 +2,14 @@
 @import '../utils/config';
 
 
-h2 {
+.advantages .advantages__container  h2 {
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 58px;
+font-weight: 400;
+font-size: 58px;
+line-height: 66px;
+text-align: left;
+letter-spacing: 0.04em;
+text-transform: uppercase;
 
     color: color.$pink-dark;
 }
@@ -17,7 +21,7 @@ h2 {
 
     background: color.$pink-light;
 }
-p {
+.advantages .advantages__container p {
     width: 288px;
     margin-top: 16px;
 
@@ -35,7 +39,7 @@ p {
     .advantages {
         gap: 32px;
     }
-    p {
+    .advantages .advantages__container p {
         width: 288px;
     }
     .advantages__icon {
@@ -47,7 +51,7 @@ p {
     .advantages {
         gap: 22px;
     }
-    p {
+    .advantages .advantages__container p {
         width: 180px;
     }
     .advantages__icon {
@@ -59,7 +63,7 @@ p {
         gap: 115px;
         margin-left: 7px;
     }
-    p {
+    .advantages .advantages__container p {
         width: 288px;
     }
     .advantages__icon {
