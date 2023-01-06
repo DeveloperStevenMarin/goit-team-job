@@ -1,7 +1,7 @@
-@use "../utils/color" as colores;
+@use "../utils/color" as colors;
 
 .about {
-    background: #FFF5F6;;
+    background: colors.$pink-light;
     padding: 50px;
     // text-align: center;  
     margin: auto; 
@@ -9,7 +9,7 @@
 
 .container-about__description{
     color: $pink;
-    font-family: 'Titan', sans-serif;
+    font-family: 'Titan One', sans-serif;
     font-size: 30px;
     font-weight: 700;
     text-align: center;
@@ -18,7 +18,7 @@
 
 .container-about__title{
     color: $pink-dark;
-    font-family: "Titan", sans-serif;
+    font-family: "Titan One", sans-serif;
     font-size: 58px;
     font-weight: 700;
     line-height: 66px;
