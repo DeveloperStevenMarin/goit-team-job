@@ -23,6 +23,194 @@ a:hover {
   cursor: pointer;
 }
 
+
+.buttons-contacts {
+  width: 340px;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button--color--red {
+  width: 150px;
+  height: 44px;
+  background: #D41342;
+  border-radius: 22px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: solid;
+  color: #FFFFFF;
+}
+
+.button--color--white {
+  width: 150px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: red;
+  border: none;
+}
+
+.card--contacts {
+  width: 368px;
+  height: 538px;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+  margin-top: 1%;
+  margin-right: 0.5%;
+  margin-left: 1%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+}
+.card--contacts:hover {
+  color: rgb(212, 20, 67);
+  box-shadow: 0px 8px 30px rgb(212, 20, 67);
+}
+.card--contacts__sale {
+  width: 75.1px;
+  height: 28px;
+  left: 86px;
+  top: 3917px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background: rgb(240, 209, 165);
+  border-radius: 6px;
+}
+.card--contacts__salef {
+  width: 71.1px;
+  height: 28px;
+  left: 56px;
+  top: 3917px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgb(255, 255, 255);
+  background: rgb(194, 226, 151);
+  border-radius: 6px;
+}
+.card--contacts__locations {
+  width: 120px;
+  height: 30px;
+  left: 56px;
+  top: 3977px;
+  letter-spacing: 0.04em;
+  color: rgba(0, 0, 0, 0);
+}
+.card--contacts__promise {
+  width: 250px;
+  height: 50px;
+  left: 56px;
+  top: 4015px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  color: rgb(144, 127, 130);
+}
+.card--contacts__icon {
+  margin-top: 4%;
+  width: 288px;
+  height: 0px;
+  left: 56px;
+  top: 4097px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.card--contacts__schedule {
+  width: 237.86px;
+  height: 30px;
+  left: 56px;
+  top: 4129px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+}
+.card--contacts__time {
+  width: 167.7px;
+  height: 30px;
+  left: 56px;
+  top: 4159px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  color: rgb(212, 20, 67);
+}
+.card--contacts__icon {
+  margin-bottom: 1%;
+  width: 288px;
+  height: 0px;
+  left: 56px;
+  top: 4097px;
+  border: 1px solid rgb(255, 255, 255);
+}
+.card--contacts__phone {
+  width: 250px;
+  height: 50px;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: rgb(144, 127, 130);
+}
+.card--contacts__mail {
+  width: 250px;
+  height: 50px;
+  margin-left: 0%;
+  margin-top: 0%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 183%;
+  color: rgb(144, 127, 130);
+}
+
+.contacts {
+  background: linear-gradient(0deg, rgb(255, 245, 246) 80%, rgb(255, 255, 255) 80%);
+  width: 100%;
+  height: fit-content;
+  margin-left: 0%;
+  top: 3976px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteiner--card {
+  width: 100%;
+  height: 638px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 .about {
   background: rgb(255, 245, 246);
   padding: 50px;
