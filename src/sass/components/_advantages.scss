@@ -1,0 +1,73 @@
+@use "../utils/color" as color;
+@import '../utils/config';
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap: 115px;
+    background: color.$pink-light;
+    &__container h2{
+        font-family: 'Titan One';
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 66px;
+        text-align: left;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: color.$pink-dark;
+    }
+    &__container p{
+        width: 288px;
+    margin-top: 16px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+    }
+    &__icon{
+        fill: color.$pink;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .advantages {
+        gap: 32px;
+        &__container p{
+            width: 288px;
+        }
+        &__icon{
+            margin-bottom: 16px;
+        }
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .advantages {
+        gap: 22px;
+        &__container p{
+            width: 180px;
+        }
+        &__icon{
+            margin-bottom: 36px;
+        }
+    }
+}
+@media screen and (min-width: 1280px) {
+    .advantages {
+        gap: 115px;
+        margin-left: 7px;
+        &__container p{
+            width: 288px;
+        }
+        &__icon{
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+

@@ -23,6 +23,7 @@ a:hover {
   cursor: pointer;
 }
 
+
 .buttons-contacts {
   width: 340px;
   height: 90px;
@@ -210,6 +211,272 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+.about {
+  background: rgb(255, 245, 246);
+  padding: 50px;
+  margin: auto;
+}
+
+.container-about__description {
+  color: rgb(255, 165, 186);
+  font-family: "Titan One", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-about__title {
+  color: rgb(212, 20, 67);
+  font-family: "Titan One", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 66px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-about {
+  padding-left: 70px;
+}
+
+.container-about__image {
+  height: 501px;
+  width: 501px;
+  position: absolute;
+  padding: 50px;
+}
+
+.container-about__text {
+  position: relative;
+  padding-top: 150px;
+  padding-left: 600px;
+  padding-bottom: 100px;
+}
+
+.container-about__text--1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 176%;
+  text-align: left;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+.container-about__text--2 {
+  color: rgb(152, 142, 142);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 194%;
+  padding-left: 60px;
+}
+
+* {
+  font-family: "DM Sans";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 0em;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(212, 20, 67);
+  cursor: pointer;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 115px;
+  background: rgb(255, 245, 246);
+}
+.advantages__container h2 {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: left;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgb(212, 20, 67);
+}
+.advantages__container p {
+  width: 288px;
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+}
+.advantages__icon {
+  fill: rgb(255, 165, 186);
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .advantages {
+    gap: 32px;
+  }
+  .advantages__container p {
+    width: 288px;
+  }
+  .advantages__icon {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    gap: 22px;
+  }
+  .advantages__container p {
+    width: 180px;
+  }
+  .advantages__icon {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages {
+    gap: 115px;
+    margin-left: 7px;
+  }
+  .advantages__container p {
+    width: 288px;
+  }
+  .advantages__icon {
+    margin-bottom: 40px;
+  }
+}
+* {
+  font-family: "DM Sans";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 0em;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(212, 20, 67);
+  cursor: pointer;
+}
+
+.customer__reviews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.customer__images__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.customer__testimonials__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  width: fit-content;
+  height: 138px;
+}
+
+.icon__quotation {
+  position: absolute;
+  width: 54px;
+  height: 42px;
+  top: 32px;
+  left: 72px;
+  fill: #E1E1E1;
+  z-index: 0;
+}
+
+.customer__coments {
+  width: 750px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 186%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #000000;
+  z-index: 1;
+}
+
+.customer__elipse__container {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  gap: 10px;
+  margin: 16px auto;
+}
+
+.customer__elipse {
+  background: red;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 32ps;
+}
+
+.slider__button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 72px;
+  margin: 33px auto;
+}
+
+.slider__button__off {
+  background: #D9D9D9;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.icon__house {
+  width: 12px;
+  height: 10px;
+  fill: red;
 }
 
 .gallery {
