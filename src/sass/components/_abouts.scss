@@ -1,4 +1,69 @@
 @use "../utils/color" as colores;
 
+.about {
+    background: #FFF5F6;;
+    padding: 50px;
+    // text-align: center;  
+    margin: auto; 
+    max-width: 1600px;
+}
 
+.container-about__description{
+    color: $pink;
+    font-family: "Titan", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-about__title{
+    color: $pink-dark;
+    font-family: "Titan", sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+.container-about{
+    // position: relative;
+    // background-image: 
+    // url("../images/background-about-section.jpg");
+
+    padding-left: 70px;
+
+}
+.container-about__image{
+    height: 501px;
+    width: 501px;
+    position: absolute;
+    padding: 50px;
+
+}
+
+.container-about__text{
+    position: relative;
+    padding-top: 150px;
+    padding-left: 600px;
+    padding-bottom: 100px;
+
+}
+
+.container-about__text--1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 176%;
+    text-align:left;
+    padding-left:60px;
+    padding-bottom: 30px;
+}
+
+.container-about__text--2{
+    color: $grey;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 194%;
+    padding-left:60px;
+}
 
