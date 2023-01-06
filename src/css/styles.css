@@ -84,6 +84,94 @@ a:hover {
   padding-left: 60px;
 }
 
+* {
+  font-family: "DM Sans";
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-end: 0em;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(212, 20, 67);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 58px;
+  color: rgb(212, 20, 67);
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 115px;
+  background: rgb(255, 245, 246);
+}
+
+p {
+  width: 288px;
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.02em;
+}
+
+.advantages__icon {
+  fill: rgb(255, 165, 186);
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 320px) {
+  .advantages {
+    gap: 32px;
+  }
+  p {
+    width: 288px;
+  }
+  .advantages__icon {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages {
+    gap: 22px;
+  }
+  p {
+    width: 180px;
+  }
+  .advantages__icon {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages {
+    gap: 115px;
+    margin-left: 7px;
+  }
+  p {
+    width: 288px;
+  }
+  .advantages__icon {
+    margin-bottom: 40px;
+  }
+}
 .gallery {
   display: flex;
   flex-direction: row;
