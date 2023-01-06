@@ -1,0 +1,157 @@
+@use "../utils/color" as colors;
+.card--contacts {
+ 
+    width: 368px;
+    height: 538px;
+    background: colors.$white;
+    border-radius: 24px;
+    margin-top:1%;
+    margin-right: .5%;
+    margin-left: 1%;
+    margin-bottom: 16px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding: 3%;
+    
+
+    &:hover {
+        color:colors.$pink-dark ;
+        box-shadow: 0px 8px 30px colors.$pink-dark;
+      }
+        
+        
+        &__sale {
+          width: 75.1px;
+          height: 28px;
+          left: 86px;
+          top: 3917px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 186%;
+          text-align: center;
+          color: colors.$white;
+          background: colors.$yellow;
+          border-radius: 6px;
+            
+        }
+        &__salef {
+          width: 71.1px;
+          height: 28px;
+          left: 56px;
+          top: 3917px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 186%;
+          text-align: center;
+          letter-spacing: 0.04em;
+          color: colors.$white;
+          background: colors.$green;
+          border-radius: 6px;
+        
+          
+        }
+        
+        
+        &__locations {
+          width: 120px;
+          height: 30px;
+          left: 56px;
+          top: 3977px;
+          letter-spacing: 0.04em;
+          color: colors.$black;
+        }
+        
+        &__promise {
+          width: 250px;
+          height: 50px;
+          left: 56px;
+          top: 4015px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 183%;
+          letter-spacing: 0.04em;
+          color: colors.$grey;
+        
+        }
+        
+        &__icon {
+          margin-top: 4%;
+          width: 288px;
+          height: 0px;
+          left: 56px;
+          top: 4097px;
+          border: 1px solid colors.$white;
+        
+        }
+        
+        &__schedule {
+          width: 237.86px;
+          height: 30px;
+          left: 56px;
+          top: 4129px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 186%;
+          letter-spacing: 0.04em;
+        
+        }
+        
+        &__time {
+          width: 167.7px;
+          height: 30px;
+          left: 56px;
+          top: 4159px;
+          font-family: 'DM Sans';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 186%;
+          color: colors.$pink-dark;
+        
+        }
+        
+        &__icon {
+          margin-bottom: 1%;
+          width: 288px;
+          height: 0px;
+          left: 56px;
+          top: 4097px;
+          border: 1px solid colors.$white;
+        
+        }
+        
+        &__phone {
+          width: 250px;
+          height: 50px;
+          margin-left: 0%;
+          margin-right: 0%;
+          margin-bottom: 0%;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 183%;
+          color: colors.$grey;
+          
+        }
+        &__mail {
+          width: 250px;
+          height: 50px;
+          margin-left: 0%;
+          margin-top: 0%;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 183%;
+          color: colors.$grey;
+          
+        } 
+}
