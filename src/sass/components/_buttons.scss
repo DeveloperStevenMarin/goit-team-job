@@ -1,39 +1,38 @@
+@use "../utils/color" as colors;
 
-.buttons-contacts {
-    width: 340px;
-    height: 90px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
+
+
+.button{
+  width: 180px;
+  height: 44px;
+  border-radius: 22px;
+  background:colors.$white;
+  color: colors.$pink-dark;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: solid;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+  
+  .button--pink {
+    background:colors.$pink-dark;
+    color: colors.$white;
+  
+  }
+  
+  
+  .button--white {
+   
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
     
-  } 
-  
-  .button--color--red {
-    width: 150px;
-    height: 44px;
-    background:#D41342;
-    border-radius: 22px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: solid;
-    color: #FFFFFF;
-  
   }
-  
-  
-  .button--color--white {
-    width: 150px;
-    height: 44px;
-    background:#ffffff;
-    border-radius: 22px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    color: red;
-    border: none;
-  
-  }
+
+ 

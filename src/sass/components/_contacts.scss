@@ -22,4 +22,13 @@
     justify-content: center;
    
   } 
-  
+  .contacts__button-container {
+    width: 340px;
+    height: 90px;
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    
+  } 
