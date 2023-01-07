@@ -571,6 +571,7 @@ a:hover {
   position: relative;
   width: 100%;
   height: 334px;
+  padding: 0 16px;
 }
 
 .footer__background {
