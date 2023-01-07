@@ -172,56 +172,44 @@ a:hover {
     margin-bottom: 40px;
   }
 }
-* {
-  font-family: "DM Sans";
-  box-sizing: border-box;
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin-block-end: 0em;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding-inline-start: 0px;
-}
-
-a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-a:hover {
-  color: rgb(212, 20, 67);
-  cursor: pointer;
-}
-
-.customer__reviews {
+.customer__reviews__section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 10.5%;
 }
 
-.customer__images__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-
-.customer__testimonials__container {
+.customer__images__list {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(250, 250, 250);
-  width: fit-content;
+  width: 85px;
+  height: 85px;
+}
+
+.customer__images__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  background-color: rgb(255, 255, 255);
+  transition: opacity 0.5;
+}
+
+.customer__images__slider:nth-child(1) {
+  opacity: 1;
+}
+
+ul li.customer__images__slider:target {
+  opacity: 1;
+}
+
+.customer__testimonials__list {
+  position: relative;
+  width: 100%;
   height: 138px;
+  background-color: rgb(250, 250, 250);
 }
 
 .icon__quotation {
@@ -230,20 +218,27 @@ a:hover {
   height: 42px;
   top: 32px;
   left: 72px;
-  fill: #E1E1E1;
-  z-index: 0;
+  fill: rgb(250, 250, 250);
 }
 
-.customer__coments {
-  width: 750px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #000000;
-  z-index: 1;
+.customer__testimonials__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  padding: 4.8% 9.05% 4% 9.05%;
+  width: inherit;
+  height: inherit;
+  background-color: rgb(250, 250, 250);
+  transition: opacity 0.5;
+}
+
+.customer__testimonials__slider:nth-child(1) {
+  opacity: 1;
+}
+
+.customer__image__slider:target .customer__testimonials__slider:target {
+  opacity: 1;
 }
 
 .customer__elipse__container {
@@ -261,7 +256,7 @@ a:hover {
   height: 4px;
 }
 
-h2 {
+.customer__comment__city {
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
@@ -279,7 +274,9 @@ h2 {
 }
 
 .slider__button__off {
-  background: #D9D9D9;
+  display: inline-block;
+  background-color: rgb(152, 142, 142);
+  list-style: none;
   border-radius: 50%;
   width: 12px;
   height: 12px;

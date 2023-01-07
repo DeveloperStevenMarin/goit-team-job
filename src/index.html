@@ -55,29 +55,29 @@
 				</div>
 			</div>
 		</section>
-    <section class="advantages">
-      <div class="advantages__container">
-        <svg class="advantages__icon" width="50" height="50">
-          <use href="./images/icons.svg#glass"></use>
-        </svg>
-        <h2>721</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="advantages__container">
-        <svg class="advantages__icon" width="50" height="50">
-          <use href="./images/icons.svg#glass-2"></use>
-        </svg>
-        <h2>16kg</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="advantages__container">
-        <svg class="advantages__icon" width="44" height="50">
-          <use href="./images/icons.svg#heart"></use>
-        </svg>
-        <h2>84</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    </section>
+		<section class="advantages">
+			<div class="advantages__container">
+				<svg class="advantages__icon" width="50" height="50">
+					<use href="./images/icons.svg#glass"></use>
+				</svg>
+				<h2>721</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="advantages__container">
+				<svg class="advantages__icon" width="50" height="50">
+					<use href="./images/icons.svg#glass-2"></use>
+				</svg>
+				<h2>16kg</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="advantages__container">
+				<svg class="advantages__icon" width="44" height="50">
+					<use href="./images/icons.svg#heart"></use>
+				</svg>
+				<h2>84</h2>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+		</section>
 		<section class="gallery">
 			<div class="container-images">
 				<img
@@ -142,25 +142,56 @@
 				/>
 			</div>
 		</section>
-		<section class="customer__reviews">
-			<div class="customer__images__container">
-				<img
-					class="customer__images__slider"
-					src="images/testimonials1.png"
-					alt=""
-				/>
+
+		<section class="customer__reviews__section">
+			<div>
+				<ul class="customer__images__list">
+					<li id="customer-img1" class="customer__images__slider">
+						<img src="images/testimonials1.png" alt="" />
+					</li>
+					<li id="customer-img2" class="customer__images__slider">
+						<img src="images/testimonials2.png" alt="" />
+					</li>
+					<li id="customer-img3" class="customer__images__slider">
+						<img src="images/testimonials3.png" alt="" />
+					</li>
+				</ul>
 			</div>
 
-			<div class="customer__testimonials__container">
-				<svg class="icon__quotation">
-					<use href="images/icon.svg#quotes"></use>
-				</svg>
-				<p class="customer__coments">
-					Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
-					Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
-					ipsum primis in nibh vel risus.
-				</p>
-			</div>
+			<ul class="customer__testimonials__list">
+				<!-- <li>
+					<svg class="icon__quotation">
+						<use href="images/icon.svg#quotes"></use>
+					</svg>
+				</li> -->
+				<li id="#text1" class="customer__testimonials__slider">
+					<p class="customer__text">
+						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+						ipsum primis in nibh vel risus.
+					</p>
+				</li>
+				 <li id="text2" class="customer__testimonials__slider">
+					<p class="customer__text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat.
+					</p>
+					</a>
+				</li>
+
+				<li class="customer__testimonials__slider">
+						<p class="customer__text">
+							Sed ut perspiciatis unde omnis iste natus
+							error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa
+							quae ab illo inventore veritatis et
+							quasi architecto beatae vitae dicta sunt
+							explicabo.
+						</p>
+				</li> 
+			</ul>
 
 			<div class="customer__elipse__container">
 				<div class="customer__elipse"></div>
@@ -169,16 +200,28 @@
 			</div>
 
 			<div>
-				<h2>Emily, Los Angeles</h2>
+				<h2 class="customer__comment__city">Emily, Los Angeles</h2>
 			</div>
 
-			<div class="slider__button">
-				<svg class="icon__house">
-					<use href="images/icon.svg#house"></use>
-				</svg>
-				<div class="slider__button__off"></div>
-				<div class="slider__button__off"></div>
-			</div>
+			<ul class="slider__button">
+				<li>
+					<a
+						href="#customer-img1"
+						onclick="text1"
+						class="slider__button__off"
+					>
+						<!-- <svg class="icon__house">
+							<use href="images/icons.svg#house"></use>
+						</svg> -->
+					</a>
+				</li>
+				<li>
+					<a href="#customer-img2" onclick="text2" class="slider__button__off"></a>
+				</li>
+				<li>
+					<a href="#customer-img3" class="slider__button__off"></a>
+				</li>
+			</ul>
 		</section>
 		<section class="contacts"></section>
 		<footer class="footer"></footer>
