@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap");
 * {
   font-family: "DM Sans";
   box-sizing: border-box;
@@ -33,6 +34,9 @@ a:hover {
   margin: 0 auto;
 }
 
+.footer {
+  padding-top: 60px;
+}
 .footer__slogan {
   text-transform: uppercase;
 }
@@ -43,21 +47,51 @@ a:hover {
   letter-spacing: 0.04em;
   font-family: "Titan One", cursive;
 }
+.footer__slogan--small-title span {
+  transition: 500ms ease-in-out;
+}
+.footer__slogan--small-title:hover {
+  position: relative;
+  text-align: center;
+  transition: 500ms ease-in-out;
+  padding-bottom: 20px;
+}
+.footer__slogan--small-title:hover:hover span {
+  position: absolute;
+  transform: translate(-250%, 100%);
+  transition: 500ms ease-in-out;
+}
 .footer__slogan span {
   font-family: "Titan One", cursive;
 }
 .footer__slogan--big-title {
+  display: flex;
+  gap: 14px;
+}
+.footer__slogan--big-title:hover h2 span {
+  font-size: 4.2rem;
+  transition: 600ms ease;
+}
+.footer__slogan--big-title h2 {
   color: rgb(212, 20, 67);
   font-size: 3.6rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  font-family: "Titan One", cursive;
+  transition: 600ms ease;
+}
+
+.footer__slogan-social {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .footer__social--icons {
   display: flex;
-  gap: 10px;
+  justify-content: end;
+  gap: 30px;
+  padding-bottom: 40px;
 }
 .footer__social--icon {
   width: 34px;
@@ -66,18 +100,32 @@ a:hover {
   border-radius: 50%;
   text-align: center;
   line-height: 2.7;
+  transition: 500ms ease;
 }
 .footer__social--icon:hover {
   background-color: rgb(212, 20, 67);
+  transition: 500ms ease;
 }
 .footer__social--icon svg {
   fill: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
 }
+.footer__social--contact {
+  font-weight: 700;
+  text-align: right;
+}
+.footer__social--contact a {
+  color: rgb(212, 20, 67);
+  transition: 500ms ease;
+}
+.footer__social--contact a:hover {
+  font-size: 1.2rem;
+  transition: 500ms ease;
+}
 
 .footer__copyright {
-  border-top: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid #e1e1e1;
   text-align: center;
   padding: 25px 0;
 }
@@ -91,6 +139,91 @@ a:hover {
 .footer__copyright p:hover {
   font-size: 1rem;
   transition: 500ms ease;
+}
+.footer__copyright br {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__slogan--small-title {
+    font-size: 1.6rem;
+  }
+  .footer__slogan--small-title span {
+    display: block;
+  }
+  .footer__slogan--big-title {
+    padding-top: 10px;
+    font-size: 3rem;
+    line-height: normal;
+    display: inline-block;
+  }
+  .footer__slogan--big-title h2 {
+    line-height: 1;
+  }
+  .footer__social {
+    margin: auto;
+  }
+  .footer__social--contact {
+    font-size: 0.87rem;
+  }
+  .footer__copyright {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__social {
+    padding: 40px 0 20px;
+  }
+  .footer__social--contact {
+    justify-content: flex-start;
+    text-align: end;
+  }
+  .footer__slogan-social {
+    display: block;
+  }
+  .footer__copyright br {
+    display: block;
+  }
+}
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 300px, rgb(255, 245, 246) 300px);
+  overflow: hidden;
+  height: 420px;
+}
+
+.container-images {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.container-images:nth-child(2n+0) {
+  margin-bottom: -45px;
+}
+.container-images:nth-child(4n+0) {
+  margin-bottom: -45px;
+}
+.container-images:nth-child(3n+0) {
+  margin-bottom: 45px;
+}
+.container-images:nth-child(5n+0) {
+  margin-bottom: 45px;
+}
+.container-images__image {
+  max-height: 138px;
+  max-width: 138px;
+  transition: max-height 0.15s ease-out;
+  transition: max-width 0.15s ease-out;
+}
+.container-images__image:hover {
+  max-height: 220px;
+  max-width: 220px;
+  transition: max-height 0.25s ease-in;
+  transition: max-width 0.15s ease-out;
 }
 
 /*# sourceMappingURL=main.min.css.map */
