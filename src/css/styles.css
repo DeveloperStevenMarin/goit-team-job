@@ -693,6 +693,7 @@ a:hover {
   font-size: 16px;
   line-height: 21px;
   color: rgb(255, 255, 255);
+  z-index: 1;
 }
 .hero-header__nav__right {
   display: flex;
@@ -760,7 +761,7 @@ a:hover {
   height: 534px;
   border-radius: 50%;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   top: 0;
 }
 .hero-header__container__iceCream-image {

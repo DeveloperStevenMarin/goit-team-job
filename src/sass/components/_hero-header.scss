@@ -1,220 +1,220 @@
 @use "../utils/color" as color;
-@import '../utils/config';
+@import "../utils/config";
 
 .button-shape {
-    padding: 11px 23px;
-    border-radius: 20px;
-    border: 2px;
+	padding: 11px 23px;
+	border-radius: 20px;
+	border: 2px;
 }
 
 .hero-header {
-    background-color: color.$main-color;
-    width: auto;
-    height: 664px;
-    position: relative;
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 37px 15px 60px 15px;
+	background-color: color.$main-color;
+	width: auto;
+	height: 664px;
+	position: relative;
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 37px 15px 60px 15px;
 
-        &__brand {
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            align-items: center;
-            &__text {
-                font-family: 'Titan One';
-                font-weight: 400;
-                font-size: 30px;
-                line-height: 90.5%;
-                
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
+		&__brand {
+			display: flex;
+			flex-direction: row;
+			gap: 30px;
+			align-items: center;
+			&__text {
+				font-family: "Titan One";
+				font-weight: 400;
+				font-size: 30px;
+				line-height: 90.5%;
 
-                color: color.$pink-dark;
-            }
-        }
-        &__sections {
-            display: flex;
-            align-items: center;
-            gap: 35px;
+				letter-spacing: 0.04em;
+				text-transform: uppercase;
 
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 21px;
-            color: color.$white;
-        }
-        &__right {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 32px;
-            &__buyButton {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 12px;
-        
-                width: 159px;
-                height: 44px;
-                border: 2px ;
-                border-radius: 22px;
-        
-                color: color.$pink-dark;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 21px;
-            }
-            &__menu-burguer {
-                visibility: hidden;
-            }
-        }
-            
-    }
-    &__title {
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 44px;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        text-align: left;
-        padding: 0 0 24px 15px;
+				color: color.$pink-dark;
+			}
+		}
+		&__sections {
+			display: flex;
+			align-items: center;
+			gap: 35px;
 
-        width: 277px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 21px;
+			color: color.$white;
+			z-index: 1;
+		}
+		&__right {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 32px;
+			&__buyButton {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 12px;
 
-        color: color.$white;
-        &__passion {
-            font-family: 'Titan One';
-            font-size: 58px;
-            line-height: 90.5%;
-            
-            color: color.$pink-dark;
-        }    
-    }
-    &__titleButtons {
-        padding-left: 15px;
-        &__pink {
-            color: color.$white;
-            background: color.$pink-dark;
-        }
-        &__white {
-            color: color.$pink-dark;
-            background: color.$white;
-            margin-left: 15px;
-        }
-    }
+				width: 159px;
+				height: 44px;
+				border: 2px;
+				border-radius: 22px;
 
-    &__container {
-        width: 534px;
-        height: 611px;
-        position: absolute;
-        bottom: 0;
-        right: 12%;      
+				color: color.$pink-dark;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 21px;
+			}
+			&__menu-burguer {
+				visibility: hidden;
+			}
+		}
+	}
+	&__title {
+		font-family: "Titan One";
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 44px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		text-align: left;
+		padding: 0 0 24px 15px;
 
-        &__circle {
-            background: color.$pink;
-            width: 534px;
-            height: 534px;
-            border-radius: 50%;
-            position: relative;
-            z-index: 1;
-            top: 0;
-        }
-    
-        &__iceCream-image {
-            width: 236px;
-            height: 557px;
-            position: absolute;
-            z-index: 2;
-            bottom: 0;
-            right: 35%;
-        }
-    }
-    &__jarContainer {
-        display: flex;
-        align-items:flex-end;
-        padding-left: 15px;
-        padding-top: 40px;
-        &__text {
-            width: 250px;
-            p {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 140%;
-                padding-bottom: 20px;
+		width: 277px;
 
-                color: color.$white;
-            }
-        }
-    }
-    &__iceCreamGirl {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-        img {
-            height: 100%;
-            width: 100%;
-        }
-    }
-    &__branches {
-        position: absolute;
-        right: 15px;
-        top: 152px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        &__container {
-            position: relative;
-            &__text {
-                width: 90px;
-                height: 77px;
-                display: flex;
-                justify-content: center;
-                h2 {
-                    position: absolute;
-                    z-index: 2;
-                    font-family: 'Titan One';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 46px;
-                    line-height: 53px;
-                    
-                    text-align: right;
-                    letter-spacing: 0.04em;
-                    text-transform: uppercase;
-                    
-                    color: color.$pink-dark;
-                }
-                p {
-                    position: absolute;
-                    bottom: 0;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 18px;
-                    
-                    color: color.$white;
-                }
-            }
-            &__circle {
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 30px;
-                height: 30px;
-                background: color.$white;
-                border-radius: 50%;
-            }
-        }
-    }
+		color: color.$white;
+		&__passion {
+			font-family: "Titan One";
+			font-size: 58px;
+			line-height: 90.5%;
+
+			color: color.$pink-dark;
+		}
+	}
+	&__titleButtons {
+		padding-left: 15px;
+		&__pink {
+			color: color.$white;
+			background: color.$pink-dark;
+		}
+		&__white {
+			color: color.$pink-dark;
+			background: color.$white;
+			margin-left: 15px;
+		}
+	}
+
+	&__container {
+		width: 534px;
+		height: 611px;
+		position: absolute;
+		bottom: 0;
+		right: 12%;
+
+		&__circle {
+			background: color.$pink;
+			width: 534px;
+			height: 534px;
+			border-radius: 50%;
+			position: relative;
+			z-index: 0;
+			top: 0;
+		}
+
+		&__iceCream-image {
+			width: 236px;
+			height: 557px;
+			position: absolute;
+			z-index: 2;
+			bottom: 0;
+			right: 35%;
+		}
+	}
+	&__jarContainer {
+		display: flex;
+		align-items: flex-end;
+		padding-left: 15px;
+		padding-top: 40px;
+		&__text {
+			width: 250px;
+			p {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 140%;
+				padding-bottom: 20px;
+
+				color: color.$white;
+			}
+		}
+	}
+	&__iceCreamGirl {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__branches {
+		position: absolute;
+		right: 15px;
+		top: 152px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		&__container {
+			position: relative;
+			&__text {
+				width: 90px;
+				height: 77px;
+				display: flex;
+				justify-content: center;
+				h2 {
+					position: absolute;
+					z-index: 2;
+					font-family: "Titan One";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 46px;
+					line-height: 53px;
+
+					text-align: right;
+					letter-spacing: 0.04em;
+					text-transform: uppercase;
+
+					color: color.$pink-dark;
+				}
+				p {
+					position: absolute;
+					bottom: 0;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 18px;
+
+					color: color.$white;
+				}
+			}
+			&__circle {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 30px;
+				height: 30px;
+				background: color.$white;
+				border-radius: 50%;
+			}
+		}
+	}
 }
-@media screen and (max-width:1280px) {
-    .hero-header__nav__sections {
-        display: none;
-    }
-    .hero-header__nav__right__menu-burguer {
-        visibility: visible;
-    }
+@media screen and (max-width: 1280px) {
+	.hero-header__nav__sections {
+		display: none;
+	}
+	.hero-header__nav__right__menu-burguer {
+		visibility: visible;
+	}
 }
