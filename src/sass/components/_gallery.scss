@@ -5,46 +5,100 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+
   background: linear-gradient(
     0deg,
     colors.$white 300px,
     colors.$pink-light 300px
   );
- overflow: hidden;
- height: 420px;
+  overflow: hidden;
+  height: 420px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    height: 320px;
+  }
 }
 
 .container-images {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  
-  
-  &:nth-child(2n+0) {
-    margin-bottom: -45px;
+
+  &:nth-child(2n + 0) {
+    margin-top: auto;
   }
-  &:nth-child(4n+0) {
-    margin-bottom: -45px;
+  &:nth-child(4n + 0) {
+    margin-top: auto;
   }
-  &:nth-child(3n+0) {
-    margin-bottom: 45px;
+  &:nth-child(3n + 0) {
+    margin-bottom: auto;
   }
-  &:nth-child(5n+0) {
-    margin-bottom: 45px;
+  &:nth-child(5n + 0) {
+    margin-bottom: auto;
   }
   &__image {
     max-height: 138px;
     max-width: 138px;
     transition: max-height 0.15s ease-out;
     transition: max-width 0.15s ease-out;
+    &:hover {
+      max-height: 220px;
+      max-width: 220px;
+      transition: max-height 0.25s ease-in;
+      transition: max-width 0.15s ease-out;
+    }
   }
-  &__image:hover{
-    
-    max-height: 220px;
-    max-width: 220px;
-    transition: max-height 0.25s ease-in;
-    transition: max-width 0.15s ease-out;
-    
+}
+
+@media screen and (max-width: 1280px) {
+  .gallery {
+    &__container {
+      width: 80%;
+      height: 200px;
+      .container-images {
+        width: 100px;
+        &__image {
+          max-width: 80%;
+          max-height: 80%;
+          &:hover {
+            max-height: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .container-images {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery {
+    &__container {
+      width: 80%;
+      height: 40%;
+    }
+  }
+}
+@media screen and (max-width: 590px) {
+  .gallery {
+    &__container {
+      width: 80%;
+      height: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .gallery {
+    &__container {
+      width: 80%;
+      height: 30%;
+    }
   }
 }

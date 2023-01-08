@@ -1,0 +1,149 @@
+@use "../utils/color" as colors;
+
+.about {
+  background: colors.$pink-light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 35px;
+
+  &__container-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h3 {
+      margin-top: 60px;
+      color: colors.$pink;
+      font-family: "Titan One", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    h2 {
+      color: colors.$pink-dark;
+      font-family: "Titan One", sans-serif;
+      font-size: 58px;
+      font-weight: 700;
+      line-height: 66px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    gap:20%;
+    background-image: url(".././images/background-about-section.png");
+    background-size: 100% 610px;
+    background-repeat: no-repeat;
+    justify-content: space-evenly;
+
+  }
+  &__image {
+    height: 500px;
+    width: 480px;
+  
+    img{
+      width: 480px;
+      height: 500px;
+    }
+    
+  }
+  &__text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  &__text--1 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    text-align: left;
+   color: colors.$black;
+   font-size: 16px;
+  }
+  
+  &__text--2 {
+    color: colors.$grey;
+    font-weight: 500;
+    font-size: 14px;
+   
+   
+  }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .about{
+        &__container{
+            justify-content: center;
+        }
+        &__text--1{
+            font-size: 14px;
+        }
+        &__text--2{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .about{
+        &__container{
+            
+            gap: 10%
+        }
+       
+        &__image {
+            height: 80%;
+            width: 80%;
+          
+            img{
+                height: 80%;
+                width: 80%;
+            }
+            
+        }
+    
+    }
+}
+@media screen and (max-width: 478px) {
+    .about{
+        &__container-title {
+            h2{
+                font-size: 34px;
+            }
+            h3{
+                font-size: 18px;
+            }
+        }
+        &__container{
+            flex-direction: column;
+            align-items: center;
+            background-image: none;
+        }
+        &__text{
+            width: 80%;
+            background-image: url(".././images/background-about-section.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        &__image {
+            height: 80%;
+            width: 80%;
+          
+            img{
+                height: 80%;
+                width: 80%;
+            }
+            
+        }
+    
+    }
+
+}
