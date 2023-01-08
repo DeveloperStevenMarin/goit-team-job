@@ -45,6 +45,7 @@
 .footer__socialmedia__list {
 	display: flex;
 	padding-top: 12px;
+	justify-content: end;
 }
 
 .footer__socialmedia__button {
@@ -68,19 +69,26 @@
 	padding: 7px 12px;
 }
 
+.footer__socialmedia__button:hover {
+	background-color: $pink-dark;
+}
+
 .icon__github {
 	width: 20px;
 	height: 20px;
+	fill: $white;
 }
 
 .icon__telegram {
 	width: 20px;
 	height: 15px;
+	fill: $white;
 }
 
 .icon__facebook {
 	width: 9px;
 	height: 20px;
+	fill: $white;
 }
 
 .footer__contact {

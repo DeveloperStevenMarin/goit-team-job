@@ -637,6 +637,7 @@ a:hover {
 .footer__socialmedia__list {
   display: flex;
   padding-top: 12px;
+  justify-content: end;
 }
 
 .footer__socialmedia__button {
@@ -660,19 +661,26 @@ a:hover {
   padding: 7px 12px;
 }
 
+.footer__socialmedia__button:hover {
+  background-color: rgb(212, 20, 67);
+}
+
 .icon__github {
   width: 20px;
   height: 20px;
+  fill: rgb(255, 255, 255);
 }
 
 .icon__telegram {
   width: 20px;
   height: 15px;
+  fill: rgb(255, 255, 255);
 }
 
 .icon__facebook {
   width: 9px;
   height: 20px;
+  fill: rgb(255, 255, 255);
 }
 
 .footer__contact {
