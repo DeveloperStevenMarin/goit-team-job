@@ -94,7 +94,7 @@
         </symbol>
           <!-- products-arrow -->
         <symbol id="products-arrow" viewBox="1.5 -7 11 22" xmlns="http://www.w3.org/2000/svg"> 
-        <g fill="none" stroke="black" stroke-width="1">
+        <g   stroke-width="1">
             <path stroke-linecap="round" d="M 9.1747 1.4947 8.9502 1.7191 11.392 4.1612 3.36 4.1612 3.36 4.4789 11.3924 4.4789 8.9502 6.9206 9.1747 7.1454 12 4.3201 Z" 
             />
         </g>
