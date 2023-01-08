@@ -590,7 +590,44 @@ h2 {
   transition: max-width 0.15s ease-out;
 }
 
-<<<<<<< HEAD
+@media screen and (max-width: 1280px) {
+  .gallery__container {
+    width: 80%;
+    height: 200px;
+  }
+  .gallery__container .container-images {
+    width: 100px;
+  }
+  .gallery__container .container-images__image {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .gallery__container .container-images__image:hover {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .container-images {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery__container {
+    width: 80%;
+    height: 40%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .gallery__container {
+    width: 80%;
+    height: 35%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .gallery__container {
+    width: 80%;
+    height: 30%;
+  }
+}
 * {
   font-family: "DM Sans";
   box-sizing: border-box;
@@ -815,44 +852,6 @@ a:hover {
   .hero-header__nav__right__menu-burguer {
     visibility: visible;
   }
-=======
-@media screen and (max-width: 1280px) {
-  .gallery__container {
-    width: 80%;
-    height: 200px;
-  }
-  .gallery__container .container-images {
-    width: 100px;
-  }
-  .gallery__container .container-images__image {
-    max-width: 80%;
-    max-height: 80%;
-  }
-  .gallery__container .container-images__image:hover {
-    max-height: 100%;
-    max-width: 100%;
-  }
-  .container-images {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .gallery__container {
-    width: 80%;
-    height: 40%;
-  }
-}
-@media screen and (max-width: 590px) {
-  .gallery__container {
-    width: 80%;
-    height: 35%;
-  }
-}
-@media screen and (max-width: 478px) {
-  .gallery__container {
-    width: 80%;
-    height: 30%;
-  }
 }
 .products {
   padding-top: 60px;
@@ -954,7 +953,6 @@ a:hover {
   padding-top: 32px;
   margin-left: auto;
   margin-right: auto;
->>>>>>> a29313d93172bf723d525f4d9b40038e78b68342
 }
 
 /*# sourceMappingURL=styles.css.map */
