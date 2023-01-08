@@ -478,7 +478,7 @@ a:hover {
   top: 32px;
   left: 72px;
   fill: rgb(225, 225, 225);
-  z-index: 1;
+  opacity: 60%;
 }
 
 .customer__coments {
@@ -493,7 +493,7 @@ a:hover {
   text-decoration-thickness: 2px;
   color: rgb(0, 0, 0);
   text-decoration-color: rgb(225, 225, 225);
-  z-index: 2;
+  z-index: 3;
   padding: 47px 109px 39px 109px;
 }
 
