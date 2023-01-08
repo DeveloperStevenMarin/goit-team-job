@@ -32,8 +32,8 @@
 				<li href="#">Our products</li>
 				<li href="#">Contact</li>
 			</ul>
-			<div class="hero-header__nav__right">
-				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
+			<div class="hero-header__nav__right" data-modal-open>
+				<svg class="hero-header__nav__right__menu-burguer"  width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
 				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
@@ -271,8 +271,8 @@
 							<a href="#customer-comment-section1">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
-							</svg>
 						</li>
 						<li>
 							<a href="#customer-comment-section2" class="slider__button__off"></a>
@@ -321,6 +321,7 @@
 							<a href="#customer-comment-section2">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
@@ -372,6 +373,7 @@
 							<a href="#customer-comment-section3">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
@@ -468,5 +470,33 @@
             </div>
         </div>
     </footer>
+	<div class="modal modal--is-hidden" data-modal>
+		<div class="modal__close-container" data-modal-close >
+			<svg class="close-icon">
+				<use href="images/icons.svg#close-icon"></use>
+			</svg>
+		</div>
+		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
+		<div class="modal__content">
+			<ul class="modal__links">
+				<li class="modal__links__link modal__links__link--current">
+					<a href="" >Home</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" > About us</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >How it’s made?</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Our products</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 </html>
