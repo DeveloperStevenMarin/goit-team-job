@@ -3,10 +3,10 @@
 
 .advantages {
     display: flex;
-    flex-wrap: wrap;
     justify-content:flex-start;
     gap: 115px;
     background: color.$pink-light;
+    padding-left: 23px;
     &__container h2{
         font-family: 'Titan One';
         font-weight: 400;
@@ -19,14 +19,14 @@
         color: color.$pink-dark;
     }
     &__container p{
-        width: 288px;
-    margin-top: 16px;
+        width: 100%;
+        margin-top: 16px;
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 176%;
-    letter-spacing: 0.02em;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 176%;
+        letter-spacing: 0.02em;
     }
     &__icon{
         fill: color.$pink;
@@ -34,10 +34,12 @@
     }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     .advantages {
         gap: 32px;
-        &__container p{
+        align-items: center;
+        &__container {
+            padding-left: 20px;
             width: 288px;
         }
         &__icon{
@@ -46,10 +48,12 @@
     }
     
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
     .advantages {
+        flex-direction: column;
+        align-items: center;
         gap: 22px;
-        &__container p{
+        &__container {
             width: 180px;
         }
         &__icon{
@@ -57,17 +61,32 @@
         }
     }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1279px) {
     .advantages {
-        gap: 115px;
-        margin-left: 7px;
-        &__container p{
-            width: 288px;
+        gap: 22px;
+        &__container {
+            min-width: 160px;
+            max-width: 320px;
         }
         &__icon{
             margin-bottom: 40px;
         }
     }
     
+}
+@media screen and (min-width: 1280px) {
+    .advantages {
+        gap: 112px;
+
+        &__container {
+            min-width: 160px;
+            max-width: 320px;
+        }
+
+        &__icon {
+            margin-bottom: 40px;
+        }
+    }
+
 }
 
