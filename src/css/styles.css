@@ -169,10 +169,10 @@ a:hover {
 
 .advantages {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   gap: 115px;
   background: rgb(255, 245, 246);
+  padding-left: 23px;
 }
 .advantages__container h2 {
   font-family: "Titan One";
@@ -185,7 +185,7 @@ a:hover {
   color: rgb(212, 20, 67);
 }
 .advantages__container p {
-  width: 288px;
+  width: 100%;
   margin-top: 16px;
   font-style: normal;
   font-weight: 700;
@@ -198,35 +198,51 @@ a:hover {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .advantages {
     gap: 32px;
+    align-items: center;
   }
-  .advantages__container p {
+  .advantages__container {
+    padding-left: 20px;
     width: 288px;
   }
   .advantages__icon {
     margin-bottom: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .advantages {
+    flex-direction: column;
+    align-items: center;
     gap: 22px;
   }
-  .advantages__container p {
+  .advantages__container {
     width: 180px;
   }
   .advantages__icon {
     margin-bottom: 36px;
   }
 }
+@media screen and (max-width: 1279px) {
+  .advantages {
+    gap: 22px;
+  }
+  .advantages__container {
+    min-width: 160px;
+    max-width: 320px;
+  }
+  .advantages__icon {
+    margin-bottom: 40px;
+  }
+}
 @media screen and (min-width: 1280px) {
   .advantages {
-    gap: 115px;
-    margin-left: 7px;
+    gap: 112px;
   }
-  .advantages__container p {
-    width: 288px;
+  .advantages__container {
+    min-width: 160px;
+    max-width: 320px;
   }
   .advantages__icon {
     margin-bottom: 40px;
@@ -757,18 +773,18 @@ a:hover {
 }
 .hero-header__container__circle {
   background: rgb(255, 165, 186);
-  width: 534px;
-  height: 534px;
+  width: 334px;
+  height: 334px;
   border-radius: 50%;
   position: relative;
   z-index: 0;
   top: 0;
 }
 .hero-header__container__iceCream-image {
-  width: 236px;
-  height: 557px;
+  max-width: 236px;
+  height: 100%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   right: 35%;
 }
@@ -852,6 +868,10 @@ a:hover {
   }
   .hero-header__nav__right__menu-burguer {
     visibility: visible;
+  }
+  .hero-header__container {
+    width: 335px;
+    height: 373px;
   }
 }
 .products {
