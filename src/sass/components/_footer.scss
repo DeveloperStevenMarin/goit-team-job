@@ -1,125 +1,194 @@
-@use "../utils/config";
-@use "../utils/color";
+@use "../utils/color" as color;
+@use "../utils/mixins" as m;
 
-.footer__container {
-	background-color: $pink-light;
-	position: relative;
-	width: 100%;
-	padding: 0 16px;
+// color:$pink-light;
+// color: $pink;
+// color: $pink-dark;
+// color:$gray-pink;
+.footer {
+  background-color: color.$pink-light;
+}
+.container__footer {
+  min-width: 320px;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.footer__content__container {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 121px;
+.footer {
+  padding-top: 60px;
+  &__slogan {
+    text-transform: uppercase;
+    &--small-title {
+      @include m.footerText(color.$pink, 1.8rem, 400, 0.04em, null);
+      font-family: "Titan One", cursive;
+
+      span {
+        transition: 500ms ease-in-out;
+      }
+      &:hover {
+        position: relative;
+        text-align: center;
+        transition: 500ms ease-in-out;
+        padding-bottom: 20px;
+
+        &:hover span {
+          position: absolute;
+          transform: translate(-250%, 100%);
+          transition: 500ms ease-in-out;
+        }
+      }
+    }
+    span {
+      font-family: "Titan One", cursive;
+    }
+
+    &--big-title {
+      display: flex;
+      gap: 14px;
+
+      &:hover h2 span {
+        font-size: 4.2rem;
+        transition: 600ms ease;
+      }
+      h2 {
+        @include m.footerText(color.$pink-dark, 3.6rem, 400, 0.04em, 1.5);
+        transition: 600ms ease;
+      }
+    }
+  }
 }
 
-.footer__slogan {
-	padding: 0 0;
+.footer {
+  &__slogan-social {
+    display: flex;
+    // position: relative;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
 }
 
-.footer__slogan--pink {
-	font-family: "Titan One";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 34px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: $pink;
-	margin-bottom: 16px;
+.footer__social {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  &--icons {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-bottom: 40px;
+  }
+  &--icon {
+    width: 34px;
+    height: 34px;
+    background-color: color.$pink;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.7;
+    transition: 500ms ease;
+
+    &:hover {
+      background-color: color.$pink-dark;
+      transition: 500ms ease;
+    }
+    svg {
+      fill: color.$white;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &--contact {
+    font-weight: 700;
+    text-align: right;
+    // display: block;
+
+    a {
+      color: color.$pink-dark;
+      transition: 500ms ease;
+
+      &:hover {
+        font-size: 1.2rem;
+        transition: 500ms ease;
+      }
+    }
+  }
 }
 
-.footer__slogan--darkpink {
-	font-family: "Titan One";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 58px;
-	line-height: 66px;
-	letter-spacing: 0.06em;
-	text-transform: uppercase;
+.footer__copyright {
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+  padding: 25px 0;
+  p {
+    @include m.footerText(color.$gray-pink, 0.87rem, 700, 0.04em, null);
+    transition: 500ms ease;
 
-	color: #d41443;
+    &:hover {
+      font-size: 1rem;
+      transition: 500ms ease;
+    }
+  }
+  br {
+    display: none;
+  }
 }
 
-.footer__socialmedia__list {
-	display: flex;
-	padding-top: 12px;
-	justify-content: end;
+@media screen and (max-width: 768px) {
+  .footer {
+    &__slogan {
+      &--small-title {
+        font-size: 1.6rem;
+        span {
+          display: block;
+        }
+      }
+      &--big-title {
+        padding-top: 10px;
+        font-size: 3rem;
+        line-height: normal;
+        display: inline-block;
+        // position: relative;
+        h2 {
+          line-height: 1;
+        }
+      }
+      &--passion {
+        // display: block;
+        // line-height: null;
+        // position: absolute;
+        // top: 50px;
+        // left: 0;
+      }
+    }
+  }
+  .footer__social {
+    // top: 25%;
+    // right: 0;
+    margin: auto;
+
+    &--contact {
+      font-size: 0.87rem;
+    }
+  }
+  .footer__copyright {
+    margin-top: 40px;
+  }
 }
-
-.footer__socialmedia__button {
-	width: 34px;
-	height: 34px;
-	background-color: $pink;
-	border-radius: 50%;
-}
-
-.footer__socialmedia__button:nth-child(1) {
-	padding: 7px 7px;
-	margin-right: 30px;
-}
-
-.footer__socialmedia__button:nth-child(2) {
-	padding: 9px 6px;
-	margin-right: 30px;
-}
-
-.footer__socialmedia__button:nth-child(3) {
-	padding: 7px 12px;
-}
-
-.footer__socialmedia__button:hover {
-	background-color: $pink-dark;
-}
-
-.icon__github {
-	width: 20px;
-	height: 20px;
-	fill: $white;
-}
-
-.icon__telegram {
-	width: 20px;
-	height: 15px;
-	fill: $white;
-}
-
-.icon__facebook {
-	width: 9px;
-	height: 20px;
-	fill: $white;
-}
-
-.footer__contact {
-	margin-top: 40px;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 186%;
-
-	letter-spacing: 0.02em;
-	color: $black;
-}
-
-.footer__contact span {
-	color: $pink-dark;
-}
-
-.footer__allrights {
-	text-align: center;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 186%;
-	letter-spacing: 0.02em;
-	color: $grey;
-	margin-top: 67px;
-}
-
-.footer__allrights::before {
-	content: "";
-	display: flex;
-	align-items: flex-end;
-	width: 100%;
-	border: 1px solid $midgrey;
-	margin-bottom: 7px;
+@media screen and (max-width: 480px) {
+  .footer {
+    &__social {
+      padding: 40px 0 20px;
+    }
+    &__social--contact {
+      justify-content: flex-start;
+      text-align: end;
+    }
+    &__slogan-social {
+      display: block;
+    }
+  }
+  .footer__copyright {
+    br {
+      display: block;
+    }
+  }
 }
