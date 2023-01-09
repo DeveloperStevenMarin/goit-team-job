@@ -322,9 +322,6 @@ a:hover {
   height: 538px;
   background: rgb(255, 255, 255);
   border-radius: 24px;
-  margin-top: 1%;
-  margin-right: 0.5%;
-  margin-left: 1%;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
@@ -332,74 +329,57 @@ a:hover {
   padding: 3%;
 }
 .card--contacts:hover {
-  color: rgb(212, 20, 67);
-  box-shadow: 0px 8px 30px rgb(212, 20, 67);
+  animation-name: card-hover;
+  animation-duration: 1s;
+  box-shadow: 0px 8px 30px rgb(255, 165, 186);
 }
-.card--contacts__sale {
-  width: 75.1px;
+.card--contacts__category-container__sale {
+  display: flex;
+  width: 75px;
   height: 28px;
-  left: 86px;
-  top: 3917px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 186%;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   background: rgb(240, 209, 165);
   border-radius: 6px;
 }
-.card--contacts__salef {
-  width: 71.1px;
-  height: 28px;
-  left: 56px;
-  top: 3917px;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: rgb(255, 255, 255);
+.card--contacts__category-container__sale--green {
   background: rgb(194, 226, 151);
-  border-radius: 6px;
 }
-.card--contacts__locations {
+.card--contacts__content-container__locations {
   width: 120px;
   height: 30px;
-  left: 56px;
-  top: 3977px;
   letter-spacing: 0.04em;
   color: rgb(0, 0, 0);
 }
-.card--contacts__promise {
-  width: 250px;
+.card--contacts__content-container__promise {
+  position: relative;
   height: 50px;
-  left: 56px;
-  top: 4015px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 183%;
   letter-spacing: 0.04em;
   color: rgb(152, 142, 142);
 }
-.card--contacts__icon {
-  margin-top: 4%;
-  width: 288px;
-  height: 0px;
-  left: 56px;
-  top: 4097px;
-  border: 1px solid rgb(255, 255, 255);
+.card--contacts__content-container__promise::after {
+  content: "";
+  position: absolute;
+  top: 160%;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  border-top: 0.5px solid rgb(225, 225, 225);
 }
-.card--contacts__schedule {
-  width: 237.86px;
+.card--contacts__calendar-container {
+  position: relative;
+}
+.card--contacts__calendar-container__schedule {
   height: 30px;
-  left: 56px;
-  top: 4129px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -407,28 +387,25 @@ a:hover {
   line-height: 186%;
   letter-spacing: 0.04em;
 }
-.card--contacts__time {
-  width: 167.7px;
+.card--contacts__calendar-container__time {
   height: 30px;
-  left: 56px;
-  top: 4159px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
-  color: rgb(212, 20, 67);
+  color: rgb(255, 165, 186);
 }
-.card--contacts__icon {
-  margin-bottom: 1%;
-  width: 288px;
-  height: 0px;
-  left: 56px;
-  top: 4097px;
-  border: 1px solid rgb(255, 255, 255);
+.card--contacts__calendar-container::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  right: 0;
+  height: 0.5px;
+  border-top: 0.5px solid rgb(225, 225, 225);
 }
-.card--contacts__phone {
-  width: 250px;
+.card--contacts__address-container__phone {
   height: 50px;
   margin-left: 0%;
   margin-right: 0%;
@@ -439,8 +416,7 @@ a:hover {
   line-height: 183%;
   color: rgb(152, 142, 142);
 }
-.card--contacts__mail {
-  width: 250px;
+.card--contacts__address-container__mail {
   height: 50px;
   margin-left: 0%;
   margin-top: 0%;
@@ -451,24 +427,72 @@ a:hover {
   color: rgb(152, 142, 142);
 }
 
+@keyframes card-hover {
+  0% {
+    box-shadow: 0px 3px 10px rgb(255, 245, 246);
+  }
+  25% {
+    box-shadow: 0px 5px 15px rgb(255, 245, 246);
+  }
+  50% {
+    box-shadow: 0px 6px 20px rgb(255, 165, 186);
+  }
+  75% {
+    box-shadow: 0px 7px 25px rgb(255, 165, 186);
+  }
+  100% {
+    box-shadow: 0px 8px 30px rgb(255, 165, 186);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .card--contacts {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 770px) {
+  .card--contacts {
+    width: 280px;
+    height: 412px;
+  }
+  .card--contacts__content-container__promise {
+    font-size: 14px;
+  }
+  .card--contacts__calendar-container {
+    position: relative;
+  }
+  .card--contacts__calendar-container__schedule {
+    font-size: 14px;
+  }
+  .card--contacts__calendar-container__time {
+    font-size: 14px;
+  }
+  .card--contacts__address-container__phone {
+    font-size: 14px;
+  }
+  .card--contacts__address-container__mail {
+    font-size: 14px;
+  }
+}
 .contacts {
   background: linear-gradient(0deg, rgb(255, 245, 246) 80%, rgb(255, 255, 255) 80%);
   width: 100%;
+  margin: 100px 0px 0px 0px;
   height: fit-content;
-  margin-left: 0%;
-  top: 3976px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 35px;
 }
 
 .conteiner--card {
   width: 100%;
-  height: 638px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 2%;
 }
 
 .contacts__button-container {
@@ -481,13 +505,21 @@ a:hover {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .conteiner--card {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .customer__reviews__section {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   width: 1200px;
-  height: 427px;
-  padding: 0 109px;
+  height: 430px;
+  padding: 0px 10%;
 }
 
 .customer__reviews__section__container {
@@ -495,7 +527,7 @@ a:hover {
   position: relative;
   align-items: center;
   flex-direction: column;
-  height: 427px;
+  height: 100%;
 }
 
 .customer__reviews__section__slider {
@@ -504,11 +536,8 @@ a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  left: 0;
-  top: 0;
+  bottom: 5%;
   opacity: 0;
-  width: inherit;
-  height: inherit;
   background-color: rgb(255, 255, 255);
   transition: opacity 0.8;
 }
@@ -582,8 +611,8 @@ a:hover {
 .customer__elipse__active {
   background: red;
   border-radius: 100%;
-  width: 10px;
-  height: 10px;
+  width: 4px;
+  height: 4px;
 }
 
 .customer__comment__city {
@@ -612,7 +641,6 @@ a:hover {
   align-items: center;
   gap: 16px;
   width: 72px;
-  margin: auto;
 }
 
 .slider__button li {
@@ -635,7 +663,28 @@ a:hover {
   opacity: 1;
 }
 
-
+@media screen and (max-width: 1200px) {
+  .customer__reviews__section {
+    align-items: center;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .customer__coments {
+    font-size: 14px;
+  }
+  .customer__comment__city {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .customer__coments {
+    font-size: 12px;
+  }
+  .customer__comment__city {
+    font-size: 14px;
+  }
+}
 .footer {
   background-color: rgb(255, 245, 246);
 }
@@ -653,7 +702,6 @@ a:hover {
 .footer__slogan {
   text-transform: uppercase;
 }
-
 .footer__slogan--small-title {
   color: rgb(255, 165, 186);
   font-size: 1.8rem;
@@ -744,9 +792,7 @@ a:hover {
   padding: 25px 0;
 }
 .footer__copyright p {
-
-  color: #907E82;
-
+  color: rgb(144, 126, 130);
   font-size: 0.87rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -954,6 +1000,9 @@ a:hover {
   color: rgb(255, 255, 255);
   z-index: 1;
 }
+.hero-header__nav__sections li:hover {
+  cursor: pointer;
+}
 .hero-header__nav__right {
   display: flex;
   align-items: center;
@@ -1012,12 +1061,12 @@ a:hover {
   height: 611px;
   position: absolute;
   bottom: 0;
-  right: 12%;
+  right: 25%;
 }
 .hero-header__container__circle {
   background: rgb(255, 165, 186);
-  width: 334px;
-  height: 334px;
+  width: 534px;
+  height: 534px;
   border-radius: 50%;
   position: relative;
   z-index: 0;
@@ -1025,7 +1074,7 @@ a:hover {
 }
 .hero-header__container__iceCream-image {
   max-width: 236px;
-  height: 100%;
+  height: 90%;
   position: absolute;
   z-index: 1;
   bottom: 0;
@@ -1039,6 +1088,7 @@ a:hover {
 }
 .hero-header__jarContainer__text {
   width: 250px;
+  z-index: 2;
 }
 .hero-header__jarContainer__text p {
   font-weight: 400;
@@ -1050,12 +1100,20 @@ a:hover {
 .hero-header__iceCreamGirl {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: 10%;
   z-index: 1;
+  width: 350px;
+  height: 270px;
 }
-.hero-header__iceCreamGirl img {
+.hero-header__iceCreamGirl a img {
   height: 100%;
   width: 100%;
+}
+.hero-header__iceCreamGirl:hover {
+  animation-name: tasty-hover;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
 }
 .hero-header__branches {
   position: absolute;
@@ -1105,32 +1163,68 @@ a:hover {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1280px) {
+@keyframes tasty-hover {
+  0% {
+    width: 360px;
+    height: 280px;
+  }
+  12% {
+    width: 365px;
+    height: 275px;
+  }
+  25% {
+    width: 370px;
+    height: 290px;
+  }
+  35% {
+    width: 375px;
+    height: 295px;
+  }
+  50% {
+    width: 380px;
+    height: 300px;
+  }
+  63% {
+    width: 375px;
+    height: 295px;
+  }
+  75% {
+    width: 370px;
+    height: 290px;
+  }
+  86% {
+    width: 365px;
+    height: 285px;
+  }
+  100% {
+    width: 360px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 1097px) {
+  .hero-header__jarContainer__text {
+    width: 115px;
+  }
+  .hero-header__jarContainer__text p {
+    font-size: 10px;
+  }
   .hero-header__nav__sections {
     display: none;
   }
   .hero-header__nav__right__menu-burguer {
     visibility: visible;
   }
-  .hero-header__container {
-    width: 335px;
-    height: 373px;
-  }
 }
 .modal {
-  position: absolute;
-  top: 0%;
-  left: 0%;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
-  visibility: visible;
-  opacity: 1;
   background-color: rgb(225, 121, 146);
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
   z-index: 3;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   gap: 20px;
@@ -1162,7 +1256,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: 20px;
+  padding: 20px 20px;
 }
 .modal__close-container svg {
   fill: rgb(255, 255, 255);
@@ -1233,9 +1327,7 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-
-  background-image: url("../src/images/products1.png");
-
+  background-image: url("../images/products1.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
@@ -1326,9 +1418,7 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-
-  background-image: url("../src/images/products2.png");
-
+  background-image: url("../images/products2.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
@@ -1419,9 +1509,7 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-
-  background-image: url("../src/images/products3.png");
-
+  background-image: url("../images/products3.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;

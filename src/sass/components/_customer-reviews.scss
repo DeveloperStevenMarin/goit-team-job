@@ -6,8 +6,8 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 1200px;
-	height: 427px;
-	padding: 0 109px;
+	height: 430px;
+	padding: 0px 10%;
 }
 
 .customer__reviews__section__container {
@@ -15,7 +15,7 @@
 	position: relative;
 	align-items: center;
 	flex-direction: column;
-	height: 427px;
+	height: 100%
 }
 
 .customer__reviews__section__slider {
@@ -24,11 +24,8 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
-	left: 0;
-	top: 0;
+	bottom: 5%;
 	opacity: 0;
-	width: inherit;
-	height: inherit;
 	background-color: $white;
 	transition: opacity 0.8;
 }
@@ -103,8 +100,8 @@
 .customer__elipse__active {
 	background: red;
 	border-radius: 100%;
-	width: 10px;
-	height: 10px;
+	width: 4px;
+	height: 4px;
 }
 
 .customer__comment__city {
@@ -133,7 +130,7 @@
 	align-items: center;
 	gap: 16px;
 	width: 72px;
-	margin: auto;
+	
 }
 
 .slider__button li {
@@ -156,82 +153,26 @@
 	opacity: 1;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 1200px){
 	.customer__reviews__section {
 		align-items: center;
-		max-width: 768px;
-		margin: 0 auto;
-		width: 768px;
-		height: 518px;
-		padding: 0 74px;
-	}
-
-	.customer__reviews__section__container {
-		display: flex;
-		position: relative;
-		align-items: center;
-		flex-direction: column;
-		height: 518px;
-	}
-
-	.customer__coments {
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 216%;
-		letter-spacing: 0.04em;
-		text-align: center;
-		text-decoration: underline;
-		text-underline-offset: 8px;
-		text-decoration-thickness: 2px;
-
-		color: $black;
-		text-decoration-color: $lightgrey2;
-		z-index: 5;
-		padding: 37px 55px 44px 50px;
-	}
-
-	.customer__images__slider {
-		padding-bottom: 20px;
+		max-width: 100%;
+		
 	}
 }
-
-@media screen and (max-width: 480px) {
-	.customer__reviews__section {
-		align-items: center;
-		max-width: 480px;
-		margin: 0 auto;
-		width: 320px;
-		height: 574px;
-		padding: 0 20px;
+@media screen and (max-width: 768px){
+	.customer__coments{
+		font-size: 14px;
 	}
-
-	.customer__reviews__section__container {
-		display: flex;
-		position: relative;
-		align-items: center;
-		flex-direction: column;
-		height: 574px;
+	.customer__comment__city{
+		font-size: 16px;
 	}
-
-	.customer__coments {
-		font-style: normal;
-		font-weight: 500;
+}
+@media screen and (max-width: 480px){
+	.customer__coments{
 		font-size: 12px;
-		line-height: 255%;
-		text-align: center;
-		text-decoration: underline;
-		text-underline-offset: 8px;
-		text-decoration-thickness: 2px;
-
-		color: $black;
-		text-decoration-color: $lightgrey2;
-		z-index: 5;
-		padding: 43px 58px 26px 65px;
 	}
-
-	.customer__images__slider {
-		padding-bottom: 32px;
+	.customer__comment__city{
+		font-size: 14px;
 	}
-
 }
