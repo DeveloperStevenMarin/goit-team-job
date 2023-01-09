@@ -441,12 +441,15 @@ a:hover {
 
 .customer__reviews__section {
   align-items: center;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
   height: 427px;
+  padding: 0 109px;
 }
 
 .customer__reviews__section__container {
+  display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
@@ -476,15 +479,20 @@ a:hover {
   opacity: 1;
 }
 
+.customer__images__slider {
+  padding-bottom: 16px;
+}
+
 .customer__testimonial__container {
   width: 100%;
   background-color: rgb(250, 250, 250);
+  z-index: 0;
 }
 
 .customer__icon__container {
   position: relative;
   width: inherit;
-  z-index: 0;
+  z-index: 1;
 }
 
 .icon__quotation {
@@ -495,6 +503,7 @@ a:hover {
   left: 72px;
   fill: rgb(225, 225, 225);
   opacity: 60%;
+  z-index: 2;
 }
 
 .customer__coments {
@@ -584,6 +593,75 @@ a:hover {
   opacity: 1;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .customer__reviews__section {
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+    width: 768px;
+    height: 518px;
+    padding: 0 74px;
+  }
+  .customer__reviews__section__container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: 518px;
+  }
+  .customer__coments {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(225, 225, 225);
+    z-index: 5;
+    padding: 37px 55px 44px 50px;
+  }
+  .customer__images__slider {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .customer__reviews__section {
+    align-items: center;
+    max-width: 480px;
+    margin: 0 auto;
+    width: 320px;
+    height: 574px;
+    padding: 0 20px;
+  }
+  .customer__reviews__section__container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    height: 574px;
+  }
+  .customer__coments {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color: rgb(0, 0, 0);
+    text-decoration-color: rgb(225, 225, 225);
+    z-index: 5;
+    padding: 43px 58px 26px 65px;
+  }
+  .customer__images__slider {
+    padding-bottom: 32px;
+  }
+}
 * {
   font-family: "DM Sans";
   box-sizing: border-box;
