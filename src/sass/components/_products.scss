@@ -1,24 +1,18 @@
 // $items: "1" "rgb(255, 184, 202)", "2" "rgb(240, 209, 165)",
 //   "3" "rgb(194, 226, 151)";
 
-
 //   @each $item, $color in $items {
 //     &__products-item-box#{$item} {
 //       background-color: #{$color};
 //     }
 //   }
 
-
-
-
-
 .products {
-  padding-top: 60px;
+  padding: 60px 0px;
 }
 
 .products__title--1 {
-
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -27,11 +21,11 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #FFA5BA;
+  color: #ffa5ba;
 }
 
 .products__title--2 {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 58px;
@@ -40,7 +34,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #D41443;
+  color: #d41443;
 }
 
 .products__boxes {
@@ -60,15 +54,13 @@
 }
 
 .products__boxes--box1up {
-
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url('../src/images/products1.png');
+  background-image: url("../images/products1.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
-
 }
 
 .products__boxes--box1bottom {
@@ -84,7 +76,7 @@
 }
 
 .products__boxes--box1bottom-title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -93,7 +85,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .products__boxes--box1bottom-title:after {
@@ -108,7 +100,7 @@
   width: 245px;
   text-align: center;
 
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -117,7 +109,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   padding-top: 35px;
   padding-bottom: 60px;
@@ -127,6 +119,7 @@
   background-color: white;
   border-radius: 25px;
   margin-bottom: 60px;
+  stroke: $pink-dark;
 }
 
 .products__boxes--box2 {
@@ -138,15 +131,13 @@
 }
 
 .products__boxes--box2up {
-
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url('../src/images/products2.png');
+  background-image: url("../images/products2.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
-
 }
 
 .products__boxes--box2bottom {
@@ -162,7 +153,7 @@
 }
 
 .products__boxes--box2bottom-title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -171,7 +162,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .products__boxes--box2bottom-title:after {
@@ -186,7 +177,7 @@
   width: 245px;
   text-align: center;
 
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -195,7 +186,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   padding-top: 35px;
   padding-bottom: 60px;
@@ -205,14 +196,8 @@
   background-color: white;
   border-radius: 25px;
   margin-bottom: 60px;
+  stroke: $pink-dark;
 }
-
-
-
-
-
-
-
 
 .products__boxes--box3 {
   display: flex;
@@ -223,15 +208,13 @@
 }
 
 .products__boxes--box3up {
-
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url('../src/images/products3.png');
+  background-image: url("../images/products3.png");
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
-
 }
 
 .products__boxes--box3bottom {
@@ -247,7 +230,7 @@
 }
 
 .products__boxes--box3bottom-title {
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -256,7 +239,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .products__boxes--box3bottom-title:after {
@@ -271,7 +254,7 @@
   width: 245px;
   text-align: center;
 
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -280,7 +263,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   padding-top: 35px;
   padding-bottom: 60px;
@@ -290,8 +273,8 @@
   background-color: white;
   border-radius: 25px;
   margin-bottom: 60px;
+  stroke: $pink-dark;
 }
-
 
 // .products__title--1:hover {
 //   animation: ;
