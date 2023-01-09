@@ -441,12 +441,15 @@ a:hover {
 
 .customer__reviews__section {
   align-items: center;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
   height: 427px;
+  padding: 0 109px;
 }
 
 .customer__reviews__section__container {
+  display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
@@ -476,15 +479,20 @@ a:hover {
   opacity: 1;
 }
 
+.customer__images__slider {
+  padding-bottom: 16px;
+}
+
 .customer__testimonial__container {
   width: 100%;
   background-color: rgb(250, 250, 250);
+  z-index: 0;
 }
 
 .customer__icon__container {
   position: relative;
   width: inherit;
-  z-index: 0;
+  z-index: 1;
 }
 
 .icon__quotation {
@@ -495,6 +503,7 @@ a:hover {
   left: 72px;
   fill: rgb(225, 225, 225);
   opacity: 60%;
+  z-index: 2;
 }
 
 .customer__coments {
@@ -584,8 +593,10 @@ a:hover {
   opacity: 1;
 }
 
+
 .footer {
   background-color: rgb(255, 245, 246);
+
 }
 
 .container__footer {
