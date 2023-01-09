@@ -907,7 +907,8 @@ a:hover {
 .hero-header {
   background-color: rgb(255, 184, 202);
   width: auto;
-  height: 664px;
+  max-height: 664px;
+  min-height: 502px;
   position: relative;
 }
 .hero-header__nav {
@@ -1102,6 +1103,57 @@ a:hover {
   .hero-header__container {
     width: 335px;
     height: 373px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .hero-header__nav {
+    padding: 10px 15px 136px 20px;
+  }
+  .hero-header__nav__brand {
+    gap: 20px;
+  }
+  .hero-header__nav__brand__text {
+    font-size: 26px;
+    letter-spacing: 0;
+  }
+  .hero-header__nav__right__buyButton {
+    display: none;
+  }
+  .hero-header__jarContainer {
+    display: none;
+  }
+  .hero-header__iceCreamGirl {
+    display: none;
+  }
+  .hero-header__branches {
+    display: none;
+  }
+  .hero-header__title {
+    font-size: 26px;
+    line-height: 30px;
+    width: 218px;
+    padding: 0 0 20px 20px;
+  }
+  .hero-header__title__passion {
+    font-size: 48px;
+    line-height: 96.5%;
+  }
+  .hero-header__titleButtons {
+    padding-left: 20px;
+  }
+  .hero-header__titleButtons__white {
+    margin-left: 8px;
+  }
+  .hero-header__titleButtons button {
+    padding: 0 5%;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .hero-header__container {
+    right: -18%;
+  }
+  .button-shape {
+    height: 24px;
   }
 }
 .products {

@@ -10,7 +10,8 @@
 .hero-header {
 	background-color: color.$main-color;
 	width: auto;
-	height: 664px;
+	max-height: 664px;
+	min-height: 502px;
 	position: relative;
 	&__nav {
 		display: flex;
@@ -226,4 +227,61 @@
 			height: 373px;
 		}
 	}
+}
+@media screen and (max-width:321px) {
+	.hero-header {
+		&__nav {
+			padding: 10px 15px 136px 20px;
+			&__brand {
+				gap: 20px;
+				&__text {
+					font-size: 26px;
+					letter-spacing: 0;
+				}
+			}
+			&__right {
+				&__buyButton {
+					display: none;
+				}
+			}
+		}
+		&__jarContainer {
+			display: none;
+		}
+		&__iceCreamGirl {
+			display: none;
+		}
+		&__branches {
+			display: none;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 30px;
+
+			width: 218px;
+
+			padding: 0 0 20px 20px;;
+			&__passion {
+				font-size: 48px;
+				line-height: 96.5%;
+			}
+		}
+		&__titleButtons {
+			padding-left: 20px;
+			&__white {
+				margin-left: 8px;
+			}
+			button {
+				padding: 0 5%;
+				font-size: 8px;
+				line-height: 10px;
+			}
+		}
+		&__container {
+			right: -18%;
+		}
+	}
+	.button-shape {
+		height: 24px;
+	}	
 }
