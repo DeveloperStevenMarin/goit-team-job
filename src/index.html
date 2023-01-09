@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
 
@@ -33,22 +32,19 @@
 				<li href="#">Our products</li>
 				<li href="#">Contact</li>
 			</ul>
-			<div class="hero-header__nav__right">
-				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
+			<div class="hero-header__nav__right" data-modal-open>
+				<svg class="hero-header__nav__right__menu-burguer"  width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
-				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6"
-						fill="none">
-						<use href="./images/icons.svg#mayorSymbol"></use>
-					</svg> </button>
+				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
 			</div>
-		</nav>
+		</nav> 
 		<h2 class="hero-header__title">
 			ice cream made with <span class="hero-header__title__passion">passion</span>
 		</h2>
 		<div class="hero-header__titleButtons">
 			<button class="hero-header__titleButtons__pink button-shape" type="button">Products</button>
-			<button class="hero-header__titleButtons__white button-shape" type="button">How it's made?</button>
+			<button class="hero-header__titleButtons__white button-shape"type="button">How it's made?</button>
 		</div>
 		<div class="hero-header__container">
 			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png">
@@ -69,99 +65,89 @@
 			<img src="./images/PNG/iceCreamGirl.png" alt="girl-sucking-iceCream">
 		</div>
 		<div class="hero-header__branches">
-			<div class="hero-header__branches__container">
-				<div class="hero-header__branches__container__text">
-					<h2>16</h2>
-					<p>cafes</p>
+				<div class="hero-header__branches__container">
+					<div class="hero-header__branches__container__text">
+						<h2>16</h2>
+						<p>cafes</p>
+					</div>
+					<div class="hero-header__branches__container__circle"></div>
 				</div>
-				<div class="hero-header__branches__container__circle"></div>
-			</div>
-			<div class="hero-header__branches__container">
-				<div class="hero-header__branches__container__text">
-					<h2>23</h2>
-					<p>food trucks</p>
+				<div class="hero-header__branches__container">
+					<div class="hero-header__branches__container__text">
+						<h2>23</h2>
+						<p>food trucks</p>
+					</div>
+					<div class="hero-header__branches__container__circle"></div>
 				</div>
-				<div class="hero-header__branches__container__circle"></div>
-			</div>
 		</div>
 	</header>
 	<section class="products">
 		<ul>
 			<li>
 				<ul class="products__title">
-					<li class="products__title--1">100% natural</li>
-					<li class="products__title--2">PRODUCTS</li>
+					<li>
+						<p class="products__title--1">100% natural</p>
+					</li>
+					<li>
+						<p class="products__title--2">products</p>
+					</li>
 				</ul>
 			</li>
 			<li>
-				<ul class="products__products-list">
-					<li class="products__products-item">
-						<div class="products__products-item-container">
-							<ul>
-								<li>
-									<img class="products__products-item-pict" src="../src/images/products1.png"
-										alt="Ice Cream Picture">
-								</li>
-								<li class="products__products-item-box1">
-
-									<p class="products__products-item-box1-title">ICE CREAM</p>
-
-									<p class="products__products-item-box1-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et.
-										dolore magna aliqua facilisis.
-									</p>
-
-								</li>
-							</ul>
+				<ul class="products__boxes">
+					<li class="products__boxes--box1">
+						<div class="products__boxes--box1up">
+	
+						</div>
+						<div class="products__boxes--box1bottom">
+							<p class="products__boxes--box1bottom-title">
+								ICE CREAM
+							</p>
+							<p class="products__boxes--box1bottom-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							</p>
+							<svg class="products__boxes--box1bottom-arrow" width="40" height="40">
+								<use href="./images/icons.svg#products-arrow"></use>
+							</svg>
 						</div>
 					</li>
-					<li class="products__products-item">
-						<div class="products__products-item-container">
-							<ul>
-								<li>
-									<img class="products__products-item-pict" src="../src/images/products2.png"
-										alt="Ice Cream Picture">
-								</li>
-								<li class="products__products-item-box2">
-
-									<p class="products__products-item-box2-title">ICE COFFEE</p>
-
-									<p class="products__products-item-box2-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et.
-										dolore magna aliqua facilisis.
-									</p>
-
-								</li>
-							</ul>
+					<li class="products__boxes--box2">
+						<div class="products__boxes--box2up">
+	
 						</div>
-
+						<div class="products__boxes--box2bottom">
+							<p class="products__boxes--box2bottom-title">
+								ICE COFFEE
+							</p>
+							<p class="products__boxes--box2bottom-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							</p>
+							<svg class="products__boxes--box2bottom-arrow" width="40" height="40">
+								<use href="./images/icons.svg#products-arrow"></use>
+							</svg>
+						</div>
 					</li>
-					<li class="products__products-item">
-						<div class="products__products-item-container">
-							<ul>
-								<li>
-									<img class="products__products-item-pict" src="../src/images/products3.png"
-										alt="Ice Cream Picture">
-								</li>
-								<li class="products__products-item-box3">
-
-									<p class="products__products-item-box3-title">MILKSHAKE</p>
-
-									<p class="products__products-item-box3-text">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-										incididunt ut labore et.
-										dolore magna aliqua facilisis.
-									</p>
-								</li>
-							</ul>
+					<li class="products__boxes--box3">
+						<div class="products__boxes--box3up">
+	
+						</div>
+						<div class="products__boxes--box3bottom">
+							<p class="products__boxes--box3bottom-title">
+								ICE COFFEE
+							</p>
+							<p class="products__boxes--box3bottom-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							</p>
+							<svg class="products__boxes--box3bottom-arrow" width="40" height="40">
+								<use href="./images/icons.svg#products-arrow"></use>
+							</svg>
 						</div>
 					</li>
 				</ul>
 			</li>
 		</ul>
 	</section>
+
 	<section class="about">
 		<div class="about__container-title">
 			<h3>tradition and love</h3>
@@ -445,44 +431,70 @@
 					<span> Franchise > </span>
 		</div>
 	</section>
-	<footer class="footer__container">
-		<article class="footer__content__container">
+	 <footer class="footer">
+        <div class="container__footer">
+            <div class="footer__slogan-social">
+             <div class="footer__slogan">
+                <h3 class="footer__slogan--small-title">Homemade ice cream  <span>made</span></h3>
+                <div class="footer__slogan--big-title"><h2 class="footer__slogan--with"><span>W</span><span>i</span><span>t</span><span>h</span></h2>
+                  <h2 class="footer__slogan--passion"><span>p</span><span>a</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></h2></div>
+             </div>
+        <div class="footer__social">
+             <ul class="footer__social--icons">
+                <li class="footer__social--icon"><a href="#" target="_blank">
+                    <svg>
+                            <use href="images/icons.svg#github"></use>
+                        </svg>  
+                    </a></li>
+                <li class="footer__social--icon"><a href="#" target="_blank">
+                    <svg>
+                            <use href="images/icons.svg#telegram"></use>
+                        </svg>
+                    </a></li>
+                <li class="footer__social--icon"><a href="#" target="_blank">
+                    <svg>
+                            <use href="images/icons.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+             </ul>
+             <p class="footer__social--contact">
+                Feel free to contact <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+             </p>   
+        </div>
+            </div>
 
-			<aside class="footer__slogan">
-				<h2 class="footer__slogan--pink">HOMEMADE ICE CREAM MADE</h2>
-				<h2 class="footer__slogan--darkpink">WITH PASSION</h2>
-			</aside>
-			<aside>
-				<ul class="footer__socialmedia__list">
-					<li class="footer__socialmedia__button">
-						<svg class="icon__github">
-							<use href="images/icons.svg#github"></use>
-						</svg>
-					</li>
-					<li class="footer__socialmedia__button">
-						<svg class="icon__telegram">
-							<use href="images/icons.svg#telegram"></use>
-						</svg>
-					</li>
-					<li class="footer__socialmedia__button">
-						<svg class="icon__facebook">
-							<use href="images/icons.svg#facebook"></use>
-						</svg>
-					</li>
-				</ul>
-				<p class="footer__contact">Feel free to contact
-					<span>+61 (0) 383 766 284</span>
-				</p>
-			</aside>
-		</article>
-		<h4 class="footer__allrights">&copy;2022 - IceCream. All Rights Reserved.</h4>
-	</footer>
-
-
-
-
-
-
+            <div class="footer__copyright">
+                <p>&copy 2022 -IceCream. <br> All rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+	<div class="modal modal--is-hidden" data-modal>
+		<div class="modal__close-container" data-modal-close >
+			<svg class="close-icon">
+				<use href="images/icons.svg#close-icon"></use>
+			</svg>
+		</div>
+		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
+		<div class="modal__content">
+			<ul class="modal__links">
+				<li class="modal__links__link modal__links__link--current">
+					<a href="" >Home</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" > About us</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >How it’s made?</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Our products</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
-
 </html>

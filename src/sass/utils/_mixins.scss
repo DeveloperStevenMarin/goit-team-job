@@ -1,0 +1,8 @@
+@mixin footerText($color, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+    color: $color;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    letter-spacing: $letterSpacing;
+    line-height: $lineHeight;
+  }
+  
