@@ -7,33 +7,43 @@
     gap: 115px;
     background: color.$pink-light;
     padding-left: 23px;
-    &__container h2{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 58px;
-        line-height: 66px;
-        text-align: left;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        color: color.$pink-dark;
+    &__container:hover &__icon{
+        animation-name: spin-animation;
+        animation-duration: 1000ms;
+        animation-timing-function: linear;
     }
-    &__container p{
-        width: 100%;
-        margin-top: 16px;
+    &__container {
+        position: relative;
+        h2{
+            font-family: 'Titan One';
+            font-weight: 400;
+            font-size: 58px;
+            line-height: 66px;
+            text-align: left;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        
+            color: color.$pink-dark;
+        }
+        p {
+            width: 100%;
+            margin-top: 16px;
 
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 0.02em;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 176%;
+            letter-spacing: 0.02em;
+        }
+
     }
     &__icon{
         fill: color.$pink;
         margin-bottom: 40px;
     }
 }
-@media screen and (min-width: 319px) and (max-width: 479px) {
+
+@media screen and (min-width: 319px) and (max-width: 479.8px) {
     .advantages {
         flex-wrap: wrap;
         gap: 32px;
@@ -113,5 +123,13 @@
         }
     }
 
+}
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
