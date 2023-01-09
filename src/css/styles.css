@@ -174,6 +174,14 @@ a:hover {
   background: rgb(255, 245, 246);
   padding-left: 23px;
 }
+.advantages__container:hover .advantages__icon {
+  animation-name: spin-animation;
+  animation-duration: 1000ms;
+  animation-timing-function: linear;
+}
+.advantages__container {
+  position: relative;
+}
 .advantages__container h2 {
   font-family: "Titan One";
   font-weight: 400;
@@ -198,42 +206,68 @@ a:hover {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 319px) and (max-width: 479.8px) {
   .advantages {
+    flex-wrap: wrap;
     gap: 32px;
-    align-items: center;
+    padding-top: 40px;
   }
   .advantages__container {
-    padding-left: 20px;
-    width: 288px;
+    width: 200px;
+  }
+  .advantages__container h2 {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .advantages__container p {
+    font-size: 12px;
+    line-height: 170%;
   }
   .advantages__icon {
     margin-bottom: 16px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .advantages {
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 60px;
   }
   .advantages__container {
     width: 180px;
   }
+  .advantages__container h2 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .advantages__container p {
+    font-size: 14px;
+    line-height: 174%;
+  }
   .advantages__icon {
-    margin-bottom: 36px;
+    margin-bottom: 30px;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .advantages {
     gap: 22px;
+    padding-top: 40px;
+    padding-top: 60px;
   }
   .advantages__container {
     min-width: 160px;
     max-width: 320px;
   }
+  .advantages__container h2 {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .advantages__container p {
+    font-size: 14px;
+    line-height: 174%;
+  }
   .advantages__icon {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -246,6 +280,14 @@ a:hover {
   }
   .advantages__icon {
     margin-bottom: 40px;
+  }
+}
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .button {
@@ -441,12 +483,15 @@ a:hover {
 
 .customer__reviews__section {
   align-items: center;
-  padding-left: 9.7%;
-  padding-right: 9.7%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
   height: 427px;
+  padding: 0 109px;
 }
 
 .customer__reviews__section__container {
+  display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
@@ -476,15 +521,20 @@ a:hover {
   opacity: 1;
 }
 
+.customer__images__slider {
+  padding-bottom: 16px;
+}
+
 .customer__testimonial__container {
   width: 100%;
   background-color: rgb(250, 250, 250);
+  z-index: 0;
 }
 
 .customer__icon__container {
   position: relative;
   width: inherit;
-  z-index: 0;
+  z-index: 1;
 }
 
 .icon__quotation {
@@ -495,6 +545,7 @@ a:hover {
   left: 72px;
   fill: rgb(225, 225, 225);
   opacity: 60%;
+  z-index: 2;
 }
 
 .customer__coments {
@@ -584,6 +635,7 @@ a:hover {
   opacity: 1;
 }
 
+
 .footer {
   background-color: rgb(255, 245, 246);
 }
@@ -601,6 +653,7 @@ a:hover {
 .footer__slogan {
   text-transform: uppercase;
 }
+
 .footer__slogan--small-title {
   color: rgb(255, 165, 186);
   font-size: 1.8rem;
@@ -691,7 +744,9 @@ a:hover {
   padding: 25px 0;
 }
 .footer__copyright p {
+
   color: #907E82;
+
   font-size: 0.87rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1062,6 +1117,68 @@ a:hover {
     height: 373px;
   }
 }
+.modal {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  background-color: rgb(225, 121, 146);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: hidden;
+  z-index: 3;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 20px;
+}
+.modal__content {
+  width: 100%;
+}
+.modal__links {
+  width: 100%;
+}
+.modal__links__link {
+  display: flex;
+  align-items: center;
+  height: 42px;
+  border-top: 1px solid rgb(255, 165, 186);
+}
+.modal__links__link a {
+  margin-left: 20px;
+  font-weight: 700;
+}
+.modal__links__link--current a {
+  color: rgb(212, 20, 67);
+}
+.modal__links__link:last-child {
+  border-bottom: 1px solid rgb(255, 165, 186);
+}
+.modal__close-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 20px;
+}
+.modal__close-container svg {
+  fill: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+}
+.modal--is-hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transform: scale(0.6);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .products {
   padding: 60px 0px;
 }
@@ -1116,7 +1233,9 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url("../images/products1.png");
+
+  background-image: url("../src/images/products1.png");
+
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
@@ -1207,7 +1326,9 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url("../images/products2.png");
+
+  background-image: url("../src/images/products2.png");
+
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
@@ -1298,7 +1419,9 @@ a:hover {
   position: absolute;
   width: 368px;
   height: 796px;
-  background-image: url("../images/products3.png");
+
+  background-image: url("../src/images/products3.png");
+
   background-repeat: no-repeat;
   background-position: 50% 0px;
   background-size: 100%;
