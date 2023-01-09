@@ -1,10 +1,6 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as m;
 
-// color:$pink-light;
-// color: $pink;
-// color: $pink-dark;
-// color:$gray-pink;
 .footer {
   background-color: color.$pink-light;
 }
@@ -22,21 +18,13 @@
     &--small-title {
       @include m.footerText(color.$pink, 1.8rem, 400, 0.04em, null);
       font-family: "Titan One", cursive;
+      padding-bottom: 15px;
+
+      transition: transform 500ms ease-in-out;
 
       span {
+        // display: flex;
         transition: 500ms ease-in-out;
-      }
-      &:hover {
-        position: relative;
-        text-align: center;
-        transition: 500ms ease-in-out;
-        padding-bottom: 20px;
-
-        &:hover span {
-          position: absolute;
-          transform: translate(-250%, 100%);
-          transition: 500ms ease-in-out;
-        }
       }
     }
     span {
@@ -47,31 +35,48 @@
       display: flex;
       gap: 14px;
 
-      &:hover h2 span {
-        font-size: 4.2rem;
-        transition: 600ms ease;
+      span {
+        transition: transform 500ms ease-in-out;
       }
+      & span:hover {
+        transform: scale(1.2);
+        display: inline-block;
+        transition: 500ms ease-in-out;
+      }
+
       h2 {
+        display: flex;
         @include m.footerText(color.$pink-dark, 3.6rem, 400, 0.04em, 1.5);
-        transition: 600ms ease;
       }
     }
+  }
+}
+.footer__slogan {
+  transition: transform 500ms ease-in-out;
+
+  &:hover &--small-title {
+    position: relative;
+    text-align: center;
+    transition: 500ms ease-in-out;
+  }
+
+  &:hover &--small-title > span {
+    color: color.$pink-dark;
+    position: absolute;
+    transform: translate(-250%, 100%);
+    transition: 500ms ease-in-out;
   }
 }
 
 .footer {
   &__slogan-social {
     display: flex;
-    // position: relative;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 }
 
 .footer__social {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
   &--icons {
     display: flex;
     justify-content: end;
@@ -100,15 +105,18 @@
   &--contact {
     font-weight: 700;
     text-align: right;
-    // display: block;
+    display: flex;
+    gap: 5px;
+    transition: 500ms ease;
 
     a {
       color: color.$pink-dark;
       transition: 500ms ease;
 
       &:hover {
-        font-size: 1.2rem;
+        display: inline-block;
         transition: 500ms ease;
+        transform: scale(1.1) translate(10px);
       }
     }
   }
@@ -123,7 +131,7 @@
     transition: 500ms ease;
 
     &:hover {
-      font-size: 1rem;
+      transform: scale(1.1);
       transition: 500ms ease;
     }
   }
@@ -146,23 +154,13 @@
         font-size: 3rem;
         line-height: normal;
         display: inline-block;
-        // position: relative;
         h2 {
           line-height: 1;
         }
       }
-      &--passion {
-        // display: block;
-        // line-height: null;
-        // position: absolute;
-        // top: 50px;
-        // left: 0;
-      }
     }
   }
   .footer__social {
-    // top: 25%;
-    // right: 0;
     margin: auto;
 
     &--contact {
