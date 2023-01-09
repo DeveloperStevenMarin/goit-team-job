@@ -1106,6 +1106,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 321px) {
+  .hero-header {
+    overflow: hidden;
+  }
   .hero-header__nav {
     padding: 10px 15px 136px 20px;
   }

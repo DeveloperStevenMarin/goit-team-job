@@ -230,6 +230,7 @@
 }
 @media screen and (max-width:321px) {
 	.hero-header {
+		overflow: hidden;
 		&__nav {
 			padding: 10px 15px 136px 20px;
 			&__brand {
