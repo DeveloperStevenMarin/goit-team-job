@@ -1,18 +1,19 @@
 @use "../utils/color" as colors;
 
 .gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   background: linear-gradient(
     0deg,
     colors.$white 300px,
     colors.$pink-light 300px
   );
   overflow: hidden;
-  height: 420px;
+  height: 520px;
 
   &__container {
     display: flex;

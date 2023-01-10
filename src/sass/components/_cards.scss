@@ -12,7 +12,7 @@
   padding: 3%;
 
   &:hover {
-    animation-name: card-hover;
+    animation-name: contact-card-hover;
     animation-duration: 1s;
     box-shadow: 0px 8px 30px $pink;
   }
@@ -129,27 +129,7 @@
 
 }
 
-@keyframes card-hover {
-  0% {
-    box-shadow: 0px 3px 10px $pink-light;
-  }
 
-  25% {
-    box-shadow: 0px 5px 15px $pink-light;
-  }
-
-  50% {
-    box-shadow: 0px 6px 20px $pink;
-  }
-
-  75% {
-    box-shadow: 0px 7px 25px $pink;
-  }
-
-  100% {
-    box-shadow: 0px 8px 30px $pink;
-  }
-}
 
 @media screen and (max-width: 1280px) {
   .card--contacts {

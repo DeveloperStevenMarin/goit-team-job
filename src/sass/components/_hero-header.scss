@@ -242,47 +242,6 @@
     }
   }
 }
-@keyframes tasty-hover {
-  0% {
-    width: 360px;
-    height: 280px;
-  }
-  12% {
-    width: 365px;
-    height: 275px;
-  }
-  25% {
-    width: 370px;
-    height: 290px;
-  }
-  35% {
-    width: 375px;
-    height: 295px;
-  }
-  50% {
-    width: 380px;
-    height: 300px;
-  }
-  63% {
-    width: 375px;
-    height: 295px;
-  }
-  75% {
-    width: 370px;
-    height: 290px;
-  }
-  86% {
-    width: 365px;
-    height: 285px;
-  }
-  100% {
-    width: 360px;
-    height: 280px;
-  }
-}
-
-@media screen and (max-width: 1097px) {
-}
 @media screen and (max-width: 1097px) {
   .hero-header {
     &__jarContainer__text {

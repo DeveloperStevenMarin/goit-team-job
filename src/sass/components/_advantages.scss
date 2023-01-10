@@ -43,7 +43,7 @@
     }
 }
 
-@media screen and (min-width: 319px) and (max-width: 479.8px) {
+@media screen and (max-width: 479.8px) {
     .advantages {
         flex-wrap: wrap;
         gap: 32px;
@@ -65,7 +65,7 @@
         }
     }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .advantages {
         flex-wrap: wrap;
         gap: 32px;
@@ -86,7 +86,7 @@
         }
     }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
     .advantages {
         gap: 22px;
         padding-top: 40px;
@@ -123,13 +123,5 @@
         }
     }
 
-}
-@keyframes spin-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
