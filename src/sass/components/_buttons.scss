@@ -2,11 +2,11 @@
 
 
 
-.button{
+.button {
   width: 180px;
   height: 44px;
   border-radius: 22px;
-  background:colors.$white;
+  background: colors.$white;
   color: colors.$pink-dark;
   border: none;
   font-style: normal;
@@ -14,25 +14,20 @@
   font-size: 16px;
   line-height: solid;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
 }
 
-  
-  .button--pink {
-    background:colors.$pink-dark;
-    color: colors.$white;
-  
-  }
-  
-  
-  .button--white {
-   
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    
-  }
 
- 
+.button--pink {
+  background: colors.$pink-dark;
+  color: colors.$white;
+
+}
+
+.button--white {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
