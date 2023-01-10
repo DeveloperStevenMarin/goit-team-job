@@ -39,7 +39,7 @@
 
 .customer__reviews__section__slider:target {
 	opacity: 1;
-	animation: gelatine 1s ease-in;
+	animation: gelatine 1s ease-in-out;
 }
 
 @keyframes gelatine {
