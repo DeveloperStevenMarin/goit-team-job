@@ -34,6 +34,7 @@
 
         color: color.$pink-dark;
       }
+    
     }
     &__sections {
       display: flex;
@@ -48,7 +49,9 @@
       li {
         &:hover {
           cursor: pointer;
+          color: color.$pink-dark;
         }
+        
       }
     }
     &__right {
@@ -71,6 +74,10 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
+        &:hover {
+          cursor: pointer;
+          background-color:$hover-button;
+        }
       }
       &__menu-burguer {
         visibility: hidden;
@@ -99,15 +106,23 @@
     }
   }
   &__titleButtons {
+    
     padding-left: 15px;
     &__pink {
       color: color.$white;
       background: color.$pink-dark;
+      &:hover {
+        cursor: pointer;
+      }
     }
     &__white {
       color: color.$pink-dark;
       background: color.$white;
       margin-left: 15px;
+      &:hover {
+        cursor: pointer;
+        background-color:$hover-button;
+      }
     }
   }
 

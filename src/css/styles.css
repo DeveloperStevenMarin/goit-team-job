@@ -1002,6 +1002,7 @@ a:hover {
 }
 .hero-header__nav__sections li:hover {
   cursor: pointer;
+  color: rgb(212, 20, 67);
 }
 .hero-header__nav__right {
   display: flex;
@@ -1022,6 +1023,10 @@ a:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+}
+.hero-header__nav__right__buyButton:hover {
+  cursor: pointer;
+  background-color: rgb(235, 234, 234);
 }
 .hero-header__nav__right__menu-burguer {
   visibility: hidden;
@@ -1051,10 +1056,17 @@ a:hover {
   color: rgb(255, 255, 255);
   background: rgb(212, 20, 67);
 }
+.hero-header__titleButtons__pink:hover {
+  cursor: pointer;
+}
 .hero-header__titleButtons__white {
   color: rgb(212, 20, 67);
   background: rgb(255, 255, 255);
   margin-left: 15px;
+}
+.hero-header__titleButtons__white:hover {
+  cursor: pointer;
+  background-color: rgb(235, 234, 234);
 }
 .hero-header__container {
   width: 534px;
