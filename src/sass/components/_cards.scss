@@ -1,157 +1,195 @@
 @use "../utils/color" as colors;
-.card--contacts {
- 
-    width: 368px;
-    height: 538px;
-    background: colors.$white;
-    border-radius: 24px;
-    margin-top:1%;
-    margin-right: .5%;
-    margin-left: 1%;
-    margin-bottom: 16px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    padding: 3%;
-    
 
-    &:hover {
-        color:colors.$pink-dark ;
-        box-shadow: 0px 8px 30px colors.$pink-dark;
+.card--contacts {
+  width: 368px;
+  height: 538px;
+  background: colors.$white;
+  border-radius: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+
+  &:hover {
+    animation-name: card-hover;
+    animation-duration: 1s;
+    box-shadow: 0px 8px 30px $pink;
+  }
+
+  &__category-container {
+    &__sale {
+      display: flex;
+      width: 75px;
+      height: 28px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      justify-content: center;
+      align-items: center;
+      color: colors.$white;
+      background: colors.$yellow;
+      border-radius: 6px;
+
+      &--green {
+        background: colors.$green;
       }
-        
-        
-        &__sale {
-          width: 75.1px;
-          height: 28px;
-          left: 86px;
-          top: 3917px;
-          font-family: 'DM Sans';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 186%;
-          text-align: center;
-          color: colors.$white;
-          background: colors.$yellow;
-          border-radius: 6px;
-            
-        }
-        &__salef {
-          width: 71.1px;
-          height: 28px;
-          left: 56px;
-          top: 3917px;
-          font-family: 'DM Sans';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 186%;
-          text-align: center;
-          letter-spacing: 0.04em;
-          color: colors.$white;
-          background: colors.$green;
-          border-radius: 6px;
-        
-          
-        }
-        
-        
-        &__locations {
-          width: 120px;
-          height: 30px;
-          left: 56px;
-          top: 3977px;
-          letter-spacing: 0.04em;
-          color: colors.$black;
-        }
-        
-        &__promise {
-          width: 250px;
-          height: 50px;
-          left: 56px;
-          top: 4015px;
-          font-family: 'DM Sans';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 183%;
-          letter-spacing: 0.04em;
-          color: colors.$grey;
-        
-        }
-        
-        &__icon {
-          margin-top: 4%;
-          width: 288px;
-          height: 0px;
-          left: 56px;
-          top: 4097px;
-          border: 1px solid colors.$white;
-        
-        }
-        
-        &__schedule {
-          width: 237.86px;
-          height: 30px;
-          left: 56px;
-          top: 4129px;
-          font-family: 'DM Sans';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 186%;
-          letter-spacing: 0.04em;
-        
-        }
-        
-        &__time {
-          width: 167.7px;
-          height: 30px;
-          left: 56px;
-          top: 4159px;
-          font-family: 'DM Sans';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 186%;
-          color: colors.$pink-dark;
-        
-        }
-        
-        &__icon {
-          margin-bottom: 1%;
-          width: 288px;
-          height: 0px;
-          left: 56px;
-          top: 4097px;
-          border: 1px solid colors.$white;
-        
-        }
-        
-        &__phone {
-          width: 250px;
-          height: 50px;
-          margin-left: 0%;
-          margin-right: 0%;
-          margin-bottom: 0%;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 183%;
-          color: colors.$grey;
-          
-        }
-        &__mail {
-          width: 250px;
-          height: 50px;
-          margin-left: 0%;
-          margin-top: 0%;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 183%;
-          color: colors.$grey;
-          
-        } 
+    }
+  }
+
+  &__content-container {
+    &__locations {
+      width: 120px;
+      height: 30px;
+      letter-spacing: 0.04em;
+      color: colors.$black;
+    }
+
+    &__promise {
+      position: relative;
+      height: 50px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      color: colors.$grey;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 160%;
+        left: 0;
+        right: 0;
+        height: 0.5px;
+        border-top: 0.5px solid $lightgrey2;
+      }
+    }
+  }
+
+  &__calendar-container {
+    position: relative;
+
+    &__schedule {
+      height: 30px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+    }
+
+    &__time {
+      height: 30px;
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      color: colors.$pink;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 120%;
+      left: 0;
+      right: 0;
+      height: 0.5px;
+      border-top: 0.5px solid $lightgrey2;
+    }
+  }
+
+  &__address-container {
+    &__phone {
+      height: 50px;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-bottom: 0%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 183%;
+      color: colors.$grey;
+    }
+
+    &__mail {
+      height: 50px;
+      margin-left: 0%;
+      margin-top: 0%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 183%;
+      color: colors.$grey;
+    }
+  }
+
+}
+
+@keyframes card-hover {
+  0% {
+    box-shadow: 0px 3px 10px $pink-light;
+  }
+
+  25% {
+    box-shadow: 0px 5px 15px $pink-light;
+  }
+
+  50% {
+    box-shadow: 0px 6px 20px $pink;
+  }
+
+  75% {
+    box-shadow: 0px 7px 25px $pink;
+  }
+
+  100% {
+    box-shadow: 0px 8px 30px $pink;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card--contacts {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .card--contacts {
+
+    width: 280px;
+    height: 412px;
+
+    &__content-container {
+      &__promise {
+        font-size: 14px;
+      }
+    }
+
+    &__calendar-container {
+      position: relative;
+
+      &__schedule {
+        font-size: 14px;
+      }
+
+      &__time {
+        font-size: 14px;
+
+      }
+    }
+
+    &__address-container {
+      &__phone {
+        font-size: 14px;
+      }
+
+      &__mail {
+        font-size: 14px;
+      }
+    }
+  }
 }

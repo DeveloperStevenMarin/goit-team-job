@@ -1,136 +1,533 @@
-$items: "1" "rgb(255, 184, 202)", "2" "rgb(240, 209, 165)",
-  "3" "rgb(194, 226, 151)";
+// $items: "1" "rgb(255, 184, 202)", "2" "rgb(240, 209, 165)",
+//   "3" "rgb(194, 226, 151)";
+
+//   @each $item, $color in $items {
+//     &__products-item-box#{$item} {
+//       background-color: #{$color};
+//     }
+//   }
 
 .products {
-  padding-top: 60px;
+  padding: 60px 0px;
+}
 
-  &__title {
-    display: flex;
+.products__title--1 {
+  width: 280px;
+  margin: 0 auto;
+
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.products__title--2 {
+  width: 394px;
+  margin: 0 auto;
+
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #d41443;
+}
+
+.products__boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+
+  flex-wrap: wrap;
+  margin: 0 16px;
+}
+
+.products__boxes--box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 796px;
+  position: relative;
+}
+
+.products__boxes--box1up {
+  position: absolute;
+  width: 368px;
+  height: 796px;
+  background-image: url("../images/products1.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: 100%;
+}
+
+.products__boxes--box1bottom {
+  height: 535px;
+  background-color: rgba(255, 165, 186);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 368px;
+  align-self: flex-start;
+}
+
+.products__boxes--box1bottom-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.products__boxes--box1bottom-title:after {
+  display: block;
+  content: ". . .";
+  color: $white;
+  top: 32px;
+  font-size: 25px;
+}
+
+.products__boxes--box1bottom-text {
+  width: 245px;
+  text-align: center;
+
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box1bottom-arr{
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box1bottom-arrow {
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  stroke: $pink-dark;
+  z-index: 1;
+}
+
+.products__boxes--box1bottom-arrow-shadow{
+  position:absolute;
+  width: 368px;
+  height: 535px;
+  display: none;
+  top: -476px;
+  left: -164px;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+
+
+//////////////////////////////
+//////////////////////////////
+
+
+.products__boxes--box2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 796px;
+  position: relative;
+}
+
+.products__boxes--box2up {
+  position: absolute;
+  width: 368px;
+  height: 796px;
+  background-image: url("../images/products2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: 100%;
+}
+
+.products__boxes--box2bottom {
+  height: 535px;
+  background-color: $yellow;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 368px;
+  align-self: flex-start;
+}
+
+.products__boxes--box2bottom-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.products__boxes--box2bottom-title:after {
+  display: block;
+  content: ". . .";
+  color: $white;
+  top: 32px;
+  font-size: 25px;
+}
+
+.products__boxes--box2bottom-text {
+  width: 245px;
+  text-align: center;
+
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box2bottom-arr {
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box2bottom-arrow {
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  stroke: $pink-dark;
+  z-index: 1;
+}
+
+.products__boxes--box2bottom-arrow-shadow {
+  position: absolute;
+  width: 368px;
+  height: 535px;
+  display: none;
+  top: -476px;
+  left: -164px;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+//////////////////////////////
+//////////////////////////////
+
+
+.products__boxes--box3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 796px;
+  position: relative;
+}
+
+.products__boxes--box3up {
+  position: absolute;
+  width: 368px;
+  height: 796px;
+  background-image: url("../images/products3.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: 100%;
+}
+
+.products__boxes--box3bottom {
+  height: 535px;
+  background-color: $green;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 368px;
+  align-self: flex-start;
+}
+
+.products__boxes--box3bottom-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.products__boxes--box3bottom-title:after {
+  display: block;
+  content: ". . .";
+  color: $white;
+  top: 32px;
+  font-size: 25px;
+}
+
+.products__boxes--box3bottom-text {
+  width: 245px;
+  text-align: center;
+
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 176%;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
+
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box3bottom-arr {
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  padding-bottom: 60px;
+}
+
+.products__boxes--box3bottom-arrow {
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  stroke: $pink-dark;
+  z-index: 1;
+}
+
+.products__boxes--box3bottom-arrow-shadow {
+  position: absolute;
+  width: 368px;
+  height: 535px;
+  display: none;
+  top: -476px;
+  left: -164px;
+  border-radius: 24px;
+  z-index: -2;
+}
+
+.products__title--1:hover,
+.products__title--2:hover {
+  animation: extend1;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes extend1 {
+  0%{
+  transform: scaleX(1);
+  }
+  33% {
+  transform: scaleX(2);
+  }
+  66% {
+  transform: scaleX(1.6);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.products__boxes--box1bottom-arrow:hover,
+.products__boxes--box2bottom-arrow:hover,
+.products__boxes--box3bottom-arrow:hover {
+  background-color: $pink-dark;
+  stroke: $white;
+  animation: rotate1;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
+  
+}
+
+ @keyframes rotate1 {
+   0% {
+    transform: rotate(0deg);
+   }
+   100% {
+    transform: rotate(-90deg);
+   }
+}
+
+.products__boxes--box1bottom-arr:hover .products__boxes--box1bottom-arrow-shadow,
+.products__boxes--box2bottom-arr:hover .products__boxes--box2bottom-arrow-shadow,
+.products__boxes--box3bottom-arr:hover .products__boxes--box3bottom-arrow-shadow
+{
+
+  display: block;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+  .products__title--1 {
+    font-size: 26px;
+  }
+  .products__title--2 {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.04em;
+  }
+  .products__boxes {
+    gap: 16px;
+    margin: 0 32px;
+  }
+  .products__boxes--box1,
+  .products__boxes--box2,
+  .products__boxes--box3 {
+    height: 611px;
+  }  
+  .products__boxes--box1up,
+  .products__boxes--box2up,
+  .products__boxes--box3up {
+    width: 224px;
+    background-position: 50% 175px;
+  }
+  .products__boxes--box1bottom,
+  .products__boxes--box2bottom,
+  .products__boxes--box3bottom {
+    width: 224px;
+    height: 473px;
+  }
+  .products__boxes--box1bottom-title,
+  .products__boxes--box2bottom-title,
+  .products__boxes--box3bottom-title {
+    font-size: 20px;
+    line-height: 23px;    
+  }
+
+  .products__boxes--box1bottom-text,
+  .products__boxes--box2bottom-text,
+  .products__boxes--box3bottom-text {
+    width: 160px;
+    font-size: 14px;
+    padding-top: 32px;    
+  }
+
+  .products__boxes--box1bottom-arrow-shadow,
+  .products__boxes--box2bottom-arrow-shadow,
+  .products__boxes--box3bottom-arrow-shadow {
+    width: 224px;
+    height: 473px;
+    top: -413px;
+    left: -92px;
+  }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .products__title--1 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0em;
+  }
+
+  .products__title--2 {
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;    
+  }
+
+  .products__boxes {
+    gap: 16px;
+    margin: 0 20px;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-
-    &--1 {
-      font-family: "Titan One";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 21px;
-
-      text-align: center;
-      text-transform: uppercase;
-
-      color: #ffa5ba;
-    }
-
-    &--2 {
-      font-family: "Titan One", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 34px;
-      line-height: 39px;
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-
-      color: #d41443;
-    }
   }
 
-  &__products-item-box1,
-  &__products-item-box2,
-  &__products-item-box3 {
-    width: 80%;
+  .products__boxes--box1,
+  .products__boxes--box2,
+  .products__boxes--box3 {
+    height: 629px;
+  }
+
+  .products__boxes--box1up,
+  .products__boxes--box2up,
+  .products__boxes--box3up {
+    width: 280px;
+    background-position: 50% 168px;
+  }
+
+  .products__boxes--box1bottom,
+  .products__boxes--box2bottom,
+  .products__boxes--box3bottom {
+    width: 280px;
     height: 489px;
-    background-color: #ffb8ca;
-
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 24px;
-
-    background-image: url(/src/images/arrow-right\ 4.png);
-    background-repeat: no-repeat;
-    background-position: 50% 90%;
   }
 
-  @each $item, $color in $items {
-    &__products-item-box#{$item} {
-      background-color: #{$color};
-    }
+  .products__boxes--box1bottom-title,
+  .products__boxes--box2bottom-title,
+  .products__boxes--box3bottom-title {
+    font-size: 20px;
+    line-height: 23px;
   }
 
-  &__products {
-
-    &-list {
-      height: 796px;
-
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      align-content: center;
-      justify-content: space-evenly;
-
-    }
-
-    &-item-container {
-      position: relative;
-      top: 120px;
-    }
-
-    &-item-pict {
-      position: absolute;
-
-      top: -28%;
-      left: 6.5%;
-    }
-
-    &-item-box1-title,
-    &-item-box2-title,
-    &-item-box3-title {
-      font-family: "Titan One";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 23px;
-
-      text-align: center;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-
-      color: $white;
-
-      padding-top: 160px;
-    }
-
-    &-item-box1-title::after,
-    &-item-box2-title::after,
-    &-item-box3-title::after {
-      display: block;
-      content: ". . .";
-      color: $white;
-      top: 32px;
-      font-size: 25px;
-    }
-
-    &-item-box1-text,
-    &-item-box2-text,
-    &-item-box3-text {
-      width: 60%;
-      font-family: "DM Sans";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 152%;
-
-      text-align: center;
-      letter-spacing: 0.04em;
-
-      color: $white;
-
-      padding-top: 32px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .products__boxes--box1bottom-text,
+  .products__boxes--box2bottom-text,
+  .products__boxes--box3bottom-text {
+    width: 200px;
+    
+    font-size: 14px;
+    line-height: 152%;
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
+
+  .products__boxes--box1bottom-arrow-shadow,
+  .products__boxes--box2bottom-arrow-shadow,
+  .products__boxes--box3bottom-arrow-shadow {
+    width: 280px;
+    height: 489px;
+    top: -429px;
+    left: -120px;
+  }
+
 }

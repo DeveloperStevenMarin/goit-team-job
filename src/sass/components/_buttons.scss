@@ -25,9 +25,15 @@
   color: colors.$white;
 
 }
-
 .button--white {
+
+  background-color: $white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+
+}
+
+.button--white:hover {
+  background-color: $lightgrey;
 }
