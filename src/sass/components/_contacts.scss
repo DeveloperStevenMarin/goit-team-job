@@ -3,7 +3,7 @@
 .contacts {
 	background: linear-gradient(0deg, colors.$pink-light 80%, colors.$white 80%);
 	width: 100%;
-	margin: 100px 0px 0px 0px ;
+	margin: 100px 0px 0px 0px;
 	height: fit-content;
 	display: flex;
 	justify-content: center;
@@ -11,6 +11,7 @@
 	flex-direction: column;
 	gap: 35px
 }
+
 .conteiner--card {
 	width: 100%;
 	height: 100%;
@@ -20,6 +21,7 @@
 	flex-wrap: wrap;
 	gap: 2%;
 }
+
 .contacts__button-container {
 	width: 340px;
 	height: 42px;
@@ -29,9 +31,10 @@
 	justify-content: space-around;
 	align-items: center;
 }
+
 @media screen and (max-width: 768px) {
 
-	.conteiner--card{
+	.conteiner--card {
 		flex-wrap: nowrap;
 		flex-direction: column;
 		align-items: center;
