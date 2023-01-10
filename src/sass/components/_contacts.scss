@@ -40,8 +40,24 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.contacts__button-container{
+
+	.contacts__button-container {
 		flex-wrap: nowrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+	.conteiner--card {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.contacts__button-container {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;

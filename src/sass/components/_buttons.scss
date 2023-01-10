@@ -20,7 +20,9 @@
 .button--pink {
   background: colors.$pink-dark;
   color: colors.$white;
+
 }
+
 .button--white {
   background-color: $white;
   font-style: normal;
@@ -31,19 +33,21 @@
 .button--white:hover {
   background-color: $lightgrey;
 }
+
 .button--products {
- 
   height: 40px;
   width: 40px;
   padding-bottom: 60px;
   border-radius: 25px;
   background: none;
-  svg{
+
+  svg {
     background-color: colors.$white;
     border-radius: 25px;
     margin-bottom: 60px;
     stroke: colors.$pink-dark;
-    &:hover{
+
+    &:hover {
       background-color: colors.$pink-dark;
       stroke: colors.$white;
       animation: btn-rotate;
@@ -53,5 +57,5 @@
       transform: rotate(-90deg);
     }
   }
-  
+
 }

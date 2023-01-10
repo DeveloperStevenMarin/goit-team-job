@@ -131,7 +131,7 @@
 	align-items: center;
 	gap: 16px;
 	width: 72px;
-	
+
 }
 
 .slider__button li {
@@ -154,26 +154,34 @@
 	opacity: 1;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 	.customer__reviews__section {
 		align-items: center;
 		max-width: 100%;
-		
+
 	}
 }
-@media screen and (max-width: 768px){
-	.customer__coments{
+
+@media screen and (max-width: 768px) {
+	.customer__coments {
 		font-size: 14px;
 	}
-	.customer__comment__city{
+
+	.customer__comment__city {
 		font-size: 16px;
 	}
 }
-@media screen and (max-width: 480px){
-	.customer__coments{
+
+@media screen and (max-width: 480px) {
+	.customer__reviews__section {
+		margin-top: 150px;
+	}
+
+	.customer__coments {
 		font-size: 12px;
 	}
-	.customer__comment__city{
+
+	.customer__comment__city {
 		font-size: 14px;
 	}
 }
