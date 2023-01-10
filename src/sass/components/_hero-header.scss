@@ -2,231 +2,304 @@
 @import "../utils/config";
 
 .button-shape {
-	padding: 11px 23px;
-	border-radius: 20px;
-	border: 2px;
+  padding: 11px 23px;
+  border-radius: 20px;
+  border: 2px;
 }
 
 .hero-header {
-	background-color: color.$main-color;
-	width: auto;
-	max-height: 664px;
-	min-height: 502px;
-	position: relative;
-	&__nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 37px 15px 60px 15px;
 
-		&__brand {
-			display: flex;
-			flex-direction: row;
-			gap: 30px;
-			align-items: center;
-			&__text {
-				font-family: "Titan One";
-				font-weight: 400;
-				font-size: 30px;
-				line-height: 90.5%;
+  background-color: color.$main-color;
+  width: auto;
+  height: 664px;
+  position: relative;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 15px 60px 15px;
 
-				letter-spacing: 0.04em;
-				text-transform: uppercase;
+    &__brand {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      align-items: center;
+      &__text {
+        font-family: "Titan One";
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 90.5%;
 
-				color: color.$pink-dark;
-			}
-		}
-		&__sections {
-			display: flex;
-			align-items: center;
-			gap: 35px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
 
-			font-weight: 700;
-			font-size: 16px;
-			line-height: 21px;
-			color: color.$white;
-			z-index: 1;
-		}
-		&__right {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			gap: 32px;
-			&__buyButton {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				gap: 12px;
+        color: color.$pink-dark;
+      }
+    
+    }
+    &__sections {
+      display: flex;
+      align-items: center;
+      gap: 35px;
 
-				width: 159px;
-				height: 44px;
-				border: 2px;
-				border-radius: 22px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: color.$white;
+      z-index: 1;
+      li {
+        &:hover {
+          cursor: pointer;
+          color: color.$pink-dark;
+        }
+        
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      &__buyButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
 
-				color: color.$pink-dark;
-				font-weight: 700;
-				font-size: 16px;
-				line-height: 21px;
-			}
-			&__menu-burguer {
-				visibility: hidden;
-			}
-		}
-	}
-	&__title {
-		font-family: "Titan One";
-		font-weight: 400;
-		font-size: 38px;
-		line-height: 44px;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
-		text-align: left;
-		padding: 0 0 24px 15px;
+        width: 159px;
+        height: 44px;
+        border: 2px;
+        border-radius: 22px;
 
-		width: 277px;
+        color: color.$pink-dark;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        &:hover {
+          cursor: pointer;
+          background-color:$hover-button;
+        }
+      }
+      &__menu-burguer {
+        visibility: hidden;
+      }
+    }
+  }
+  &__title {
+    font-family: "Titan One";
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 0 0 24px 15px;
 
-		color: color.$white;
-		&__passion {
-			font-family: "Titan One";
-			font-size: 58px;
-			line-height: 90.5%;
+    width: 277px;
 
-			color: color.$pink-dark;
-		}
-	}
-	&__titleButtons {
-		padding-left: 15px;
-		&__pink {
-			color: color.$white;
-			background: color.$pink-dark;
-		}
-		&__white {
-			color: color.$pink-dark;
-			background: color.$white;
-			margin-left: 15px;
-		}
-	}
+    color: color.$white;
+    &__passion {
+      font-family: "Titan One";
+      font-size: 58px;
+      line-height: 90.5%;
 
-	&__container {
-		max-width: 534px;
-		max-height: 611px;
-		position: absolute;
-		bottom: 0;
-		right: 12%;
+      color: color.$pink-dark;
+    }
+  }
+  &__titleButtons {
+    
+    padding-left: 15px;
+    &__pink {
+      color: color.$white;
+      background: color.$pink-dark;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &__white {
+      color: color.$pink-dark;
+      background: color.$white;
+      margin-left: 15px;
+      &:hover {
+        cursor: pointer;
+        background-color:$hover-button;
+      }
+    }
+  }
 
-		&__circle {
-			background: color.$pink;
-			width: 334px;
-			height: 334px;
-			border-radius: 50%;
-			position: relative;
-			z-index: 0;
-			top: -4%;
-		}
+  &__container {
+    width: 534px;
+    height: 611px;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
 
-		&__iceCream-image {
-			max-width: 236px;
-			height: 100%;
-			position: absolute;
-			z-index: 1;
-			bottom: 0;
-			right: 30%;
-		}
-	}
-	&__jarContainer {
-		display: flex;
-		align-items: flex-end;
-		padding-left: 15px;
-		padding-top: 40px;
-		&__text {
-			width: 250px;
-			p {
-				font-weight: 400;
-				font-size: 14px;
-				line-height: 140%;
-				padding-bottom: 20px;
+    &__circle {
+      background: color.$pink;
+      width: 534px;
+      height: 534px;
+      border-radius: 50%;
+      position: relative;
+      z-index: 0;
+      top: 0;
+    }
 
-				color: color.$white;
-			}
-		}
-	}
-	&__iceCreamGirl {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: 1;
-		img {
-			height: 100%;
-			width: 100%;
-		}
-	}
-	&__branches {
-		position: absolute;
-		right: 15px;
-		top: 152px;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		&__container {
-			position: relative;
-			&__text {
-				width: 90px;
-				height: 77px;
-				display: flex;
-				justify-content: center;
-				h2 {
-					position: absolute;
-					z-index: 2;
-					font-family: "Titan One";
-					font-style: normal;
-					font-weight: 400;
-					font-size: 46px;
-					line-height: 53px;
+    &__iceCream-image {
+      max-width: 236px;
+      height: 90%;
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+      right: 35%;
+    }
+  }
+  &__jarContainer {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 15px;
+    padding-top: 40px;
+    &__text {
+      width: 250px;
+      z-index: 2;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        padding-bottom: 20px;
 
-					text-align: right;
-					letter-spacing: 0.04em;
-					text-transform: uppercase;
+        color: color.$white;
+      }
+    }
+  }
+  &__iceCreamGirl {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    z-index: 1;
+    width: 350px;
+    height: 270px;
+    a {
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &:hover {
+      animation-name: tasty-hover;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      cursor: pointer;
+    }
+  }
+  &__branches {
+    position: absolute;
+    right: 15px;
+    top: 152px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__container {
+      position: relative;
+      &__text {
+        width: 90px;
+        height: 77px;
+        display: flex;
+        justify-content: center;
+        h2 {
+          position: absolute;
+          z-index: 2;
+          font-family: "Titan One";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 46px;
+          line-height: 53px;
 
-					color: color.$pink-dark;
-				}
-				p {
-					position: absolute;
-					bottom: 0;
-					font-weight: 400;
-					font-size: 14px;
-					line-height: 18px;
+          text-align: right;
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
 
-					color: color.$white;
-				}
-			}
-			&__circle {
-				position: absolute;
-				top: 0;
-				right: 0;
-				width: 30px;
-				height: 30px;
-				background: color.$white;
-				border-radius: 50%;
-			}
-		}
-	}
+          color: color.$pink-dark;
+        }
+        p {
+          position: absolute;
+          bottom: 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+
+          color: color.$white;
+        }
+      }
+      &__circle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background: color.$white;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+@keyframes tasty-hover {
+  0% {
+    width: 360px;
+    height: 280px;
+  }
+  12% {
+    width: 365px;
+    height: 275px;
+  }
+  25% {
+    width: 370px;
+    height: 290px;
+  }
+  35% {
+    width: 375px;
+    height: 295px;
+  }
+  50% {
+    width: 380px;
+    height: 300px;
+  }
+  63% {
+    width: 375px;
+    height: 295px;
+  }
+  75% {
+    width: 370px;
+    height: 290px;
+  }
+  86% {
+    width: 365px;
+    height: 285px;
+  }
+  100% {
+    width: 360px;
+    height: 280px;
+  }
 }
 
-@media screen and (max-width: 1280px) {
-	.hero-header {
-		&__nav {
-			&__sections {
-				display: none;
-			}
-			&__right__menu-burguer {
-				visibility: visible;
-			}
-		}
-		&__container {
-			width: 335px;
-			height: 373px;
-		}
-	}
+@media screen and (max-width: 1097px) {
+}
+@media screen and (max-width: 1097px) {
+  .hero-header {
+    &__jarContainer__text {
+      width: 115px;
+      p {
+        font-size: 10px;
+      }
+    }
+    &__nav {
+      &__sections {
+        display: none;
+      }
+      &__right__menu-burguer {
+        visibility: visible;
+      }
+    }
+  }
 }
 @media screen and (max-width:321px) {
 	.hero-header {
