@@ -13,10 +13,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>IceCream</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="../src/images/logo.png">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
+	
 	<header class="hero-header">
 		<nav class="hero-header__nav">
 			<div class="hero-header__nav__brand">
@@ -32,8 +36,8 @@
 				<li href="#">Our products</li>
 				<li href="#">Contact</li>
 			</ul>
-			<div class="hero-header__nav__right">
-				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
+			<div class="hero-header__nav__right" data-modal-open>
+				<svg class="hero-header__nav__right__menu-burguer"  width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
 				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
@@ -62,7 +66,9 @@
 			</div>
 		</div>
 		<div class="hero-header__iceCreamGirl">
-			<img src="./images/PNG/iceCreamGirl.png" alt="girl-sucking-iceCream">
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+				<img src="./images/PNG/iceCreamGirl.png" alt="girl-sucking-iceCream">
+			</a>
 		</div>
 		<div class="hero-header__branches">
 				<div class="hero-header__branches__container">
@@ -81,74 +87,73 @@
 				</div>
 		</div>
 	</header>
-
 	<section class="products">
-		<ul>
+		<ul class="products__title">
 			<li>
-				<ul class="products__title">
-					<li>
-						<p class="products__title--1">100% natural</p>
-					</li>
-					<li>
-						<p class="products__title--2">products</p>
-					</li>
-				</ul>
+				<p class="products__title--1">100% natural</p>
 			</li>
 			<li>
-				<ul class="products__boxes">
-					<li class="products__boxes--box1">
-						<div class="products__boxes--box1up">
-	
-						</div>
-						<div class="products__boxes--box1bottom">
-							<p class="products__boxes--box1bottom-title">
-								ICE CREAM
-							</p>
-							<p class="products__boxes--box1bottom-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-							</p>
-							<svg class="products__boxes--box1bottom-arrow" width="40" height="40">
-								<use href="./images/icons.svg#products-arrow"></use>
-							</svg>
-						</div>
-					</li>
-					<li class="products__boxes--box2">
-						<div class="products__boxes--box2up">
-	
-						</div>
-						<div class="products__boxes--box2bottom">
-							<p class="products__boxes--box2bottom-title">
-								ICE COFFEE
-							</p>
-							<p class="products__boxes--box2bottom-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-							</p>
-							<svg class="products__boxes--box2bottom-arrow" width="40" height="40">
-								<use href="./images/icons.svg#products-arrow"></use>
-							</svg>
-						</div>
-					</li>
-					<li class="products__boxes--box3">
-						<div class="products__boxes--box3up">
-	
-						</div>
-						<div class="products__boxes--box3bottom">
-							<p class="products__boxes--box3bottom-title">
-								ICE COFFEE
-							</p>
-							<p class="products__boxes--box3bottom-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-							</p>
-							<svg class="products__boxes--box3bottom-arrow" width="40" height="40">
-								<use href="./images/icons.svg#products-arrow"></use>
-							</svg>
-						</div>
-					</li>
-				</ul>
+				<p class="products__title--2">products</p>
 			</li>
 		</ul>
+		<ul class="products__boxes-container">
+			<li class="products__boxes products__boxes--box1">
+						<div class="products__boxes-img products__boxes-img--1">
+							<img src="../src/images/products1.png" alt="Some icecream image">
+						</div>
+						<div class="products__boxes__box-content products__boxes__box-content--1">
+							<p class="products__boxes__box-content-title">
+								ICE CREAM
+							</p>
+							<p class="products__boxes__box-content-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+							</p>
+							<div class="button button--products">
+								<svg width="40" height="40">
+									<use href="./images/icons.svg#products-arrow"></use>
+								</svg>
+							</div>
+						</div>
+			</li>
+			<li class="products__boxes products__boxes--box2">
+				<div class="products__boxes-img products__boxes-img--2">
+					<img src="../src/images/products2.png" alt="Some icecream image">
+				</div>
+				<div class="products__boxes__box-content products__boxes__box-content--2">
+					<p class="products__boxes__box-content-title">
+						ICE COFFEE
+					</p>
+					<p class="products__boxes__box-content-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+					</p>
+					<div class="button button--products">
+						<svg width="40" height="40">
+							<use href="./images/icons.svg#products-arrow"></use>
+						</svg>
+					</div>
+				</div>
+			</li>
+			<li class="products__boxes products__boxes--box3">
+				<div class="products__boxes-img products__boxes-img--3">
+					<img src="../src/images/products3.png" alt="Some icecream image">
+				</div>
+				<div class="products__boxes__box-content products__boxes__box-content--3">
+					<p class="products__boxes__box-content-title">
+						MILKSHAKES
+					</p>
+					<p class="products__boxes__box-content-text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+					</p>
+					<div class="button button--products">
+						<svg width="40" height="40">
+							<use href="./images/icons.svg#products-arrow"></use>
+						</svg>
+					</div>
+				</div>
+			</li>
 	</section>
 
+ 
 	<section class="about">
 		<div class="about__container-title">
 			<h3>tradition and love</h3>
@@ -176,7 +181,6 @@
 			</div>
 		</div>
 	</section>
-
 	<section class="advantages">
 		<div class="advantages__container">
 			<svg class="advantages__icon" width="50" height="50">
@@ -200,7 +204,6 @@
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 		</div>
 	</section>
-
 	<section class="gallery">
 		<div class="gallery__container">
 			<div class="container-images">
@@ -237,6 +240,7 @@
 		<div class="customer__reviews__section__container">
 
 			<article id="customer-comment-section1" class="customer__reviews__section__slider">
+
 				<div>
 					<img class="customer__images__slider" src="images/testimonials1.png" alt="customer1" />
 				</div>
@@ -271,8 +275,8 @@
 							<a href="#customer-comment-section1">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
-							</svg>
 						</li>
 						<li>
 							<a href="#customer-comment-section2" class="slider__button__off"></a>
@@ -286,7 +290,7 @@
 
 			<article id="customer-comment-section2" class="customer__reviews__section__slider">
 				<div>
-					<img class="customer__images__slider" src="images/testimonials2.png" alt="customer1" />
+					<img class="customer__images__slider" src="images/testimonials2.png" alt="customer2" />
 				</div>
 
 				<div class="customer__testimonial__container">
@@ -297,11 +301,12 @@
 					</div>
 
 					<p class="customer__coments">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						2nd comment Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+						ipsum primis in nibh vel risus.
 					</p>
 				</div>
+
 				<div class="customer__elipse__container">
 					<div class="customer__elipse"></div>
 					<div class="customer__elipse__active"></div>
@@ -309,7 +314,7 @@
 				</div>
 
 				<div>
-					<h2 class="customer__comment__city">Maria, Maine</h2>
+					<h2 class="customer__comment__city">Rose, Miami</h2>
 				</div>
 
 				<div>
@@ -318,9 +323,10 @@
 							<a href="#customer-comment-section1" class="slider__button__off"></a>
 						</li>
 						<li>
-							<a href="#customer-comment-section2">
+							<a href="#customer-comment-section1">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
 						</li>
 						<li>
@@ -332,7 +338,7 @@
 
 			<article id="customer-comment-section3" class="customer__reviews__section__slider">
 				<div>
-					<img class="customer__images__slider" src="images/testimonials3.png" alt="customer1" />
+					<img class="customer__images__slider" src="images/testimonials3.png" alt="customer3" />
 				</div>
 
 				<div class="customer__testimonial__container">
@@ -343,10 +349,9 @@
 					</div>
 
 					<p class="customer__coments">
-						Excepteur sint occaecat cupidatat non proident,
-						sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Excepteur sint occaecat cupidatat non proident,
-						sunt in culpa qui officia deserunt mollit anim id est laborum.
+						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+						ipsum primis in nibh vel risus.
 					</p>
 				</div>
 
@@ -357,10 +362,9 @@
 				</div>
 
 				<div>
-					<h2 class="customer__comment__city">Sherryl, Pensilvania</h2>
+					<h2 class="customer__comment__city">Sherry, Pensilvania</h2>
 				</div>
 
-				<div>
 					<ul class="slider__button">
 						<li>
 							<a href="#customer-comment-section1" class="slider__button__off"></a>
@@ -372,10 +376,10 @@
 							<a href="#customer-comment-section3">
 								<svg class="icon__house">
 									<use href="images/icons.svg#house"></use>
+								</svg>
 							</a>
 						</li>
 					</ul>
-				</div>
 			</article>
 		</div>
 	</section>
@@ -383,45 +387,62 @@
 	<section class="contacts">
 		<div class="conteiner--card">
 			<div class="card--contacts">
-				<h3 class="card--contacts__sale"> CAFE </h3>
-				<h3 class="card--contacts__locations"> Chicago </h3>
-				<p class="card--contacts__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<h3 class="card--contacts__schedule"> Monday - Friday </h3>
-				<p class="card--contacts__time"> 06:00 AM - 10:00 PM </p>
-				<h3 class="card--contacts__schedule"> Saturday - Sunday </h3>
-				<p class="card--contacts__time"> 08:00 AM - 16:00 PM </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<a class="card--contacts__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
-				<a class="card--contacts__mail" href="noreply@envato.com">noreply@envato.com</a>
+				<div class="card--contacts__category-container">
+					<h3 class="card--contacts__category-container__sale"> CAFE </h3>
+				</div>
+				<div class="card--contacts__content-container">
+					<h3 class="card--contacts__content-container__locations"> Chicago </h3>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+				</div>
+				<div class="card--contacts__calendar-container">
+					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
+					<p class="card--contacts__calendar-container__time"> 06:00 AM - 10:00 PM </p>
+					<h3 class="card--contacts__calendar-container__schedule"> Saturday - Sunday </h3>
+					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
+				</div>
+				<div class="card--contacts__address-container">
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
+				</div>
 			</div>
 			<div class="card--contacts">
-				<h3 class="card--contacts__salef"> FOOD TRUCK </h3>
-				<h3 class="card--contacts__locations"> Los Angeles </h3>
-				<p class="card--contacts__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<h3 class="card--contacts__schedule"> Monday - Friday </h3>
-				<p class="card--contacts__time"> 06:00 AM - 10:00 PM </p>
-				<h3 class="card--contacts__schedule"> Saturday - Sunday </h3>
-				<p class="card--contacts__time"> 08:00 AM - 16:00 PM </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<a class="card--contacts__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
-				<a class="card--contacts__mail" href="noreply@envato.com">noreply@envato.com</a>
+				<div class="card--contacts__category-container">
+					<h3 class="card--contacts__category-container__sale card--contacts__category-container__sale--green"> FOOD </h3>
+				</div>
+				<div class="card--contacts__content-container">
+					<h3 class="card--contacts__content-container__locations"> Los Angeles </h3>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+				</div>
+				<div class="card--contacts__calendar-container">
+					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
+					<p class="card--contacts__calendar-container__time"> 06:00 AM - 10:00 PM </p>
+					<h3 class="card--contacts__calendar-container__schedule"> Saturday - Sunday </h3>
+					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
+				</div>
+				<div class="card--contacts__address-container">
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
+				</div>
 			</div>
 
 			<div class="card--contacts">
-				<h3 class="card--contacts__sale"> CAFE </h3>
-				<h3 class="card--contacts__locations"> New York </h3>
-				<p class="card--contacts__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<h3 class="card--contacts__schedule"> Monday - Friday </h3>
-				<p class="card--contacts__time"> 06:00 AM - 10:00 PM </p>
-				<h3 class="card--contacts__schedule"> Saturday - Sunday </h3>
-				<p class="card--contacts__time"> 08:00 AM - 16:00 PM </p>
-				<img class="card--contacts__icon" src="./images/gallery-icon-1.jpg" alt="line">
-				<a class="card--contacts__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
-				<a class="card--contacts__mail" href="noreply@envato.com">noreply@envato.com</a>
-
+				<div class="card--contacts__category-container">
+					<h3 class="card--contacts__category-container__sale"> CAFE </h3>
+				</div>
+				<div class="card--contacts__content-container">
+					<h3 class="card--contacts__content-container__locations"> New York </h3>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+				</div>
+				<div class="card--contacts__calendar-container">
+					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
+					<p class="card--contacts__calendar-container__time"> 06:00 AM - 10:00 PM </p>
+					<h3 class="card--contacts__calendar-container__schedule"> Saturday - Sunday </h3>
+					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
+				</div>
+				<div class="card--contacts__address-container">
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
+				</div>
 			</div>
 		</div>
 		<div class="contacts__button-container">
@@ -468,5 +489,34 @@
             </div>
         </div>
     </footer>
+
+	<div class="modal modal--is-hidden" data-modal>
+		<div class="modal__close-container" data-modal-close >
+			<svg class="close-icon">
+				<use href="images/icons.svg#close-icon"></use>
+			</svg>
+		</div>
+		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
+		<div class="modal__content">
+			<ul class="modal__links">
+				<li class="modal__links__link modal__links__link--current">
+					<a href="" >Home</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" > About us</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >How it’s made?</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Our products</a>
+				</li>
+				<li class="modal__links__link">
+					<a href="" >Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/modal.js"></script>
 </body>
 </html>

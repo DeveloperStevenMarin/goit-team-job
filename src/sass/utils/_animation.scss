@@ -1,0 +1,161 @@
+
+@keyframes extend {
+    0% {
+      transform: scaleX(1);
+    }
+    33% {
+      transform: scaleX(2);
+    }
+    66% {
+      transform: scaleX(1.6);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes btn-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-90deg);
+    }
+  }
+  @keyframes contact-card-hover {
+    0% {
+      box-shadow: 0px 3px 10px $pink-light;
+    }
+  
+    25% {
+      box-shadow: 0px 5px 15px $pink-light;
+    }
+  
+    50% {
+      box-shadow: 0px 6px 20px $pink;
+    }
+  
+    75% {
+      box-shadow: 0px 7px 25px $pink;
+    }
+  
+    100% {
+      box-shadow: 0px 8px 30px $pink;
+    }
+  }
+  @keyframes gelatine {
+
+	from,
+	to {
+		transform: scale(1, 1);
+	}
+
+	25% {
+		transform: scale(0.9, 1.1);
+	}
+
+	50% {
+		transform: scale(1.1, 0.9);
+	}
+
+	75% {
+		transform: scale(0.95, 1.00);
+	}
+}
+
+@keyframes tasty-hover {
+    0% {
+      width: 360px;
+      height: 280px;
+    }
+    12% {
+      width: 365px;
+      height: 275px;
+    }
+    25% {
+      width: 370px;
+      height: 290px;
+    }
+    35% {
+      width: 375px;
+      height: 295px;
+    }
+    50% {
+      width: 380px;
+      height: 300px;
+    }
+    63% {
+      width: 375px;
+      height: 295px;
+    }
+    75% {
+      width: 370px;
+      height: 290px;
+    }
+    86% {
+      width: 365px;
+      height: 285px;
+    }
+    100% {
+      width: 360px;
+      height: 280px;
+    }
+  }
+  @keyframes extend {
+    0% {
+      transform: scaleX(1);
+    }
+    33% {
+      transform: scaleX(2);
+    }
+    66% {
+      transform: scaleX(1.6);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  @keyframes card-hover {
+    0% {
+      box-shadow: 2px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    }
+    25% {
+      box-shadow: 4px 1px 2px 0px rgba(0, 0, 0, 0.75);
+    }
+    50% {
+      box-shadow: 6px 2px 3px 0px rgba(0, 0, 0, 0.75);
+    }
+    75% {
+      box-shadow: 8px 3px 4px 0px rgba(0, 0, 0, 0.75);
+    }
+    100% {
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+  @keyframes flip {
+    0% {
+      transform: scaleX(-0.3);
+    }
+    25% {
+      transform: scaleX(-0.5);
+    }
+    50% {
+      transform: scaleX(-0.7);
+    }
+    75% {
+      transform: scaleX(-0.8);
+    }
+    100% {
+      transform: scaleX(-1);
+    }
+  }
