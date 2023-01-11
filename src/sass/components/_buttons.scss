@@ -150,6 +150,10 @@
       background-color: $hover-gray;
     }
   }
+  &--read-more{
+    background-color: $white;
+    color: $pink-dark;
+  }
 }
 
 @media screen and (max-width: 1097px) {

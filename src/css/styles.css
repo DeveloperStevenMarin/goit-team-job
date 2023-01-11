@@ -604,6 +604,10 @@ form {
 .button--close:hover {
   background-color: rgb(236, 235, 235);
 }
+.button--read-more {
+  background-color: #ffffff;
+  color: rgb(212, 20, 67);
+}
 
 @media screen and (max-width: 1097px) {
   .button--nav-white {
@@ -1769,8 +1773,9 @@ form {
 }
 .modal--form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+.modal--form-content {
   position: fixed;
   z-index: 2;
   background: rgb(255, 245, 246);
@@ -1778,10 +1783,9 @@ form {
   border-radius: 10px;
   top: 20%;
   width: 600px;
-  left: 35%;
   height: 495px;
 }
-.modal--form-icon {
+.modal--form-content-icon {
   fill: rgb(212, 20, 67);
   position: absolute;
   top: 65%;
@@ -1789,7 +1793,7 @@ form {
   height: 13px;
   width: 13px;
 }
-.modal--form-title {
+.modal--form-content-title {
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400px;
@@ -1801,40 +1805,40 @@ form {
   text-align: center;
   padding-top: 20px;
 }
-.modal--form .custom-input {
+.modal--form-content .custom-input {
   height: 60px;
   width: 450px;
   position: relative;
   margin: 4px 0px 10px 0px;
 }
-.modal--form .custom-input input {
+.modal--form-content .custom-input input {
   border: 1px;
   border-style: solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 6px;
-  width: 100%;
+  width: 450px;
   height: 40px;
   padding-left: 35px;
   font-family: "Roboto";
   font-weight: 700;
   margin: 6px 0px;
 }
-.modal--form .custom-input label {
+.modal--form-content .custom-input label {
   text-transform: capitalize;
   color: rgb(117, 117, 117);
   font-size: 12px;
   font-weight: 500;
 }
-.modal--form .custom-input input:focus {
+.modal--form-content .custom-input input:focus {
   outline: none;
   border-color: rgb(212, 20, 67);
 }
-.modal--form .custom-input input:focus + .icon--input-modal {
+.modal--form-content .custom-input input:focus + .icon--input-modal {
   height: 15px;
   width: 15px;
   fill: rgb(212, 20, 67);
 }
-.modal--form .custom-input--feedback {
+.modal--form-content .custom-input--feedback {
   height: 120px;
   width: 450px;
   display: flex;
@@ -1842,7 +1846,7 @@ form {
   align-items: flex-start;
   justify-content: flex-start;
 }
-.modal--form .custom-input--feedback textarea {
+.modal--form-content .custom-input--feedback textarea {
   padding: 8px;
   text-align: start;
   border: 1px;
@@ -1862,18 +1866,18 @@ form {
   justify-content: flex-start;
   resize: none;
 }
-.modal--form .custom-input--feedback textarea:focus {
+.modal--form-content .custom-input--feedback textarea:focus {
   outline: none;
   border-color: rgb(212, 20, 67);
 }
-.modal--form .custom-input--feedback textarea::placeholder {
+.modal--form-content .custom-input--feedback textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
 }
-.modal--form .terms-conditions-container {
+.modal--form-content .terms-conditions-container {
   width: 430px;
 }
-.modal--form .terms-conditions-container label {
+.modal--form-content .terms-conditions-container label {
   text-transform: none;
   font-weight: 400;
   font-size: 13px;
@@ -1944,6 +1948,44 @@ form {
   display: none;
 }
 
+@media screen and (max-width: 650px) {
+  .modal--form-content {
+    width: 90%;
+    height: 550px;
+  }
+  .modal--form-content-title {
+    font-size: 30px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 579px) {
+  .modal--form-content .custom-input {
+    width: 330px;
+  }
+  .modal--form-content .custom-input input {
+    width: 330px;
+  }
+  .modal--form-content .custom-input--feedback {
+    width: 330px;
+  }
+  .modal--form-content .custom-input--feedback textarea {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .modal--form-content .custom-input {
+    width: 250px;
+  }
+  .modal--form-content .custom-input input {
+    width: 250px;
+  }
+  .modal--form-content .custom-input--feedback {
+    width: 250px;
+  }
+  .modal--form-content .custom-input--feedback textarea {
+    width: 250px;
+  }
+}
 .products {
   padding: 60px 0px;
 }

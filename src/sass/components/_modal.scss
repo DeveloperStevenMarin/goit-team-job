@@ -71,127 +71,128 @@
   }
   &--form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    z-index: 2;
-    background: rgb(255, 245, 246);
-    background: radial-gradient(
-      circle,
-      rgba(255, 245, 246, 0.6) 0%,
-      rgba(255, 165, 216, 0.7) 72%,
-      rgba(255, 165, 216, 0.8) 92%,
-      rgba(255, 165, 216, 0.9) 100%
-    );
-    border-radius: 10px;
-    top: 20%;
-    width: 600px;
-    left: 35%;
-    height: 495px;
-    &-icon {
-      fill: $pink-dark;
-      position: absolute;
-      top: 65%;
-      left: 3%;
-      height: 13px;
-      width: 13px;
-    }
-    &-title {
-      font-family: "Titan One";
-      font-style: normal;
-      font-weight: 400px;
-      font-size: 38px;
-      line-height: 44px;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: $pink-dark;
-      text-align: center;
-      padding-top: 20px;
-    }
-    .custom-input {
-      height: 60px;
-      width: 450px;
-      position: relative;
-      margin: 4px 0px 10px 0px;
-
-      input {
-        border: 1px;
-        border-style: solid;
-        border-color: rgba(33, 33, 33, 0.2);
-        border-radius: 6px;
-        width: 100%;
-        height: 40px;
-        padding-left: 35px;
-        font-family: "Roboto";
-        font-weight: 700;
-        margin: 6px 0px;
+    justify-content: center;
+    &-content {
+      position: fixed;
+      z-index: 2;
+      background: rgb(255, 245, 246);
+      background: radial-gradient(
+        circle,
+        rgba(255, 245, 246, 0.6) 0%,
+        rgba(255, 165, 216, 0.7) 72%,
+        rgba(255, 165, 216, 0.8) 92%,
+        rgba(255, 165, 216, 0.9) 100%
+      );
+      border-radius: 10px;
+      top: 20%;
+      width: 600px;
+      height: 495px;
+      &-icon {
+        fill: $pink-dark;
+        position: absolute;
+        top: 65%;
+        left: 3%;
+        height: 13px;
+        width: 13px;
       }
-
-      label {
-        text-transform: capitalize;
-        color: rgba(117, 117, 117, 1);
-        font-size: 12px;
-        font-weight: 500;
+      &-title {
+        font-family: "Titan One";
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 38px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $pink-dark;
+        text-align: center;
+        padding-top: 20px;
       }
-      input:focus {
-        outline: none;
-        border-color: colors.$pink-dark;
-      }
-      input:focus + .icon--input-modal {
-        height: 15px;
-        width: 15px;
-        fill: colors.$pink-dark;
-      }
-      &--feedback {
-        height: 120px;
+      .custom-input {
+        height: 60px;
         width: 450px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
+        position: relative;
+        margin: 4px 0px 10px 0px;
 
-        textarea {
-          padding: 8px;
-          text-align: start;
+        input {
           border: 1px;
           border-style: solid;
           border-color: rgba(33, 33, 33, 0.2);
           border-radius: 6px;
-          width: 100%;
+          width: 450px;
           height: 40px;
+          padding-left: 35px;
           font-family: "Roboto";
           font-weight: 700;
           margin: 6px 0px;
+        }
+
+        label {
+          text-transform: capitalize;
+          color: rgba(117, 117, 117, 1);
+          font-size: 12px;
+          font-weight: 500;
+        }
+        input:focus {
+          outline: none;
+          border-color: colors.$pink-dark;
+        }
+        input:focus + .icon--input-modal {
+          height: 15px;
+          width: 15px;
+          fill: colors.$pink-dark;
+        }
+        &--feedback {
           height: 120px;
           width: 450px;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
           justify-content: flex-start;
-          resize: none;
+
+          textarea {
+            padding: 8px;
+            text-align: start;
+            border: 1px;
+            border-style: solid;
+            border-color: rgba(33, 33, 33, 0.2);
+            border-radius: 6px;
+            width: 100%;
+            height: 40px;
+            font-family: "Roboto";
+            font-weight: 700;
+            margin: 6px 0px;
+            height: 120px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            resize: none;
+          }
+          textarea:focus {
+            outline: none;
+            border-color: colors.$pink-dark;
+          }
+          textarea::placeholder {
+            color: rgba(117, 117, 117, 0.5);
+            font-weight: 400;
+          }
         }
-        textarea:focus {
-          outline: none;
-          border-color: colors.$pink-dark;
-        }
-        textarea::placeholder {
-          color: rgba(117, 117, 117, 0.5);
+      }
+
+      .terms-conditions-container {
+        width: 430px;
+
+        label {
+          text-transform: none;
           font-weight: 400;
+          font-size: 13px;
+          letter-spacing: 0.03em;
+          color: rgba(117, 117, 117, 1);
         }
       }
     }
 
-    .terms-conditions-container {
-      width: 430px;
-
-      label {
-        text-transform: none;
-        font-weight: 400;
-        font-size: 13px;
-        letter-spacing: 0.03em;
-        color: rgba(117, 117, 117, 1);
-      }
-    }
     &-is-hidden {
       visibility: hidden;
       opacity: 0;
@@ -219,7 +220,6 @@
       rgba(255, 164, 186, 1) 50%,
       rgba(255, 165, 220, 1) 90%,
       rgba(255, 245, 246, 0.1) 100%
-     
     );
     &-mapouter {
       h2 {
@@ -266,3 +266,47 @@
     }
   }
 }
+@media screen and (max-width: 650px) {
+  .modal--form-content {
+    width: 90%;
+    height: 550px;
+    &-title {
+      font-size: 30px;
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 579px) {
+  .modal--form-content {
+    .custom-input {
+      width: 330px;
+      & input {
+        width: 330px;
+      }
+      &--feedback{
+        width: 330px;
+        & textarea{
+          width: 330px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .modal--form-content {
+    .custom-input {
+      width: 250px;
+      & input {
+        width: 250px;
+      }
+      &--feedback{
+        width: 250px;
+        & textarea{
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+

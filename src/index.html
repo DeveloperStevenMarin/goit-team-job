@@ -190,7 +190,7 @@
 					euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
 					massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
 				</p>
-				<button class="button button--white" type="button">
+				<button class="button button--read-more" type="button">
 					Read more >
 				</button>
 			</div>
@@ -587,38 +587,40 @@
 	</div>
 
 	<div class="modal--form modal--form-is-hidden" modal-form>
-		<button class="button button--close" modal-form-close>X</button>
-		<h2 class="modal--form-title">We'll give you a call</h2>
-		<div class="modal--form-container">
-			<form name="modal--form-container__form" autocomplete="off">
-				<div class="custom-input">
-					<label for="user">Name</label>
-					<input id="user" type="text" name="User name">
-					<svg class="modal--form-icon">
-						<use href="images/icons.svg#user"></use>
-					</svg>
-				</div>
-				<div class="custom-input">
-					<label for="phone">Phone</label>
-					<input id="phone" type="tel" name="User phone">
-					<svg class="modal--form-icon">
-						<use href="images/icons.svg#phone-form"></use>
-					</svg>
-				</div>
-				<div class="custom-input">
-					<label for="email">E-mail</label>
-					<input id="email" type="email" name="User mail">
-					<svg class="modal--form-icon">
-						<use href="images/icons.svg#mail-form"></use>
-					</svg>
-				</div>
-				<div class="custom-input custom-input--feedback">
-					<label for="feedback">Order details</label>
-					<textarea name="feedback" id="feedback" cols="30" rows="10"
-						placeholder="Read and description"></textarea>
-				</div>
-				<button type="submit" class="button button--form-modal">Send</button>
-			</form>
+		<div class="modal--form-content">
+			<button class="button button--close" modal-form-close>X</button>
+			<h2 class="modal--form-content-title">We'll give you a call</h2>
+			<div class="modal--form-content-container">
+				<form name="modal--form-content-container__form" autocomplete="off">
+					<div class="custom-input">
+						<label for="user">Name</label>
+						<input id="user" type="text" name="User name">
+						<svg class="modal--form-content-icon">
+							<use href="images/icons.svg#user"></use>
+						</svg>
+					</div>
+					<div class="custom-input">
+						<label for="phone">Phone</label>
+						<input id="phone" type="tel" name="User phone">
+						<svg class="modal--form-content-icon">
+							<use href="images/icons.svg#phone-form"></use>
+						</svg>
+					</div>
+					<div class="custom-input">
+						<label for="email">E-mail</label>
+						<input id="email" type="email" name="User mail">
+						<svg class="modal--form-content-icon">
+							<use href="images/icons.svg#mail-form"></use>
+						</svg>
+					</div>
+					<div class="custom-input custom-input--feedback">
+						<label for="feedback">Order details</label>
+						<textarea name="feedback" id="feedback" cols="30" rows="10"
+							placeholder="Read and description"></textarea>
+					</div>
+					<button type="submit" class="button button--form-modal">Send</button>
+				</form>
+			</div>
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
