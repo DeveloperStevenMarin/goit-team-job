@@ -136,6 +136,20 @@
     width: 50px;
     z-index: 1;
   }
+  &--form-modal{
+    color: $pink-dark;
+  }
+  &--close{
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    color: $pink-dark;
+    &:hover {
+      background-color: $hover-gray;
+    }
+  }
 }
 
 @media screen and (max-width: 1097px) {
@@ -190,19 +204,3 @@
     }
   }
 }
-
-.button--close {
-  position: absolute;
-  top: 1%;
-  left: 90%;
-  width: 30px;
-  height: 30px;
-  color: $pink-dark;
-  &:hover {
-    background-color: $hover-gray;
-  }
-}
-
-  .button--contacts-white:hover {
-    background-color: $hover-button;
-  }

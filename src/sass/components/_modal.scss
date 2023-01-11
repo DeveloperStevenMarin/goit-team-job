@@ -201,6 +201,10 @@
   }
   &--map {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -217,43 +221,41 @@
       rgba(255, 245, 246, 0.6) 100%,
       rgba(255, 245, 246, 0.4) 100%
     );
+    &-mapouter{
+      h2{
+        margin: 20px 0px;
+        color: $white;
+        text-align: center;
+      }
+    }
     &-title {
+      margin-top: 25px;
       font-family: "Titan One";
       font-style: normal;
       font-weight: 400;
-      font-size: 38px;
-      line-height: 44px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: $white;
       text-align: center;
+      font-size: 25px;
+      letter-spacing: 3px;
+      color: $pink-dark;
     }
     &__container {
       display: flex;
-      position: relative;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 15px;
+      overflow: hidden;
     }
     & iframe {
       text-align: center;
       border-radius: 5%;
-      height: 400px;
-      width: 400px;
+      height: 250px;
+      width: 250px;
       border: none;
       opacity: 1;
-    }
-    & h2 {
-      font-family: "Titan One";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 21px;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: $white;
     }
     &-is-hidden {
       visibility: hidden;
@@ -262,42 +264,7 @@
       display: none;
     }
   }
-
-  /*.modal__input__group-name:hover .modal__input__form,
-  .modal__input__group-name:hover .icon-person {
-    fill: $pink-dark;
-    border-color: $pink-dark;
-    border-width: 2px;
-  }*/
-
-  /* .modal__input__form:focus+.icon-person,
-  .modal__input__form:hover+.icon-person {
-    fill: $pink-dark;
-  }
-  */
-
-  /*.modal__input__group-phone:hover .modal__input__form,
-  .modal__input__group-phone:hover .icon-old-phone {
-    fill: $pink-dark;
-    border-color: $pink-dark;
-    border-width: 2px;
-  }*/
-
-  /*.modal__input__form:focus+.icon-old-phone,
-  .modal__input__form:hover+.icon-old-phone {
-    fill: $pink-dark;
-  }*/
-
-  /*.modal__input__group-email:hover .modal__input__form,
-  .modal__input__group-email:hover .icon-black-envelope {
-    fill: $pink-dark;
-    border-color: $pink-dark;
-    border-width: 2px;
-  }
-  
-  
-  .modal__input__form:focus+.icon-black-envelope,
-  .modal__input__form:hover+.icon-black-envelope {
-    fill: $pink-dark;
-  }*/
 }
+  
+ 
+
