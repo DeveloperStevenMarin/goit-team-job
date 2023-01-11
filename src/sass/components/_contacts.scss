@@ -79,6 +79,12 @@
 		pointer-events: none;
 	}
 }
+@media screen and (max-width: 768px) {
+	.contacts__button-container {
+		height: 98px;
+	}
+}
+
 
 @media screen and (max-width: 580px) {
 
@@ -93,7 +99,6 @@
 		align-items: center;
 		justify-content: center;
 		width: 161.45px;
-		height: 98px;
 		gap: 10px;
 	}
 }

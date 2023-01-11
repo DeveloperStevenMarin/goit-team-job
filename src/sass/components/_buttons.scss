@@ -4,14 +4,11 @@
   width: 180px;
   height: 44px;
   border-radius: 22px;
-  background: colors.$white;
-  color: colors.$pink-dark;
   border: none;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: solid;
-
   &:hover {
     cursor: pointer;
   }
@@ -33,13 +30,16 @@
   }
 
   &--nav-white {
+    color:$pink-dark;
     &:hover {
       background-color: $pink-dark;
       color: $white;
     }
   }
 
-  &--modal {
+  &--modal{
+    color:$pink-dark;
+
     &:hover {
       background-color: $pink-dark;
       color: $white;
@@ -48,21 +48,32 @@
 
   &--header-white {
     width: 138px;
+    a{
+      color: $pink-dark;
+    }
+   
+    background-color: $white;
 
     &:hover {
       background-color: $pink-dark;
-      color: $white;
+      a{
+        color: $white;
+      }
     }
   }
 
   &--header-pink {
     background-color: $pink-dark;
-    color: $white;
+    a{
+      color: $white;
+    }
     width: 108px;
 
     &:hover {
       background-color: $white;
-      color: $pink-dark;
+      a{
+        color: $pink-dark;
+      }
     }
   }
 
@@ -121,17 +132,44 @@
   &--contacts-pink {
     background: colors.$pink-dark;
     color: colors.$white;
+    width: 161.45px;
   }
 
   &--contacts-white {
     background-color: $white;
     font-style: normal;
     font-weight: 700;
+    width: 161.45px;
     font-size: 16px;
+
+    color: $pink-dark;
 
     &:hover {
       background-color: $lightgrey;
     }
+  }
+  &--open-modal{
+    background-color: transparent;
+    width: 50px;
+    z-index: 1;
+  }
+  &--form-modal{
+    color: $pink-dark;
+  }
+  &--close{
+    position: absolute;
+    top: 1%;
+    left: 90%;
+    width: 30px;
+    height: 30px;
+    color: $pink-dark;
+    &:hover {
+      background-color: $hover-gray;
+    }
+  }
+  &--read-more{
+    background-color: $white;
+    color: $pink-dark;
   }
 }
 
@@ -144,6 +182,10 @@
     width: 65px;
     font-size: 10px;
     height: 28px;
+  }
+
+  .button--contacts-white{
+    height: 44px;
   }
 
   .button--header-white {
@@ -160,6 +202,7 @@
       height: 25px;
     }
   }
+  
 }
 
 @media screen and (max-width: 630px) {
@@ -184,28 +227,11 @@
   .button {
     &--contacts-white {
       width: 161.45px;
-      height: 44px;
     }
 
     &--contacts-pink {
       width: 161.45px;
-      height: 44px;
     }
   }
 }
 
-.button--close {
-  position: absolute;
-  top: 1%;
-  left: 90%;
-  width: 30px;
-  height: 30px;
-
-  &:hover {
-    background-color: $hover-gray;
-  }
-}
-
-.button--contacts-white:hover {
-  background-color: $hover-button;
-}

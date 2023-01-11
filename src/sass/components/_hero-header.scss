@@ -36,19 +36,28 @@
       display: flex;
       align-items: center;
       gap: 35px;
-
       font-weight: 700;
       font-size: 16px;
       line-height: 21px;
       color: color.$white;
       z-index: 1;
-
-      li {
+      &-section{
+        a{
+          color: $white;
+        }
+        &--current{
+          a{
+            color: color.$pink-dark;
+          }
+          
+        }
         &:hover {
           cursor: pointer;
-          color: color.$pink-dark;
+          a{
+            color: color.$pink-dark;
+          }
+         
         }
-
       }
     }
 
@@ -298,7 +307,6 @@
       &__sections {
         display: none;
       }
-
       &__right__menu-burguer {
         visibility: visible;
       }
@@ -323,19 +331,16 @@
       }
     }
   }
-
 }
 
 @media screen and (max-width: 768px) {
   .hero-header {
     height: 520px;
-
     &__nav {
       &__brand {
         z-index: 2;
       }
     }
-
     &__jarContainer {
       padding: 0px;
     }
@@ -395,7 +400,6 @@
 @media screen and (max-width: 630px) {
   .hero-header {
     overflow: hidden;
-
     &__title {
       font-size: 40px;
     }
@@ -408,7 +412,6 @@
         top: 37%;
         right: -17%;
       }
-
       &-circle {
         top: 32%;
         left: 65%;
@@ -418,7 +421,6 @@
     &__branches {
       display: none;
     }
-
     &__iceCreamGirl {
       display: none;
     }
