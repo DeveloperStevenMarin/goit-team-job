@@ -75,13 +75,20 @@ a:hover {
     transform: scale(1, 1);
   }
   25% {
-    transform: scale(0.9, 1.1);
+    transform: scale(1.03, 1.1);
+    transform: rotate(5deg);
+  }
+  40% {
+    transform: scale(1.3, 1.1);
+    transform: rotate(-5deg);
   }
   50% {
-    transform: scale(1.1, 0.9);
+    transform: scale(1.1, 1.1);
+    transform: rotate(5deg);
   }
   75% {
     transform: scale(0.95, 1);
+    transform: rotate(-5deg);
   }
 }
 @keyframes tasty-hover {
@@ -679,6 +686,28 @@ a:hover {
     justify-content: center;
   }
 }
+@media screen and (max-width: 580px) {
+  .conteiner--card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts__button-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 161.45px;
+    height: 98px;
+    gap: 10px;
+  }
+  .button {
+    width: 161.45px;
+    height: 44px;
+  }
+  .button--white:hover {
+    background-color: rgb(235, 234, 234);
+  }
+}
 .customer__reviews__section {
   align-items: center;
   max-width: 1200px;
@@ -845,6 +874,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 480px) {
+  .customer__reviews__section {
+    margin-top: 150px;
+  }
   .customer__coments {
     font-size: 12px;
   }
@@ -868,6 +900,7 @@ a:hover {
 }
 .footer__slogan {
   text-transform: uppercase;
+  width: 650px;
 }
 .footer__slogan--small-title {
   color: rgb(255, 165, 186);
@@ -875,7 +908,6 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.04em;
   font-family: "Titan One", cursive;
-  padding-bottom: 15px;
   transition: transform 500ms ease-in-out;
 }
 .footer__slogan--small-title span {
