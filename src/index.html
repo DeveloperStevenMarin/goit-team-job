@@ -2,9 +2,11 @@
 <html lang="es">
 
 <head>
+
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title>IceCream</title>
 
 	<link rel="icon" type="image/png" sizes="32x32" href="../src/images/logo.png">
@@ -34,34 +36,39 @@
 				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
-				<button class="hero-header__nav__right__buyButton" type="button" modal-form-open>Buy now <svg
-						height="10" width="6" fill="none">
+				<button class="button button--nav-white" type="button" modal-form-open>Buy now <svg height="10" width="6"
+						fill="none">
 						<use href="./images/icons.svg#mayorSymbol"></use>
 					</svg> </button>
 			</div>
 		</nav>
-		<h2 class="hero-header__title">
+		<h1 class="hero-header__title">
 			ice cream made with <span class="hero-header__title__passion">passion</span>
-		</h2>
-		<div class="hero-header__titleButtons">
-			<button class="hero-header__titleButtons__pink button-shape" type="button"><a href="#products">Products</a>
-			</button>
-			<button class="hero-header__titleButtons__white button-shape" type="button"><a href="#about">How it's
+		</h1>
+		<div class="hero-header__button-container">
+			<button class="button button--header-pink" type="button"><a href="#products">Products</a></button>
+			<button class="button button--header-white" type="button"><a href="#about">How it's
 					made?</a></button>
 		</div>
 		<div class="hero-header__container">
-			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png">
+
+			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png" alt="iceCream">
 			<div class="hero-header__container__circle"></div>
+
 		</div>
 		<div class="hero-header__jarContainer">
-			<img src="./images/PNG/milk-jar.png">
+			<img src="./images/PNG/milk-jar.png" alt="jar-milk-splash">
 			<div class="hero-header__jarContainer__text">
 				<p>
 					Lorem ipsum, dolor sit amet consectetur
 					adipisicing elit. Voluptatibus, odio
 					dignissimos quo fugiat sit est necessitatibus!
 				</p>
-				<a href="#"><img src="./images/PNG/arrow-right.png"></a>
+				<div class="button button--jar">
+					<svg>
+						<use href="./images/icons.svg#products-arrow"></use>
+					</svg>
+				</div>
 			</div>
 		</div>
 		<div class="hero-header__iceCreamGirl">
@@ -185,6 +192,7 @@
 		</div>
 	</section>
 	<section id="howitsmade" class="advantages">
+		<h2 class="advantages__benefitsTittle">Advantages and benefits</h2>
 		<div class="advantages__container">
 			<svg class="advantages__icon" width="50" height="50">
 				<use href="./images/icons.svg#glass"></use>
@@ -211,68 +219,59 @@
 	<section class="gallery">
 		<div class="gallery__container">
 			<div class="container-images">
-				<img src="images/gallery-image-1.jpg" alt="Imágen de la galería" class="container-images__image">
+				<img src="images/gallery-image-1.jpg" alt="face-image" class="container-images__image" />
 			</div>
 			<div class="container-images">
-				<img src="images/gallery-image-2.jpg" alt="Imágen de la galería" class="container-images__image">
-				<img src="images/gallery-image-3.jpg" alt="Imágen de la galería" class="container-images__image">
-			</div>
-
-			<div class="container-images">
-				<img src="images/gallery-image-4.jpg" alt="Imágen de la galería" class="container-images__image">
-				<img src="images/gallery-image-5.jpg" alt="Imágen de la galería" class="container-images__image">
+				<img src="images/gallery-image-2.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-3.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-6.jpg" alt="Imágen de la galería" class="container-images__image">
-				<img src="images/gallery-image-7.jpg" alt="Imágen de la galería" class="container-images__image">
+				<img src="images/gallery-image-4.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-5.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-8.jpg" alt="Imágen de la galería" class="container-images__image">
-				<img src="images/gallery-image-9.jpg" alt="Imágen de la galería" class="container-images__image">
+				<img src="images/gallery-image-6.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-7.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-10.jpg" alt="Imágen de la galería" class="container-images__image">
+				<img src="images/gallery-image-8.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-9.jpg" alt="face-image" class="container-images__image" />
+			</div>
+
+			<div class="container-images">
+				<img src="images/gallery-image-10.jpg" alt="face-image" class="container-images__image" />
 			</div>
 		</div>
 	</section>
-
 	<section class="customer__reviews__section">
-
 		<div class="customer__reviews__section__container">
-
 			<article id="customer-comment-section1" class="customer__reviews__section__slider">
-
 				<div>
 					<img class="customer__images__slider" src="images/testimonials1.png" alt="customer1">
 				</div>
-
 				<div class="customer__testimonial__container">
 					<div class="customer__icon__container">
 						<svg class="icon__quotation">
 							<use href="images/icons.svg#quotes"></use>
 						</svg>
 					</div>
-
 					<p class="customer__coments">
 						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
 						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
 						ipsum primis in nibh vel risus.
 					</p>
 				</div>
-
 				<div class="customer__elipse__container">
 					<div class="customer__elipse__active"></div>
 					<div class="customer__elipse"></div>
 					<div class="customer__elipse"></div>
 				</div>
-
 				<div>
 					<h2 class="customer__comment__city">Emily, Los Angeles</h2>
 				</div>
-
 				<div>
 					<ul class="slider__button">
 						<li>
@@ -459,12 +458,10 @@
 			</div>
 		</div>
 		<div class="contacts__button-container">
-			<button id="map" class="button button--pink" type="button" modal-map-open>
+			<button class="button button--contacts-pink" type="button" modal-map-open>
 				<span> Our Locations > </span>
-			</button>
-			<button class="button button--white" type="button">
-				<span> Franchise > </span>
-			</button>
+				<button class="button button--contacts-white" type="button">
+					<span> Franchise > </span>
 		</div>
 	</section>
 	<footer class="footer">
@@ -559,8 +556,7 @@
 				<use href="images/icons.svg#close-icon"></use>
 			</svg>
 		</div>
-		<button class="hero-header__nav__right__buyButton" type="button" openformModalBtn>Buy now <svg height="10"
-				width="6" fill="none">
+		<button class="button button--modal" type="button" modal-form-open >Buy now <svg height="10" width="6" fill="none">
 				<use href="./images/icons.svg#mayorSymbol"></use>
 			</svg> </button>
 		<div class="modal--menu__content">
