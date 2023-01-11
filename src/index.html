@@ -26,11 +26,13 @@
 				<h2 class="hero-header__nav__brand__text">icecream</h2>
 			</div>
 			<ul class="hero-header__nav__sections">
-				<li class="hero-header__nav__sections-section hero-header__nav__sections-section--current"> <a data-href="#home">Home</li>
-				<li class="hero-header__nav__sections-section"> <a href="#about">About us</li>
-				<li class="hero-header__nav__sections-section"> <a href="#howitsmade">How it's made?</li>
-				<li class="hero-header__nav__sections-section"> <a href="#products">Our products</li>
-				<li class="hero-header__nav__sections-section"> <a href="#contacts">Contact</li>
+				<li class="hero-header__nav__sections-section hero-header__nav__sections-section--current">
+					<a href="#home">Home</a>
+				</li>
+				<li class="hero-header__nav__sections-section"> <a href="#about" samesite="Lax">About us</a></li>
+				<li class="hero-header__nav__sections-section"> <a href="#howitsmade">How it's made?</a></li>
+				<li class="hero-header__nav__sections-section"> <a href="#products">Our products</a></li>
+				<li class="hero-header__nav__sections-section"> <a href="#contacts">Contact<a /></li>
 			</ul>
 			<div class="hero-header__nav__right">
 				<button class="button button--open-modal" modal-menu-open>
@@ -38,8 +40,8 @@
 						<use href="./images/icons.svg#menu-burguer"></use>
 					</svg>
 				</button>
-				<button class="button button--nav-white" type="button" modal-form-open>Buy now <svg height="10" width="6"
-						fill="none">
+				<button class="button button--nav-white" type="button" modal-form-open>Buy now <svg height="10"
+						width="6" fill="none">
 						<use href="./images/icons.svg#mayorSymbol"></use>
 					</svg>
 				</button>
@@ -559,7 +561,8 @@
 				<use href="images/icons.svg#close-icon"></use>
 			</svg>
 		</div>
-		<button class="button button--modal" type="button" modal-form-open >Buy now <svg height="10" width="6" fill="none">
+		<button class="button button--modal" type="button" modal-form-open>Buy now <svg height="10" width="6"
+				fill="none">
 				<use href="./images/icons.svg#mayorSymbol"></use>
 			</svg> </button>
 		<div class="modal--menu__content">
@@ -592,27 +595,28 @@
 					<label for="user">Name</label>
 					<input id="user" type="text" name="User name">
 					<svg class="modal--form-icon">
-					  <use href="images/icons.svg#user"></use>
+						<use href="images/icons.svg#user"></use>
 					</svg>
-				  </div>
-				  <div class="custom-input">
+				</div>
+				<div class="custom-input">
 					<label for="phone">Phone</label>
 					<input id="phone" type="tel" name="User phone">
 					<svg class="modal--form-icon">
-					  <use href="images/icons.svg#phone-form"></use>
+						<use href="images/icons.svg#phone-form"></use>
 					</svg>
-				  </div>
-				  <div class="custom-input">
+				</div>
+				<div class="custom-input">
 					<label for="email">E-mail</label>
 					<input id="email" type="email" name="User mail">
 					<svg class="modal--form-icon">
-					  <use href="images/icons.svg#mail-form"></use>
+						<use href="images/icons.svg#mail-form"></use>
 					</svg>
-				  </div>
-				  <div class="custom-input custom-input--feedback">
+				</div>
+				<div class="custom-input custom-input--feedback">
 					<label for="feedback">Order details</label>
-					<textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Read and description"></textarea>
-				  </div>
+					<textarea name="feedback" id="feedback" cols="30" rows="10"
+						placeholder="Read and description"></textarea>
+				</div>
 				<button type="submit" class="button button--send">Send</button>
 			</form>
 		</div>
