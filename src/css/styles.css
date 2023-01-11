@@ -338,6 +338,9 @@ a:hover {
   background: rgb(255, 245, 246);
   padding-left: 23px;
 }
+.advantages__benefitsTittle {
+  display: none;
+}
 .advantages__container:hover .advantages__icon {
   animation-name: spin-animation;
   animation-duration: 1000ms;
@@ -900,7 +903,6 @@ a:hover {
 }
 .footer__slogan {
   text-transform: uppercase;
-  width: 650px;
 }
 .footer__slogan--small-title {
   color: rgb(255, 165, 186);
@@ -908,6 +910,7 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.04em;
   font-family: "Titan One", cursive;
+  padding-bottom: 15px;
   transition: transform 500ms ease-in-out;
 }
 .footer__slogan--small-title span {
