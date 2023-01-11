@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-	<link rel="" href="./images/icons.svg" />
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title>IceCream</title>
 
 	<link rel="icon" type="image/png" sizes="32x32" href="../src/images/logo.png">
+	<link rel="googlemaps" href="https://maps.google.com/maps?q=new%20york&t=&z=15&ie=UTF8&iwloc=&output=embed">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	
-	<header class="hero-header">
+
+	<header id="home" class="hero-header">
 		<nav class="hero-header__nav">
 			<div class="hero-header__nav__brand">
 				<svg class="hero-header__nav__brand__icon" width="49" height="50">
@@ -30,39 +26,49 @@
 				<h2 class="hero-header__nav__brand__text">icecream</h2>
 			</div>
 			<ul class="hero-header__nav__sections">
-				<li href="#">Home</li>
-				<li href="#">About us</li>
-				<li href="#">How it's made?</li>
-				<li href="#">Our products</li>
-				<li href="#">Contact</li>
+				<li> <a data-href="#home">Home</li>
+				<li> <a href="#about">About us</li>
+				<li> <a href="#howitsmade">How it's made?</li>
+				<li> <a href="#products">Our products</li>
+				<li> <a href="#contacts">Contact</li>
 			</ul>
-			<div class="hero-header__nav__right" data-modal-open>
-				<svg class="hero-header__nav__right__menu-burguer"  width="20" height="16">
+			<div class="hero-header__nav__right" modal-menu-open>
+				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
-				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
+				<button class="button button--nav-white" type="button" modal-form-open>Buy now <svg height="10" width="6"
+						fill="none">
+						<use href="./images/icons.svg#mayorSymbol"></use>
+					</svg> </button>
 			</div>
-		</nav> 
-		<h2 class="hero-header__title">
+		</nav>
+		<h1 class="hero-header__title">
 			ice cream made with <span class="hero-header__title__passion">passion</span>
-		</h2>
-		<div class="hero-header__titleButtons">
-			<button class="hero-header__titleButtons__pink button-shape" type="button">Products</button>
-			<button class="hero-header__titleButtons__white button-shape"type="button">How it's made?</button>
+		</h1>
+		<div class="hero-header__button-container">
+			<button class="button button--header-pink" type="button"><a href="#products">Products</a></button>
+			<button class="button button--header-white" type="button"><a href="#about">How it's
+					made?</a></button>
 		</div>
 		<div class="hero-header__container">
-			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png">
+
+			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png" alt="iceCream">
 			<div class="hero-header__container__circle"></div>
+
 		</div>
 		<div class="hero-header__jarContainer">
-			<img src="./images/PNG/milk-jar.png">
+			<img src="./images/PNG/milk-jar.png" alt="jar-milk-splash">
 			<div class="hero-header__jarContainer__text">
 				<p>
 					Lorem ipsum, dolor sit amet consectetur
 					adipisicing elit. Voluptatibus, odio
 					dignissimos quo fugiat sit est necessitatibus!
 				</p>
-				<a href="#"><img src="./images/PNG/arrow-right.png"></a>
+				<div class="button button--jar">
+					<svg>
+						<use href="./images/icons.svg#products-arrow"></use>
+					</svg>
+				</div>
 			</div>
 		</div>
 		<div class="hero-header__iceCreamGirl">
@@ -71,23 +77,23 @@
 			</a>
 		</div>
 		<div class="hero-header__branches">
-				<div class="hero-header__branches__container">
-					<div class="hero-header__branches__container__text">
-						<h2>16</h2>
-						<p>cafes</p>
-					</div>
-					<div class="hero-header__branches__container__circle"></div>
+			<div class="hero-header__branches__container">
+				<div class="hero-header__branches__container__text">
+					<h2>16</h2>
+					<p>cafes</p>
 				</div>
-				<div class="hero-header__branches__container">
-					<div class="hero-header__branches__container__text">
-						<h2>23</h2>
-						<p>food trucks</p>
-					</div>
-					<div class="hero-header__branches__container__circle"></div>
+				<div class="hero-header__branches__container__circle"></div>
+			</div>
+			<div class="hero-header__branches__container">
+				<div class="hero-header__branches__container__text">
+					<h2>23</h2>
+					<p>food trucks</p>
 				</div>
+				<div class="hero-header__branches__container__circle"></div>
+			</div>
 		</div>
 	</header>
-	<section class="products">
+	<section id="products" class="products">
 		<ul class="products__title">
 			<li>
 				<p class="products__title--1">100% natural</p>
@@ -98,22 +104,23 @@
 		</ul>
 		<ul class="products__boxes-container">
 			<li class="products__boxes products__boxes--box1">
-						<div class="products__boxes-img products__boxes-img--1">
-							<img src="../src/images/products1.png" alt="Some icecream image">
-						</div>
-						<div class="products__boxes__box-content products__boxes__box-content--1">
-							<p class="products__boxes__box-content-title">
-								ICE CREAM
-							</p>
-							<p class="products__boxes__box-content-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-							</p>
-							<div class="button button--products">
-								<svg width="40" height="40">
-									<use href="./images/icons.svg#products-arrow"></use>
-								</svg>
-							</div>
-						</div>
+				<div class="products__boxes-img products__boxes-img--1">
+					<img src="../src/images/products1.png" alt="Some icecream image">
+				</div>
+				<div class="products__boxes__box-content products__boxes__box-content--1">
+					<p class="products__boxes__box-content-title">
+						ICE CREAM
+					</p>
+					<p class="products__boxes__box-content-text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et.
+					</p>
+					<div class="button button--products">
+						<svg width="40" height="40">
+							<use href="./images/icons.svg#products-arrow"></use>
+						</svg>
+					</div>
+				</div>
 			</li>
 			<li class="products__boxes products__boxes--box2">
 				<div class="products__boxes-img products__boxes-img--2">
@@ -124,7 +131,8 @@
 						ICE COFFEE
 					</p>
 					<p class="products__boxes__box-content-text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et.
 					</p>
 					<div class="button button--products">
 						<svg width="40" height="40">
@@ -142,7 +150,8 @@
 						MILKSHAKES
 					</p>
 					<p class="products__boxes__box-content-text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et.
 					</p>
 					<div class="button button--products">
 						<svg width="40" height="40">
@@ -151,17 +160,18 @@
 					</div>
 				</div>
 			</li>
+		</ul>
 	</section>
 
- 
-	<section class="about">
+
+	<section id="about" class="about">
 		<div class="about__container-title">
 			<h3>tradition and love</h3>
 			<h2>how it's made?</h2>
 		</div>
 		<div class="about__container">
 			<div class="about__image">
-				<img src="./images/about-image.png" alt="Milk glass" />
+				<img src="./images/about-image.png" alt="Milk glass">
 			</div>
 			<div class="about__text">
 				<p class="about__text--1">
@@ -181,7 +191,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="advantages">
+	<section id="howitsmade" class="advantages">
+		<h2 class="advantages__benefitsTittle">Advantages and benefits</h2>
 		<div class="advantages__container">
 			<svg class="advantages__icon" width="50" height="50">
 				<use href="./images/icons.svg#glass"></use>
@@ -203,72 +214,64 @@
 			<h2>84</h2>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 		</div>
+
 	</section>
 	<section class="gallery">
 		<div class="gallery__container">
 			<div class="container-images">
-				<img src="images/gallery-image-1.jpg" alt="Imágen de la galería" class="container-images__image" />
+				<img src="images/gallery-image-1.jpg" alt="face-image" class="container-images__image" />
 			</div>
 			<div class="container-images">
-				<img src="images/gallery-image-2.jpg" alt="Imágen de la galería" class="container-images__image" />
-				<img src="images/gallery-image-3.jpg" alt="Imágen de la galería" class="container-images__image" />
-			</div>
-
-			<div class="container-images">
-				<img src="images/gallery-image-4.jpg" alt="Imágen de la galería" class="container-images__image" />
-				<img src="images/gallery-image-5.jpg" alt="Imágen de la galería" class="container-images__image" />
+				<img src="images/gallery-image-2.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-3.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-6.jpg" alt="Imágen de la galería" class="container-images__image" />
-				<img src="images/gallery-image-7.jpg" alt="Imágen de la galería" class="container-images__image" />
+				<img src="images/gallery-image-4.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-5.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-8.jpg" alt="Imágen de la galería" class="container-images__image" />
-				<img src="images/gallery-image-9.jpg" alt="Imágen de la galería" class="container-images__image" />
+				<img src="images/gallery-image-6.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-7.jpg" alt="face-image" class="container-images__image" />
 			</div>
 
 			<div class="container-images">
-				<img src="images/gallery-image-10.jpg" alt="Imágen de la galería" class="container-images__image" />
+				<img src="images/gallery-image-8.jpg" alt="face-image" class="container-images__image" />
+				<img src="images/gallery-image-9.jpg" alt="face-image" class="container-images__image" />
+			</div>
+
+			<div class="container-images">
+				<img src="images/gallery-image-10.jpg" alt="face-image" class="container-images__image" />
 			</div>
 		</div>
 	</section>
-
 	<section class="customer__reviews__section">
-
 		<div class="customer__reviews__section__container">
-
 			<article id="customer-comment-section1" class="customer__reviews__section__slider">
-
 				<div>
-					<img class="customer__images__slider" src="images/testimonials1.png" alt="customer1" />
+					<img class="customer__images__slider" src="images/testimonials1.png" alt="customer1">
 				</div>
-
 				<div class="customer__testimonial__container">
 					<div class="customer__icon__container">
 						<svg class="icon__quotation">
 							<use href="images/icons.svg#quotes"></use>
 						</svg>
 					</div>
-
 					<p class="customer__coments">
 						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
 						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
 						ipsum primis in nibh vel risus.
 					</p>
 				</div>
-
 				<div class="customer__elipse__container">
 					<div class="customer__elipse__active"></div>
 					<div class="customer__elipse"></div>
 					<div class="customer__elipse"></div>
 				</div>
-
 				<div>
 					<h2 class="customer__comment__city">Emily, Los Angeles</h2>
 				</div>
-
 				<div>
 					<ul class="slider__button">
 						<li>
@@ -290,7 +293,7 @@
 
 			<article id="customer-comment-section2" class="customer__reviews__section__slider">
 				<div>
-					<img class="customer__images__slider" src="images/testimonials2.png" alt="customer2" />
+					<img class="customer__images__slider" src="images/testimonials2.png" alt="customer2">
 				</div>
 
 				<div class="customer__testimonial__container">
@@ -309,7 +312,7 @@
 
 				<div class="customer__elipse__container">
 					<div class="customer__elipse"></div>
-					<div class="customer__elipse__active"></div>
+					<div class="customer__elipse"></div>
 					<div class="customer__elipse"></div>
 				</div>
 
@@ -338,7 +341,7 @@
 
 			<article id="customer-comment-section3" class="customer__reviews__section__slider">
 				<div>
-					<img class="customer__images__slider" src="images/testimonials3.png" alt="customer3" />
+					<img class="customer__images__slider" src="images/testimonials3.png" alt="customer3">
 				</div>
 
 				<div class="customer__testimonial__container">
@@ -349,7 +352,7 @@
 					</div>
 
 					<p class="customer__coments">
-						Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+						3rd comment Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
 						Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
 						ipsum primis in nibh vel risus.
 					</p>
@@ -358,41 +361,43 @@
 				<div class="customer__elipse__container">
 					<div class="customer__elipse"></div>
 					<div class="customer__elipse"></div>
-					<div class="customer__elipse__active"></div>
+					<div class="customer__elipse"></div>
 				</div>
 
 				<div>
 					<h2 class="customer__comment__city">Sherry, Pensilvania</h2>
 				</div>
 
-					<ul class="slider__button">
-						<li>
-							<a href="#customer-comment-section1" class="slider__button__off"></a>
-						</li>
-						<li>
-							<a href="#customer-comment-section2" class="slider__button__off"></a>
-						</li>
-						<li>
-							<a href="#customer-comment-section3">
-								<svg class="icon__house">
-									<use href="images/icons.svg#house"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
+				<ul class="slider__button">
+					<li>
+						<a href="#customer-comment-section1" class="slider__button__off"></a>
+					</li>
+					<li>
+						<a href="#customer-comment-section2" class="slider__button__off"></a>
+					</li>
+					<li>
+						<a href="#customer-comment-section3">
+							<svg class="icon__house">
+								<use href="images/icons.svg#house"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</article>
 		</div>
 	</section>
 
-	<section class="contacts">
+	<section id="contacts" class="contacts">
 		<div class="conteiner--card">
+			<h1 class="contact_tittle" alt="icecream contact"></h1>
 			<div class="card--contacts">
 				<div class="card--contacts__category-container">
 					<h3 class="card--contacts__category-container__sale"> CAFE </h3>
 				</div>
 				<div class="card--contacts__content-container">
 					<h3 class="card--contacts__content-container__locations"> Chicago </h3>
-					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu
+						molestie vulputate </p>
 				</div>
 				<div class="card--contacts__calendar-container">
 					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
@@ -401,17 +406,21 @@
 					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
 				</div>
 				<div class="card--contacts__address-container">
-					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766
+						284</a>
 					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
 				</div>
 			</div>
 			<div class="card--contacts">
 				<div class="card--contacts__category-container">
-					<h3 class="card--contacts__category-container__sale card--contacts__category-container__sale--green"> FOOD </h3>
+					<h3
+						class="card--contacts__category-container__sale card--contacts__category-container__sale--green">
+						FOOD TRUCK </h3>
 				</div>
 				<div class="card--contacts__content-container">
 					<h3 class="card--contacts__content-container__locations"> Los Angeles </h3>
-					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu
+						molestie vulputate </p>
 				</div>
 				<div class="card--contacts__calendar-container">
 					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
@@ -420,7 +429,8 @@
 					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
 				</div>
 				<div class="card--contacts__address-container">
-					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383766284">+61(0)38 376 62
+						84</a>
 					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
 				</div>
 			</div>
@@ -431,7 +441,8 @@
 				</div>
 				<div class="card--contacts__content-container">
 					<h3 class="card--contacts__content-container__locations"> New York </h3>
-					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu molestie vulputate </p>
+					<p class="card--contacts__content-container__promise"> Fusce ut velit laoreet, tempus arcu
+						molestie vulputate </p>
 				</div>
 				<div class="card--contacts__calendar-container">
 					<h3 class="card--contacts__calendar-container__schedule"> Monday - Friday </h3>
@@ -440,83 +451,182 @@
 					<p class="card--contacts__calendar-container__time"> 08:00 AM - 16:00 PM </p>
 				</div>
 				<div class="card--contacts__address-container">
-					<a class="card--contacts__address-container__phone" href="tel:+61(0)383 766 284">+61(0)383 766 284</a>
+					<a class="card--contacts__address-container__phone" href="tel:+61(0)383766284">+61(0)38 376 62
+						84</a>
 					<a class="card--contacts__address-container__mail" href="noreply@envato.com">noreply@envato.com</a>
 				</div>
 			</div>
 		</div>
 		<div class="contacts__button-container">
-			<button class="button button--pink" type="button">
+			<button class="button button--contacts-pink" type="button" modal-map-open>
 				<span> Our Locations > </span>
-				<button class="button button--white" type="button">
+				<button class="button button--contacts-white" type="button">
 					<span> Franchise > </span>
 		</div>
 	</section>
-	 <footer class="footer">
-        <div class="container__footer">
-            <div class="footer__slogan-social">
-             <div class="footer__slogan">
-                <h3 class="footer__slogan--small-title">Homemade ice cream  <span>made</span></h3>
-                <div class="footer__slogan--big-title"><h2 class="footer__slogan--with"><span>W</span><span>i</span><span>t</span><span>h</span></h2>
-                  <h2 class="footer__slogan--passion"><span>p</span><span>a</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span></h2></div>
-             </div>
-        <div class="footer__social">
-             <ul class="footer__social--icons">
-                <li class="footer__social--icon"><a href="#" target="_blank">
-                    <svg>
-                            <use href="images/icons.svg#github"></use>
-                        </svg>  
-                    </a></li>
-                <li class="footer__social--icon"><a href="#" target="_blank">
-                    <svg>
-                            <use href="images/icons.svg#telegram"></use>
-                        </svg>
-                    </a></li>
-                <li class="footer__social--icon"><a href="#" target="_blank">
-                    <svg>
-                            <use href="images/icons.svg#facebook"></use>
-                        </svg>
-                    </a></li>
-             </ul>
-             <p class="footer__social--contact">
-                Feel free to contact <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
-             </p>   
-        </div>
-            </div>
+	<footer class="footer">
+		<div class="container__footer">
+			<div class="footer__slogan-social">
+				<div class="footer__slogan">
+					<h3 class="footer__slogan--small-title">Homemade ice cream <span>made</span></h3>
+					<div class="footer__slogan--big-title">
+						<h2 class="footer__slogan--with"><span>W</span><span>i</span><span>t</span><span>h</span>
+						</h2>
+						<h2 class="footer__slogan--passion">
+							<span>p</span><span>a</span><span>s</span><span>s</span><span>i</span><span>o</span><span>n</span>
+						</h2>
+					</div>
+				</div>
+				<div class="footer__social">
+					<ul class="footer__social--icons">
+						<li class="footer__social--icon"><a href="https://github.com/" target="_blank">
+								<svg>
+									<use href="images/icons.svg#github"></use>
+								</svg>
+							</a></li>
+						<li class="footer__social--icon"><a href="https://web.telegram.org/" target="_blank">
+								<svg>
+									<use href="images/icons.svg#telegram"></use>
+								</svg>
+							</a></li>
+						<li class="footer__social--icon"><a href="https://es-la.facebook.com/" target="_blank">
+								<svg>
+									<use href="images/icons.svg#facebook"></use>
+								</svg>
+							</a></li>
+					</ul>
+					<p class="footer__social--contact">
+						Feel free to contact <a href="tel:+61(0)383766284">+61 (0) 383 766 284</a>
+					</p>
+				</div>
+			</div>
 
-            <div class="footer__copyright">
-                <p>&copy 2022 -IceCream. <br> All rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+			<button class="footer__home">
+				<a href="#home">
+					<svg class="footer__home__return">
+						<use href="images/icons.svg#products-arrow"></use>
+					</svg>
+				</a>
+			</button>
+			<div class="footer__copyright">
+				<p>&copy 2022 -IceCream. <br> All rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
 
-	<div class="modal modal--is-hidden" data-modal>
-		<div class="modal__close-container" data-modal-close >
+	<div style="overflow-x: scroll;" class="modal--map modal--map-is-hidden" modal-map>
+		<button class="button button--close" modal-map-close>X</button>
+		<h2 class="modal-tittle">Our Locations</h2>
+		<div class="map__container">
+			<div class="modal-chicago">
+				<div class="mapouter">
+					<h2>Chicago</h2>
+					<div class="gmap_canvas">
+						<iframe
+							src="https://maps.google.com/maps?q=chicago&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal-los-angeles">
+				<div class="mapouter">
+					<h2>Los Angeles</h2>
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe
+								src="https://maps.google.com/maps?q=los%20angeles&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-new-york">
+				<div class="mapouter">
+					<h2>New York</h2>
+					<iframe
+						src="https://maps.google.com/maps?q=new%20york&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal--menu modal--menu-is-hidden" modal-menu>
+		<div class="modal--menu__close-container" modal-menu-close>
 			<svg class="close-icon">
 				<use href="images/icons.svg#close-icon"></use>
 			</svg>
 		</div>
-		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none"><use href="./images/icons.svg#mayorSymbol"></use></svg> </button>
-		<div class="modal__content">
-			<ul class="modal__links">
-				<li class="modal__links__link modal__links__link--current">
-					<a href="" >Home</a>
+		<button class="button button--modal" type="button" modal-form-open >Buy now <svg height="10" width="6" fill="none">
+				<use href="./images/icons.svg#mayorSymbol"></use>
+			</svg> </button>
+		<div class="modal--menu__content">
+			<ul class="modal--menu__links">
+				<li class="modal--menu__links__link modal--menu__links__link--current">
+					<a href="#home">Home</a>
 				</li>
-				<li class="modal__links__link">
-					<a href="" > About us</a>
+				<li class="modal--menu__links__link">
+					<a href="/src/index.html#about"> About us</a>
 				</li>
-				<li class="modal__links__link">
-					<a href="" >How it’s made?</a>
+				<li class="modal--menu__links__link">
+					<a href="/src/index.html#howitsmade">How it's made?</a>
 				</li>
-				<li class="modal__links__link">
-					<a href="" >Our products</a>
+				<li class="modal--menu__links__link">
+					<a href="/src/index.html#products">Our products</a>
 				</li>
-				<li class="modal__links__link">
-					<a href="" >Contact</a>
+				<li class="modal--menu__links__link">
+					<a href="/src/index.html#contacts">Contact</a>
 				</li>
 			</ul>
 		</div>
 	</div>
+
+	<div class="modal--form modal--form-is-hidden" modal-form>
+		<button class="button button--close" modal-form-close>X</button>
+		<h2 class="modal--form-title">We'll give you a call</h2>
+		<div class="modal--form-container">
+			<form name="modal--form-container__form" autocomplete="off">
+
+				<label for="full-name">
+					Full Name
+					<div class="modal--form-group modal--form-group--name">
+						<input id="full-name" class="modal__input__form name" type="text">
+						<svg class="modal--form-icon">
+							<use href="images/icons.svg#person"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="phone-number">
+					Phone number
+					<div class="modal__input__group-phone">
+						<input id="phone-number" class="modal__input__form phone-number" type="tel">
+						<svg class="modal--form-icon">
+							<use href="images/icons.svg#old-phone"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="e-mail">
+					E-mail
+					<div class="modal__input__group-email">
+						<input id="e-mail" class="modal__input__form email" type="email">
+						<svg class="modal--form-icon">
+							<use href="images/icons.svg#black-envelope"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="comments">
+					Comments
+					<textarea id="comments" class="modal--form-container__form-comments"
+						placeholder="Short description of your order"></textarea>
+				</label>
+				<button type="submit" class="button button--send">Send</button>
+
+			</form>
+		</div>
+	</div>
 	<script src="./js/modal.js"></script>
 </body>
+
 </html>
