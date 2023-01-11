@@ -169,6 +169,19 @@
       height: 44px;
     }
   }
+}
+
+.button--close {
+  position: absolute;
+  top: 1%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    background-color: $hover-gray;
+  }
+}
 
   .button--contacts-white:hover {
     background-color: $hover-button;

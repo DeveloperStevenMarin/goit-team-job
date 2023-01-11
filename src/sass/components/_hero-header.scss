@@ -6,6 +6,7 @@
   width: auto;
   height: 664px;
   position: relative;
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -17,6 +18,7 @@
       flex-direction: row;
       gap: 30px;
       align-items: center;
+
       &__text {
         font-family: "Titan One";
         font-weight: 400;
@@ -29,6 +31,7 @@
         color: color.$pink-dark;
       }
     }
+
     &__sections {
       display: flex;
       align-items: center;
@@ -39,18 +42,22 @@
       line-height: 21px;
       color: color.$white;
       z-index: 1;
+
       li {
         &:hover {
           cursor: pointer;
           color: color.$pink-dark;
         }
+
       }
     }
+
     &__right {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 32px;
+
       &__buyButton {
         display: flex;
         justify-content: center;
@@ -66,16 +73,19 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
+
         &:hover {
           cursor: pointer;
           background-color: $hover-button;
         }
       }
+
       &__menu-burguer {
         visibility: hidden;
       }
     }
   }
+
   &__title {
     font-family: "Titan One";
     font-weight: 400;
@@ -89,6 +99,7 @@
     width: 277px;
 
     color: color.$white;
+
     &__passion {
       font-family: "Titan One";
       font-size: 58px;
@@ -129,14 +140,17 @@
       right: 35%;
     }
   }
+
   &__jarContainer {
     display: flex;
     align-items: flex-end;
     padding-left: 15px;
     padding-top: 40px;
+
     &__text {
       width: 250px;
       z-index: 2;
+
       p {
         font-weight: 400;
         font-size: 14px;
@@ -147,6 +161,7 @@
       }
     }
   }
+
   &__iceCreamGirl {
     position: absolute;
     bottom: 0;
@@ -154,12 +169,14 @@
     z-index: 1;
     width: 350px;
     height: 270px;
+
     a {
       img {
         height: 100%;
         width: 100%;
       }
     }
+
     &:hover {
       animation-name: tasty-hover;
       animation-duration: 1s;
@@ -167,6 +184,7 @@
       cursor: pointer;
     }
   }
+
   &__branches {
     position: absolute;
     right: 15px;
@@ -174,13 +192,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
     &__container {
       position: relative;
+
       &__text {
         width: 90px;
         height: 77px;
         display: flex;
         justify-content: center;
+
         h2 {
           position: absolute;
           z-index: 2;
@@ -196,6 +217,7 @@
 
           color: color.$pink-dark;
         }
+
         p {
           position: absolute;
           bottom: 0;
@@ -206,6 +228,7 @@
           color: color.$white;
         }
       }
+
       &__circle {
         position: absolute;
         top: 0;
@@ -218,8 +241,9 @@
     }
   }
 }
+
 @media screen and (max-width: 1097px) {
-  .hero-header {
+  .hero-header 
     height: 630px;
     &__container {
       &-circle {
@@ -261,10 +285,12 @@
         }
       }
     }
+
     &__nav {
       &__sections {
         display: none;
       }
+
       &__right__menu-burguer {
         visibility: visible;
       }
@@ -287,6 +313,7 @@
       }
     }
   }
+
 }
 @media screen and (max-width: 768px) {
   .hero-header {

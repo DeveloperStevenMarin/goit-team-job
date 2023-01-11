@@ -47,6 +47,37 @@
 		align-items: center;
 		justify-content: center;
 	}
+
+	.modal__map {
+		position: absolute;
+		top: 700%;
+		left: 0%;
+		width: 100%;
+		height: 450px;
+		opacity: 1;
+		z-index: 3;
+		visibility: visible;
+	}
+
+	.map__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mapouter iframe {
+		text-align: center;
+		border-radius: 5%;
+		height: 300px;
+		width: 300px;
+		border: none;
+		opacity: 1;
+	}
+
+	.is-hiddenmap {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 @media screen and (max-width: 580px) {
