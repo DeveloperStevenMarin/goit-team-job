@@ -15,31 +15,37 @@
   &:hover {
     cursor: pointer;
   }
+
   &--pink {
     background: colors.$pink-dark;
     color: colors.$white;
   }
+
   &--white {
     background-color: $white;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+
     &:hover {
       background-color: $lightgrey;
     }
   }
+
   &--nav-white {
     &:hover {
       background-color: $pink-dark;
       color: $white;
     }
   }
-  &--modal{
+
+  &--modal {
     &:hover {
       background-color: $pink-dark;
       color: $white;
     }
   }
+
   &--header-white {
     width: 138px;
 
@@ -48,21 +54,25 @@
       color: $white;
     }
   }
+
   &--header-pink {
     background-color: $pink-dark;
     color: $white;
     width: 108px;
+
     &:hover {
       background-color: $white;
       color: $pink-dark;
     }
   }
+
   &--products {
     height: 40px;
     width: 40px;
     padding-bottom: 60px;
     border-radius: 25px;
     background: none;
+
     svg {
       background-color: colors.$white;
       border-radius: 25px;
@@ -80,12 +90,14 @@
       }
     }
   }
+
   &--jar {
     height: 40px;
     width: 40px;
     padding-bottom: 60px;
     border-radius: 25px;
     background: none;
+
     svg {
       width: 40px;
       height: 40px;
@@ -105,15 +117,18 @@
       }
     }
   }
+
   &--contacts-pink {
     background: colors.$pink-dark;
     color: colors.$white;
   }
+
   &--contacts-white {
     background-color: $white;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+
     &:hover {
       background-color: $lightgrey;
     }
@@ -124,18 +139,22 @@
   .button--nav-white {
     width: 120px;
   }
+
   .button--header-pink {
     width: 65px;
     font-size: 10px;
     height: 28px;
   }
+
   .button--header-white {
     width: 100px;
     font-size: 10px;
     height: 28px;
   }
+
   .button--jar {
     height: 30px;
+
     svg {
       width: 25px;
       height: 25px;
@@ -147,23 +166,27 @@
   .button--nav-white {
     display: none;
   }
+
   .button--header-pink {
     width: 100px;
     font-size: 12px;
     height: 35px;
   }
+
   .button--header-white {
     width: 100px;
     font-size: 12px;
     height: 35px;
   }
 }
+
 @media screen and (max-width: 580px) {
   .button {
     &--contacts-white {
       width: 161.45px;
       height: 44px;
     }
+
     &--contacts-pink {
       width: 161.45px;
       height: 44px;
@@ -183,7 +206,6 @@
   }
 }
 
-  .button--contacts-white:hover {
-    background-color: $hover-button;
-  }
+.button--contacts-white:hover {
+  background-color: $hover-button;
 }
