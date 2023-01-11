@@ -1900,7 +1900,7 @@ form {
   z-index: 3;
   visibility: visible;
   background: rgb(255, 245, 246);
-  background: linear-gradient(rgb(255, 165, 220) 0%, rgb(255, 165, 220) 10%, rgb(255, 164, 186) 50%, rgb(255, 165, 220) 90%, rgba(255, 245, 246, 0.6) 100%, rgba(255, 245, 246, 0.4) 100%);
+  background: linear-gradient(rgb(255, 165, 220) 0%, rgb(255, 165, 220) 10%, rgb(255, 164, 186) 50%, rgb(255, 165, 220) 90%, rgba(255, 245, 246, 0.1) 100%);
 }
 .modal--map-mapouter h2 {
   margin: 20px 0px;
