@@ -618,7 +618,9 @@ form {
     font-size: 10px;
     height: 28px;
   }
-
+  .button--contacts-white {
+    height: 44px;
+  }
   .button--header-white {
     width: 100px;
     font-size: 10px;
@@ -650,6 +652,11 @@ form {
 @media screen and (max-width: 580px) {
   .button--contacts-white {
     width: 161.45px;
+  }
+  .button--contacts-pink {
+    width: 161.45px;
+  }
+}
 .card--contacts {
   width: 368px;
   height: 538px;
