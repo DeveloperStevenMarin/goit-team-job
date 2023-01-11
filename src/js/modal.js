@@ -1,45 +1,45 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
+      openModalBtn: document.querySelector("[modal-menu-open]"),
+      closeModalBtn: document.querySelector("[modal-menu-close]"),
+      modal: document.querySelector("[modal-menu]"),
     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.openModalBtn.addEventListener("click", toggleModalMenu);
+    refs.closeModalBtn.addEventListener("click", toggleModalMenu);
   
-    function toggleModal() {
-      refs.modal.classList.toggle("modal--is-hidden");
+    function toggleModalMenu() {
+      refs.modal.classList.toggle("modal--menu-is-hidden");
+     
     }
 })();
   
 (() => {
     const refs = {
-      openModalBtnmap: document.querySelector("[data-modal-openmap]"),
-      closeModalBtnmap: document.querySelector("[data-modal-closemap]"),
-      modalmap: document.querySelector("[data-modalmap]"),
+      openModalBtnmap: document.querySelector("[modal-map-open]"),
+      closeModalBtnmap: document.querySelector("[modal-map-close]"),
+      modalmap: document.querySelector("[modal-map]"),
     };
   
-    refs.openModalBtnmap.addEventListener("click", toggleModal);
-    refs.closeModalBtnmap.addEventListener("click", toggleModal);
+    refs.openModalBtnmap.addEventListener("click", toggleModalMap);
+    refs.closeModalBtnmap.addEventListener("click", toggleModalMap);
   
-    function toggleModal() {
-      refs.modalmap.classList.toggle("is-hiddenmap");
+    function toggleModalMap() {
+      refs.modalmap.classList.toggle("modal--map-is-hidden");
     }
 })();
-  
+
 (() => {
-    const refs = {
-      openModalBtnform: document.querySelector("[data-modal-openform]"),
-      closeModalBtnform: document.querySelector("[data-modal-closeform]"),
-      modalform: document.querySelector("[data-modalform]"),
-    };
-  
-    refs.openModalBtnform.addEventListener("click", toggleModal);
-    refs.closeModalBtnform.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modalform.classList.toggle("is-hiddenform");
-    }
-  })();
-  
+  const refs = {
+    openformModalBtn: document.querySelector("[modal-form-open]"),
+    closeformModalBtn: document.querySelector("[modal-form-close]"),
+    modalform: document.querySelector("[modal-form]"),
+  };
+
+  refs.openformModalBtn.addEventListener("click", toggleModalForm);
+  refs.closeformModalBtn.addEventListener("click", toggleModalForm);
+
+  function toggleModalForm() {
+    refs.modalform.classList.toggle("modal--form-is-hidden");
+  }
+})();

@@ -32,67 +32,6 @@
 	align-items: center;
 }
 
-.modal__map {
-	position: fixed;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 500px;
-	opacity: 1;
-	z-index: 3;
-	visibility: visible;
-	background: rgb(255, 245, 246);
-	background: linear-gradient(rgba(255, 165, 220, 1) 0%, rgba(255, 165, 220, 1) 10%, rgba(255, 164, 186, 1) 50%, rgba(255, 165, 220, 1) 90%, rgba(255, 245, 246, 0.6) 100%, rgba(255, 245, 246, 0.4) 100%);
-}
-
-.modal-tittle {
-	font-family: 'Titan One';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 38px;
-	line-height: 44px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: $white;
-	text-align: center;
-}
-
-.map__container {
-	display: flex;
-	position: relative;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 15px;
-}
-
-.mapouter iframe {
-	text-align: center;
-	border-radius: 5%;
-	height: 400px;
-	width: 400px;
-	border: none;
-	opacity: 1;
-}
-
-.mapouter h2 {
-	font-family: 'Titan One';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 21px;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	color: $white;
-}
-
-.is-hiddenmap {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
-}
-
 @media screen and (max-width: 768px) {
 
 	.conteiner--card {
