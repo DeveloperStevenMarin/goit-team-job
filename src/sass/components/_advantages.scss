@@ -2,6 +2,9 @@
 @import '../utils/config';
 
 .advantages {
+    &__benefitsTittle {
+        display: none;
+    }
     display: flex;
     justify-content:flex-start;
     gap: 115px;
