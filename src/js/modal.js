@@ -12,7 +12,6 @@
 
       /////////////////////////////////////////////////////////////// Form
       openformModalBtn: document.querySelector("[modal-form-open]"),
-      openformModalBtn2: document.querySelector("[modal-form-open]"),
       closeformModalBtn: document.querySelector("[modal-form-close]"),
       modalform: document.querySelector("[modal-form]"),
     };
