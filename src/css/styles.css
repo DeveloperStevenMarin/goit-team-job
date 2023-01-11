@@ -885,7 +885,12 @@ form {
     gap: 10px;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+
 .customer__reviews__section {
+  overflow-anchor: none;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;

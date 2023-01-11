@@ -1,7 +1,13 @@
 @use "../utils/color" as customer-color;
 @use "../utils/color";
 
+* {
+	scroll-behavior: smooth;
+
+}
+
 .customer__reviews__section {
+	overflow-anchor: none;
 	align-items: center;
 	max-width: 1200px;
 	margin: 0 auto;
