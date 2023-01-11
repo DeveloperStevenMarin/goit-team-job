@@ -1139,7 +1139,7 @@ a:hover {
 }
 
 .footer__home {
-  position: absolute;
+  position: sticky;
   left: 90%;
   background-color: rgb(212, 20, 67);
   border-radius: 50%;
