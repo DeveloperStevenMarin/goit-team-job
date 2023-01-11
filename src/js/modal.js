@@ -27,7 +27,6 @@
     ////////////////////////////////////////////////////////////// Form
     refs.openformModalBtn.addEventListener("click", toggleModalForm);
     refs.closeformModalBtn.addEventListener("click", toggleModalForm);
-    refs.openModalBtn2.addEventListener("click", toggleModalMenu);
 
 
 
