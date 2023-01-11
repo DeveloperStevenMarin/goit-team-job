@@ -204,7 +204,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:50px;
+    gap: 50px;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -221,8 +221,8 @@
       rgba(255, 245, 246, 0.6) 100%,
       rgba(255, 245, 246, 0.4) 100%
     );
-    &-mapouter{
-      h2{
+    &-mapouter {
+      h2 {
         margin: 20px 0px;
         color: $white;
         text-align: center;
@@ -244,10 +244,11 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      height: 350px;
       justify-content: center;
       align-items: center;
-      gap: 15px;
-      overflow: hidden;
+      gap: 20px;
+      overflow-x: auto;
     }
     & iframe {
       text-align: center;
@@ -265,6 +266,3 @@
     }
   }
 }
-  
- 
-

@@ -1923,10 +1923,11 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 350px;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  overflow: hidden;
+  gap: 20px;
+  overflow-x: auto;
 }
 .modal--map iframe {
   text-align: center;
