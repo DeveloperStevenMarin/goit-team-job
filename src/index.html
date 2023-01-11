@@ -34,8 +34,8 @@
 				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
-				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6"
-						fill="none">
+				<button class="hero-header__nav__right__buyButton" type="button" data-modal-openform>Buy now <svg
+						height="10" width="6" fill="none">
 						<use href="./images/icons.svg#mayorSymbol"></use>
 					</svg> </button>
 			</div>
@@ -414,7 +414,7 @@
 				<div class="card--contacts__category-container">
 					<h3
 						class="card--contacts__category-container__sale card--contacts__category-container__sale--green">
-						FOOD </h3>
+						FOOD TRUCK </h3>
 				</div>
 				<div class="card--contacts__content-container">
 					<h3 class="card--contacts__content-container__locations"> Los Angeles </h3>
@@ -457,7 +457,7 @@
 			</div>
 		</div>
 		<div class="contacts__button-container">
-			<button class="button button--pink" type="button" data-modal-openmap>
+			<button id="map" class="button button--pink" type="button" data-modal-openmap>
 				<span> Our Locations > </span>
 				<button class="button button--white" type="button">
 					<span> Franchise > </span>
@@ -513,14 +513,15 @@
 		</div>
 	</footer>
 
-	<div class="modal__map is-hiddenmap" data-modalmap>
+	<div style="overflow-x: scroll;" class="modal__map is-hiddenmap" data-modalmap>
 		<button class="button button--close" data-modal-closemap>X</button>
 		<h2 class="modal-tittle">Our Locations</h2>
 		<div class="map__container">
 			<div class="modal-chicago">
 				<div class="mapouter">
 					<h2>Chicago</h2>
-					<div class="gmap_canvas"><iframe
+					<div class="gmap_canvas">
+						<iframe
 							src="https://maps.google.com/maps?q=chicago&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 					</div>
 				</div>
@@ -530,7 +531,8 @@
 				<div class="mapouter">
 					<h2>Los Angeles</h2>
 					<div class="mapouter">
-						<div class="gmap_canvas"><iframe
+						<div class="gmap_canvas">
+							<iframe
 								src="https://maps.google.com/maps?q=los%20angeles&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
 						</div>
 					</div>
@@ -553,29 +555,83 @@
 				<use href="images/icons.svg#close-icon"></use>
 			</svg>
 		</div>
-		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none">
+		<button class="hero-header__nav__right__buyButton" type="button" data-modal-openform>Buy now <svg height="10"
+				width="6" fill="none">
 				<use href="./images/icons.svg#mayorSymbol"></use>
 			</svg> </button>
 		<div class="modal__content">
 			<ul class="modal__links">
 				<li class="modal__links__link modal__links__link--current">
-					<a href="">Home</a>
+					<a href="#home">Home</a>
 				</li>
 				<li class="modal__links__link">
-					<a href=""> About us</a>
+					<a href="/src/index.html#about"> About us</a>
 				</li>
 				<li class="modal__links__link">
-					<a href="">How it’s made?</a>
+					<a href="/src/index.html#howitsmade">How it's made?</a>
 				</li>
 				<li class="modal__links__link">
-					<a href="">Our products</a>
+					<a href="/src/index.html#products">Our products</a>
 				</li>
 				<li class="modal__links__link">
-					<a href="">Contact</a>
+					<a href="/src/index.html#contacts">Contact</a>
 				</li>
 			</ul>
 		</div>
 	</div>
+
+	<div class="modal__form is-hiddenform" data-modalform>
+		<button class="button button--close" data-modal-closeform>X</button>
+		<h2 class="modal__tittle__form">We'll give you a call</h2>
+		<div class="modal__form__container">
+			<form name="contact-form" autocomplete="off">
+
+				<label for="full-name">
+					Full Name
+					<div class="modal__input__group-name">
+						<input id="full-name" class="modal__input__form name" type="text">
+						<svg class="icon-person">
+							<use href="images/icons.svg#person"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="phone-number">
+					Phone number
+					<div class="modal__input__group-phone">
+						<input id="phone-number" class="modal__input__form phone-number" type="tel">
+						<svg class="icon-old-phone">
+							<use href="images/icons.svg#old-phone"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="e-mail">
+					E-mail
+					<div class="modal__input__group-email">
+						<input id="e-mail" class="modal__input__form email" type="email">
+						<svg class="icon-black-envelope">
+							<use href="images/icons.svg#black-envelope"></use>
+						</svg>
+					</div>
+				</label>
+
+				<label for="comments">
+					Comments
+					<textarea id="comments" class="modal__input__form comments"
+						placeholder="Short description of your order"></textarea>
+				</label>
+				<button type="submit" class="button button--send">Send</button>
+
+			</form>
+		</div>
+	</div>
+	</div>
+
+
+
+
+
 	<script src="./js/modal.js"></script>
 </body>
 

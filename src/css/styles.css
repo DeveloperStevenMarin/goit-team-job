@@ -544,6 +544,7 @@ a:hover {
 }
 .card--contacts__category-container__sale--green {
   background: rgb(194, 226, 151);
+  width: 138px;
 }
 .card--contacts__content-container__locations {
   width: 120px;
@@ -683,6 +684,67 @@ a:hover {
   align-items: center;
 }
 
+.modal__map {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 500px;
+  opacity: 1;
+  z-index: 3;
+  visibility: visible;
+  background: rgb(255, 245, 246);
+  background: linear-gradient(rgb(255, 165, 220) 0%, rgb(255, 165, 220) 10%, rgb(255, 164, 186) 50%, rgb(255, 165, 220) 90%, rgba(255, 245, 246, 0.6) 100%, rgba(255, 245, 246, 0.4) 100%);
+}
+
+.modal-tittle {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.map__container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.mapouter iframe {
+  text-align: center;
+  border-radius: 5%;
+  height: 400px;
+  width: 400px;
+  border: none;
+  opacity: 1;
+}
+
+.mapouter h2 {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+
+.is-hiddenmap {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 768px) {
   .conteiner--card {
     flex-wrap: nowrap;
@@ -695,6 +757,33 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .modal__map {
+    position: absolute;
+    top: 700%;
+    left: 0%;
+    width: 100%;
+    height: 450px;
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  .map__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapouter iframe {
+    text-align: center;
+    border-radius: 5%;
+    height: 300px;
+    width: 300px;
+    border: none;
+    opacity: 1;
+  }
+  .is-hiddenmap {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
   }
 }
 @media screen and (max-width: 580px) {
@@ -718,44 +807,46 @@ a:hover {
   .button--white:hover {
     background-color: rgb(235, 234, 234);
   }
+  .modal__map {
+    position: absolute;
+    top: 850%;
+    left: 0%;
+    width: 100%;
+    height: 450px;
+    opacity: 1;
+    z-index: 3;
+    visibility: visible;
+  }
+  .map__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mapouter iframe {
+    text-align: center;
+    border-radius: 5%;
+    height: 250px;
+    width: 250px;
+    border: none;
+    opacity: 1;
+  }
+  .is-hiddenmap {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal-tittle {
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 0.06em;
+  }
+  .button--close {
+    left: 300px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
 }
-.modal__map {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 500px;
-  background-color: rgb(255, 184, 202);
-  opacity: 1;
-  z-index: 3;
-  visibility: visible;
-  transition: translateX -50%, -50%;
-  transition: 5000ms ease;
-  transform: scale(1) translate(10px);
-}
-
-.map__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-.mapouter iframe {
-  text-align: center;
-  border-radius: 5%;
-  height: 400px;
-  width: 400px;
-  border: none;
-}
-
-.is-hiddenmap {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .customer__reviews__section {
   align-items: center;
   max-width: 1200px;
@@ -1539,6 +1630,132 @@ a:hover {
     height: 24px;
   }
 }
+.modal__form {
+  position: fixed;
+  background: rgb(255, 245, 246);
+  background: radial-gradient(circle, rgb(255, 245, 246) 0%, rgb(255, 165, 216) 62%, rgba(255, 165, 216, 0.6) 92%, rgb(255, 34, 159) 100%);
+  border-radius: 10px;
+  top: 20%;
+  left: 35%;
+  width: 600px;
+  height: 495px;
+}
+
+.modal__tittle__form {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 38px;
+  line-height: 44px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.modal__form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  padding-top: 15px;
+  gap: 28px;
+}
+
+.modal__input__form {
+  display: block;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  outline: none;
+  padding-left: 42px;
+}
+
+.modal__input__group-name,
+.modal__input__group-phone,
+.modal__input__group-email {
+  position: relative;
+}
+
+.modal__input__group-name:hover .modal__input__form,
+.modal__input__group-name:hover .icon-person {
+  fill: rgb(212, 20, 67);
+  border-color: rgb(212, 20, 67);
+  border-width: 2px;
+}
+
+.icon-person,
+.icon-old-phone,
+.icon-black-envelope {
+  width: 12px;
+  height: 12px;
+  top: 14px;
+  left: 15px;
+  position: absolute;
+}
+
+.modal__input__form:focus + .icon-person,
+.modal__input__form:hover + .icon-person {
+  fill: rgb(212, 20, 67);
+}
+
+.modal__input__group-phone:hover .modal__input__form,
+.modal__input__group-phone:hover .icon-old-phone {
+  fill: rgb(212, 20, 67);
+  border-color: rgb(212, 20, 67);
+  border-width: 2px;
+}
+
+.modal__input__form:focus + .icon-old-phone,
+.modal__input__form:hover + .icon-old-phone {
+  fill: rgb(212, 20, 67);
+}
+
+.modal__input__group-email:hover .modal__input__form,
+.modal__input__group-email:hover .icon-black-envelope {
+  fill: rgb(212, 20, 67);
+  border-color: rgb(212, 20, 67);
+  border-width: 2px;
+}
+
+.modal__input__form:focus + .icon-black-envelope,
+.modal__input__form:hover + .icon-black-envelope {
+  fill: rgb(212, 20, 67);
+}
+
+.comments {
+  height: 120px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+.comments:focus,
+.comments:hover {
+  border-width: 2px;
+  border-color: rgb(212, 20, 67);
+  border-width: 2px;
+}
+
+label .comments::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.is-hiddenform {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1591,7 +1808,6 @@ a:hover {
   display: none;
   visibility: hidden;
   opacity: 0;
-  z-index: 0;
   pointer-events: none;
   transform: scale(0.6);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

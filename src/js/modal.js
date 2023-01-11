@@ -26,5 +26,20 @@
     function toggleModal() {
       refs.modalmap.classList.toggle("is-hiddenmap");
     }
+})();
+  
+(() => {
+    const refs = {
+      openModalBtnform: document.querySelector("[data-modal-openform]"),
+      closeModalBtnform: document.querySelector("[data-modal-closeform]"),
+      modalform: document.querySelector("[data-modalform]"),
+    };
+  
+    refs.openModalBtnform.addEventListener("click", toggleModal);
+    refs.closeModalBtnform.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modalform.classList.toggle("is-hiddenform");
+    }
   })();
   
