@@ -3,12 +3,6 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
-
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Titan+One&display=swap"
-		rel="stylesheet" />
 	<link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
 	<link rel="" href="./images/icons.svg" />
 	<meta charset="utf-8" />
@@ -41,22 +35,24 @@
 				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
 					<use href="./images/icons.svg#menu-burguer"></use>
 				</svg>
-				<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6"
+				<button class="button button--nav-white" type="button">Buy now <svg height="10" width="6"
 						fill="none">
 						<use href="./images/icons.svg#mayorSymbol"></use>
 					</svg> </button>
 			</div>
 		</nav>
-		<h2 class="hero-header__title">
+		<h1 class="hero-header__title">
 			ice cream made with <span class="hero-header__title__passion">passion</span>
-		</h2>
-		<div class="hero-header__titleButtons">
-			<button class="hero-header__titleButtons__pink button-shape" type="button">Products</button>
-			<button class="hero-header__titleButtons__white button-shape" type="button">How it's made?</button>
+		</h1>
+		<div class="hero-header__button-container">
+			<button class="button button--header-pink" type="button">Products</button>
+			<button class="button button--header-white" type="button">How it's made?</button>
 		</div>
 		<div class="hero-header__container">
+
 			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png" alt="iceCream">
 			<div class="hero-header__container__circle"></div>
+
 		</div>
 		<div class="hero-header__jarContainer">
 			<img src="./images/PNG/milk-jar.png" alt="jar-milk-splash">
@@ -66,7 +62,11 @@
 					adipisicing elit. Voluptatibus, odio
 					dignissimos quo fugiat sit est necessitatibus!
 				</p>
-				<a href="#"><img src="./images/PNG/arrow-right.png" alt="arrow-right"></a>
+				<div class="button button--jar">
+					<svg>
+						<use href="./images/icons.svg#products-arrow"></use>
+					</svg>
+				</div>
 			</div>
 		</div>
 		<div class="hero-header__iceCreamGirl">
@@ -462,9 +462,9 @@
 			</div>
 		</div>
 		<div class="contacts__button-container">
-			<button class="button button--pink" type="button">
+			<button class="button button--contacts-pink" type="button">
 				<span> Our Locations > </span>
-				<button class="button button--white" type="button">
+				<button class="button button--contacts-white" type="button">
 					<span> Franchise > </span>
 		</div>
 	</section>
@@ -517,7 +517,7 @@
 				<use href="images/icons.svg#close-icon"></use>
 			</svg>
 		</div>
-		<button class="hero-header__nav__right__buyButton" type="button">Buy now <svg height="10" width="6" fill="none">
+		<button class="button button--modal" type="button">Buy now <svg height="10" width="6" fill="none">
 				<use href="./images/icons.svg#mayorSymbol"></use>
 			</svg> </button>
 		<div class="modal__content">
