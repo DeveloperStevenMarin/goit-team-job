@@ -26,20 +26,23 @@
 				<h2 class="hero-header__nav__brand__text">icecream</h2>
 			</div>
 			<ul class="hero-header__nav__sections">
-				<li> <a data-href="#home">Home</li>
-				<li> <a href="#about">About us</li>
-				<li> <a href="#howitsmade">How it's made?</li>
-				<li> <a href="#products">Our products</li>
-				<li> <a href="#contacts">Contact</li>
+				<li class="hero-header__nav__sections-section hero-header__nav__sections-section--current"> <a data-href="#home">Home</li>
+				<li class="hero-header__nav__sections-section"> <a href="#about">About us</li>
+				<li class="hero-header__nav__sections-section"> <a href="#howitsmade">How it's made?</li>
+				<li class="hero-header__nav__sections-section"> <a href="#products">Our products</li>
+				<li class="hero-header__nav__sections-section"> <a href="#contacts">Contact</li>
 			</ul>
-			<div class="hero-header__nav__right" modal-menu-open>
-				<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
-					<use href="./images/icons.svg#menu-burguer"></use>
-				</svg>
+			<div class="hero-header__nav__right">
+				<button class="button button--open-modal" modal-menu-open>
+					<svg class="hero-header__nav__right__menu-burguer" width="20" height="16">
+						<use href="./images/icons.svg#menu-burguer"></use>
+					</svg>
+				</button>
 				<button class="button button--nav-white" type="button" modal-form-open>Buy now <svg height="10" width="6"
 						fill="none">
 						<use href="./images/icons.svg#mayorSymbol"></use>
-					</svg> </button>
+					</svg>
+				</button>
 			</div>
 		</nav>
 		<h1 class="hero-header__title">
@@ -53,7 +56,7 @@
 		<div class="hero-header__container">
 
 			<img class="hero-header__container__iceCream-image" src="./images/PNG/iceCream-header.png" alt="iceCream">
-			<div class="hero-header__container__circle"></div>
+			<div class="hero-header__container-circle"></div>
 
 		</div>
 		<div class="hero-header__jarContainer">
@@ -282,10 +285,10 @@
 							</a>
 						</li>
 						<li>
-							<a href="#customer-comment-section2" class="slider__button__off"></a>
+							<a href="" class="slider__button__off"></a>
 						</li>
 						<li>
-							<a href="#customer-comment-section3" class="slider__button__off"></a>
+							<a href="" class="slider__button__off"></a>
 						</li>
 					</ul>
 				</div>
@@ -585,44 +588,32 @@
 		<h2 class="modal--form-title">We'll give you a call</h2>
 		<div class="modal--form-container">
 			<form name="modal--form-container__form" autocomplete="off">
-
-				<label for="full-name">
-					Full Name
-					<div class="modal--form-group modal--form-group--name">
-						<input id="full-name" class="modal__input__form name" type="text">
-						<svg class="modal--form-icon">
-							<use href="images/icons.svg#person"></use>
-						</svg>
-					</div>
-				</label>
-
-				<label for="phone-number">
-					Phone number
-					<div class="modal__input__group-phone">
-						<input id="phone-number" class="modal__input__form phone-number" type="tel">
-						<svg class="modal--form-icon">
-							<use href="images/icons.svg#old-phone"></use>
-						</svg>
-					</div>
-				</label>
-
-				<label for="e-mail">
-					E-mail
-					<div class="modal__input__group-email">
-						<input id="e-mail" class="modal__input__form email" type="email">
-						<svg class="modal--form-icon">
-							<use href="images/icons.svg#black-envelope"></use>
-						</svg>
-					</div>
-				</label>
-
-				<label for="comments">
-					Comments
-					<textarea id="comments" class="modal--form-container__form-comments"
-						placeholder="Short description of your order"></textarea>
-				</label>
+				<div class="custom-input">
+					<label for="user">Name</label>
+					<input id="user" type="text" name="User name">
+					<svg class="modal--form-icon">
+					  <use href="images/icons.svg#user"></use>
+					</svg>
+				  </div>
+				  <div class="custom-input">
+					<label for="phone">Phone</label>
+					<input id="phone" type="tel" name="User phone">
+					<svg class="modal--form-icon">
+					  <use href="images/icons.svg#phone-form"></use>
+					</svg>
+				  </div>
+				  <div class="custom-input">
+					<label for="email">E-mail</label>
+					<input id="email" type="email" name="User mail">
+					<svg class="modal--form-icon">
+					  <use href="images/icons.svg#mail-form"></use>
+					</svg>
+				  </div>
+				  <div class="custom-input custom-input--feedback">
+					<label for="feedback">Order details</label>
+					<textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Read and description"></textarea>
+				  </div>
 				<button type="submit" class="button button--send">Send</button>
-
 			</form>
 		</div>
 	</div>

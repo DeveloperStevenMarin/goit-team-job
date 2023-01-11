@@ -16,10 +16,13 @@ ul {
 }
 
 a {
-  color: color.$white;
   text-decoration: none;
   &:hover {
-    color: color.$pink-dark;
     cursor: pointer;
   }
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

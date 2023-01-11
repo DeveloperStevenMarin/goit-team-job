@@ -15,12 +15,16 @@ ul {
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(212, 20, 67);
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes extend {
@@ -323,12 +327,16 @@ ul {
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(212, 20, 67);
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advantages {
@@ -453,8 +461,6 @@ a:hover {
   width: 180px;
   height: 44px;
   border-radius: 22px;
-  background: #ffffff;
-  color: rgb(212, 20, 67);
   border: none;
   font-style: normal;
   font-weight: 700;
@@ -477,9 +483,15 @@ a:hover {
 .button--white:hover {
   background-color: rgb(250, 250, 250);
 }
+.button--nav-white {
+  color: rgb(212, 20, 67);
+}
 .button--nav-white:hover {
   background-color: rgb(212, 20, 67);
   color: #ffffff;
+}
+.button--modal {
+  color: rgb(212, 20, 67);
 }
 .button--modal:hover {
   background-color: rgb(212, 20, 67);
@@ -487,18 +499,28 @@ a:hover {
 }
 .button--header-white {
   width: 138px;
+  background-color: #ffffff;
+}
+.button--header-white a {
+  color: rgb(212, 20, 67);
 }
 .button--header-white:hover {
   background-color: rgb(212, 20, 67);
+}
+.button--header-white:hover a {
   color: #ffffff;
 }
 .button--header-pink {
   background-color: rgb(212, 20, 67);
-  color: #ffffff;
   width: 108px;
+}
+.button--header-pink a {
+  color: #ffffff;
 }
 .button--header-pink:hover {
   background-color: #ffffff;
+}
+.button--header-pink:hover a {
   color: rgb(212, 20, 67);
 }
 .button--products {
@@ -550,15 +572,87 @@ a:hover {
 .button--contacts-pink {
   background: rgb(212, 20, 67);
   color: #ffffff;
+  width: 161.45px;
 }
 .button--contacts-white {
   background-color: #ffffff;
   font-style: normal;
   font-weight: 700;
+  width: 161.45px;
   font-size: 16px;
+  color: rgb(212, 20, 67);
 }
 .button--contacts-white:hover {
   background-color: rgb(250, 250, 250);
+}
+.button--open-modal {
+  background-color: transparent;
+  width: 50px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1097px) {
+  .button--nav-white {
+    width: 120px;
+  }
+  .button--header-pink {
+    width: 65px;
+    font-size: 10px;
+    height: 28px;
+  }
+  .button--contacts-white {
+    height: 44px;
+  }
+  .button--header-white {
+    width: 100px;
+    font-size: 10px;
+    height: 28px;
+  }
+  .button--jar {
+    height: 30px;
+  }
+  .button--jar svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .button--nav-white {
+    display: none;
+  }
+  .button--header-pink {
+    width: 100px;
+    font-size: 12px;
+    height: 35px;
+  }
+  .button--header-white {
+    width: 100px;
+    font-size: 12px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .button--contacts-white {
+    width: 161.45px;
+  }
+  .button--contacts-pink {
+    width: 161.45px;
+  }
+}
+.button--close {
+  position: absolute;
+  top: 1%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+  color: rgb(212, 20, 67);
+}
+.button--close:hover {
+  background-color: rgb(236, 235, 235);
+}
+
+.button--contacts-white:hover {
+  background-color: rgb(235, 234, 234);
 }
 
 .card--contacts {
@@ -774,6 +868,11 @@ a:hover {
     pointer-events: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .contacts__button-container {
+    height: 98px;
+  }
+}
 @media screen and (max-width: 580px) {
   .conteiner--card {
     flex-direction: column;
@@ -785,10 +884,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     width: 161.45px;
-    height: 98px;
     gap: 10px;
   }
-
 }
 .customer__reviews__section {
   align-items: center;
@@ -1266,12 +1363,16 @@ ul {
 }
 
 a {
-  color: #ffffff;
   text-decoration: none;
 }
 a:hover {
-  color: rgb(212, 20, 67);
   cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-header {
@@ -1311,8 +1412,16 @@ a:hover {
   color: #ffffff;
   z-index: 1;
 }
-.hero-header__nav__sections li:hover {
+.hero-header__nav__sections-section a {
+  color: #ffffff;
+}
+.hero-header__nav__sections-section--current a {
+  color: rgb(212, 20, 67);
+}
+.hero-header__nav__sections-section:hover {
   cursor: pointer;
+}
+.hero-header__nav__sections-section:hover a {
   color: rgb(212, 20, 67);
 }
 .hero-header__nav__right {
@@ -1673,6 +1782,7 @@ a:hover {
   border-top: 1px solid rgb(255, 165, 186);
 }
 .modal--menu__links__link a {
+  color: #ffffff;
   margin-left: 20px;
   font-weight: 700;
 }
@@ -1695,14 +1805,26 @@ a:hover {
   height: 30px;
 }
 .modal--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
+  z-index: 2;
   background: rgb(255, 245, 246);
-  background: radial-gradient(circle, rgb(255, 245, 246) 0%, rgb(255, 165, 216) 62%, rgba(255, 165, 216, 0.6) 92%, rgb(255, 34, 159) 100%);
+  background: radial-gradient(circle, rgba(255, 245, 246, 0.6) 0%, rgba(255, 165, 216, 0.7) 72%, rgba(255, 165, 216, 0.8) 92%, rgba(255, 165, 216, 0.9) 100%);
   border-radius: 10px;
   top: 20%;
-  left: 35%;
   width: 600px;
+  left: 35%;
   height: 495px;
+}
+.modal--form-icon {
+  fill: rgb(212, 20, 67);
+  position: absolute;
+  top: 65%;
+  left: 3%;
+  height: 13px;
+  width: 13px;
 }
 .modal--form-title {
   font-family: "Titan One";
@@ -1712,57 +1834,88 @@ a:hover {
   line-height: 44px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: rgb(212, 20, 67);
   text-align: center;
   padding-top: 20px;
 }
-.modal--form-container {
+.modal--form .custom-input {
+  height: 60px;
+  width: 450px;
+  position: relative;
+  margin: 4px 0px 10px 0px;
+}
+.modal--form .custom-input input {
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 6px;
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin: 6px 0px;
+}
+.modal--form .custom-input label {
+  text-transform: capitalize;
+  color: rgb(117, 117, 117);
+  font-size: 12px;
+  font-weight: 500;
+}
+.modal--form .custom-input input:focus {
+  outline: none;
+  border-color: rgb(212, 20, 67);
+}
+.modal--form .custom-input input:focus + .icon--input-modal {
+  height: 15px;
+  width: 15px;
+  fill: rgb(212, 20, 67);
+}
+.modal--form .custom-input--feedback {
+  height: 120px;
+  width: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.modal--form .custom-input--feedback textarea {
+  padding: 8px;
+  text-align: start;
+  border: 1px;
+  border-style: solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 6px;
   width: 100%;
-  height: 400px;
-  padding-top: 15px;
-  gap: 28px;
-}
-.modal--form-container__form-comments {
-  height: 120px;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-}
-.modal--form-container__form-comments:focus, .modal--form-container__form-comments:hover {
-  border-width: 2px;
-  border-color: rgb(212, 20, 67);
-  border-width: 2px;
-}
-.modal--form-container__form-comments::placeholder {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-}
-.modal--form-input {
-  display: block;
-  width: 448px;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin: 6px 0px;
+  height: 120px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  resize: none;
+}
+.modal--form .custom-input--feedback textarea:focus {
   outline: none;
-  padding-left: 42px;
+  border-color: rgb(212, 20, 67);
 }
-.modal--form-group {
-  position: relative;
+.modal--form .custom-input--feedback textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-weight: 400;
 }
-.modal--form-icon {
-  width: 12px;
-  height: 12px;
-  top: 14px;
-  left: 15px;
-  position: absolute;
+.modal--form .terms-conditions-container {
+  width: 430px;
+}
+.modal--form .terms-conditions-container label {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
 }
 .modal--form-is-hidden {
   visibility: hidden;
