@@ -501,6 +501,17 @@ a:hover {
   transform: rotate(-90deg);
 }
 
+.button--close {
+  position: absolute;
+  top: 1%;
+  left: 90%;
+  width: 30px;
+  height: 30px;
+}
+.button--close:hover {
+  background-color: rgb(236, 235, 235);
+}
+
 .card--contacts {
   width: 368px;
   height: 538px;
@@ -557,7 +568,7 @@ a:hover {
   left: 0;
   right: 0;
   height: 0.5px;
-  border-top: 0.5px solid #e1e1e1;
+  border-top: 0.5px solid rgb(225, 225, 225);
 }
 .card--contacts__calendar-container {
   position: relative;
@@ -587,7 +598,7 @@ a:hover {
   left: 0;
   right: 0;
   height: 0.5px;
-  border-top: 0.5px solid #e1e1e1;
+  border-top: 0.5px solid rgb(225, 225, 225);
 }
 .card--contacts__address-container__phone {
   height: 50px;
@@ -708,6 +719,43 @@ a:hover {
     background-color: rgb(235, 234, 234);
   }
 }
+.modal__map {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 184, 202);
+  opacity: 1;
+  z-index: 3;
+  visibility: visible;
+  transition: translateX -50%, -50%;
+  transition: 5000ms ease;
+  transform: scale(1) translate(10px);
+}
+
+.map__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.mapouter iframe {
+  text-align: center;
+  border-radius: 5%;
+  height: 400px;
+  width: 400px;
+  border: none;
+}
+
+.is-hiddenmap {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .customer__reviews__section {
   align-items: center;
   max-width: 1200px;
@@ -768,7 +816,7 @@ a:hover {
   height: 40px;
   top: 32px;
   left: 72px;
-  fill: #e1e1e1;
+  fill: rgb(225, 225, 225);
   opacity: 60%;
   z-index: 2;
 }
@@ -784,7 +832,7 @@ a:hover {
   text-underline-offset: 8px;
   text-decoration-thickness: 2px;
   color: rgb(0, 0, 0);
-  text-decoration-color: #e1e1e1;
+  text-decoration-color: rgb(225, 225, 225);
   z-index: 3;
   padding: 47px 109px 39px 109px;
 }
@@ -900,7 +948,6 @@ a:hover {
 }
 .footer__slogan {
   text-transform: uppercase;
-  width: 650px;
 }
 .footer__slogan--small-title {
   color: rgb(255, 165, 186);
@@ -908,6 +955,7 @@ a:hover {
   font-weight: 400;
   letter-spacing: 0.04em;
   font-family: "Titan One", cursive;
+  padding-bottom: 15px;
   transition: transform 500ms ease-in-out;
 }
 .footer__slogan--small-title span {
@@ -999,10 +1047,30 @@ a:hover {
   transform: scale(1.1) translate(10px);
 }
 
+.footer__home {
+  position: absolute;
+  left: 90%;
+  background-color: rgb(212, 20, 67);
+  border-radius: 50%;
+  border: none;
+  padding: 0px;
+  width: 35px;
+  height: 35px;
+  margin-top: -50px;
+}
+.footer__home__return {
+  width: 40px;
+  height: 40px;
+  transform: rotate(-90deg);
+  stroke: #ffffff;
+  padding-bottom: 4px;
+  padding-left: 1px;
+}
+
 .footer__copyright {
   border-top: 1px solid #e1e1e1;
   text-align: center;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 .footer__copyright p {
   color: #907e82;
@@ -1042,7 +1110,7 @@ a:hover {
     font-size: 0.87rem;
   }
   .footer__copyright {
-    margin-top: 40px;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width: 480px) {
