@@ -12,7 +12,6 @@
 
       /////////////////////////////////////////////////////////////// Form
       openformModalBtn: document.querySelector("[modal-form-open]"),
-      openformModalBtn2: document.querySelector("[modal-form-open]"),
       closeformModalBtn: document.querySelector("[modal-form-close]"),
       modalform: document.querySelector("[modal-form]"),
     };
@@ -27,7 +26,6 @@
     ////////////////////////////////////////////////////////////// Form
     refs.openformModalBtn.addEventListener("click", toggleModalForm);
     refs.closeformModalBtn.addEventListener("click", toggleModalForm);
-    refs.openModalBtn2.addEventListener("click", toggleModalMenu);
 
 
 
