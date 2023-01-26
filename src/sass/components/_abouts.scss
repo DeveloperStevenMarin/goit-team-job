@@ -54,7 +54,9 @@
   &__image {
     height: 500px;
     width: 480px;
-
+    &:hover {
+        animation: rotate-scale-up 2s ease-in-out;    
+    }
     img {
       width: 480px;
       height: 500px;
