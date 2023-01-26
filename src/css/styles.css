@@ -181,6 +181,17 @@ form {
     transform: scaleX(-1);
   }
 }
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 .about {
   background: rgb(255, 245, 246);
   display: flex;
@@ -234,6 +245,9 @@ form {
 .about__image {
   height: 500px;
   width: 480px;
+}
+.about__image:hover {
+  animation: rotate-scale-up 2s ease-in-out;
 }
 .about__image img {
   width: 480px;
